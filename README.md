@@ -195,5 +195,5 @@ With a timescale of 1 ns and `BAUD_TICKS = 10`, each UART bit period is 10 ns:
 
 ---
 
-![Chip Render](images\Capture_1.PNG)
-![3D Chip Render](images\Capture.PNG)
+![Chip Render](images/Capture_1.PNG)
+![3D Chip Render](images/Capture.PNG)
