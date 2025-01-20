@@ -1,0 +1,12 @@
+❌ [red][bold] %Error: overall.v:570:25: Can't find definition of variable: 'tempC2'
+                        : ... Suggested alternative: 'tempC0'
+  570 |                         tempC2,
+      |                         ^~~~~~
+%Error: overall.v:575:25: Can't find definition of variable: 'tempC3'
+                        : ... Suggested alternative: 'tempC0'
+  575 |                         tempC3,
+      |                         ^~~~~~
+%Error: Exiting due to 4 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_03-00-34/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 4 Lint errors found.

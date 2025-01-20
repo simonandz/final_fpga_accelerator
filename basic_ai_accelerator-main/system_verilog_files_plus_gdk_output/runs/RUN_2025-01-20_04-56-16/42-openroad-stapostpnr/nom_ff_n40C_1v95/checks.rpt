@@ -1,0 +1,91 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_ff_n40C_1v95 Corner ===================================
+
+Startpoint: start_in (input port clocked by clk)
+Endpoint: _12_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  4.000000    4.000000 ^ input external delay
+     1    0.003256    0.015551    0.008440    4.008440 ^ start_in (in)
+                                                         start_in (net)
+                      0.015551    0.000000    4.008440 ^ input3/A (sky130_fd_sc_hd__clkbuf_1)
+     2    0.005538    0.054923    0.064250    4.072690 ^ input3/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net3 (net)
+                      0.054924    0.000137    4.072827 ^ _07_/A_N (sky130_fd_sc_hd__and2b_1)
+     1    0.003534    0.027126    0.111847    4.184674 v _07_/X (sky130_fd_sc_hd__and2b_1)
+                                                         _05_ (net)
+                      0.027126    0.000080    4.184754 v _08_/A (sky130_fd_sc_hd__clkbuf_1)
+     1    0.005906    0.029461    0.064986    4.249740 v _08_/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         _00_ (net)
+                      0.029463    0.000238    4.249978 v _12_/D (sky130_fd_sc_hd__dfstp_1)
+                                              4.249978   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_ff_n40C_1v95 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_ff_n40C_1v95 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 12 unannotated drivers.
+ opcode_in0
+ opcode_in1
+ opcode_in2
+ opcode_in3
+ tx_in
+ _15__4/HI
+ _16__5/HI
+ _17__6/HI
+ _18__7/HI
+ _19__8/HI
+ _20__9/HI
+ _21__10/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 3 unclocked register/latch pins.
+  _12_/CLK
+  _13_/CLK
+  _14_/CLK
+Warning: There are 11 unconstrained endpoints.
+  busy_out
+  done_out
+  out4
+  out5
+  out6
+  out7
+  out8
+  rx_out
+  _12_/D
+  _13_/D
+  _14_/D

@@ -1,0 +1,3 @@
+relativeroot=C:/fpga/simon/asic_accelerator
+original_argv=--mode hls --csim --config C:\fpga\simon\asic_accelerator\hls_config.cfg --work_dir asic_accelerator 
+

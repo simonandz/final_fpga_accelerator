@@ -1,0 +1,2 @@
+XILINX_VITIS='C:/fpga\Vitis\2024.2'
+cmdline: 'C:\fpga\Vitis\2024.2\bin\xcd.bat' -p 61863 -t fde7b252-d2ec-11ef-911f-10510787bd14

@@ -1,0 +1,4 @@
+%Error: overall.v:575:5: syntax error, unexpected IDENTIFIER, expecting "'{"
+  575 | reg tx_req_temp;
+      |     ^~~~~~~~~~~
+%Error: Exiting due to 1 error(s)

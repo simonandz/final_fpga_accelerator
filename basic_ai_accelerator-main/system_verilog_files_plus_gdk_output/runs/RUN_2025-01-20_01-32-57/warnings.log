@@ -1,0 +1,7 @@
+❌ [red][bold] %Error: overall.v:134:33: syntax error, unexpected '[', expecting ';'
+  134 |     q8_24_mul = (product >>> 24)[31:0];
+      |                                 ^
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-20_01-32-57/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

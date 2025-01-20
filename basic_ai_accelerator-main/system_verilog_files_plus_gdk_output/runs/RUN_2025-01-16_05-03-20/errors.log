@@ -1,0 +1,11 @@
+❌ [red][bold]       |                                        ^~
+%Error-UNSUPPORTED: overall.v:589:30: Unsupported: Slice of non-constant bounds
+                                    : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  589 |                             A\[m_idx * TOTAL_3x3 +: TOTAL_3x3],
+      |                              ^
+%Error: Internal Error: overall.v:589:30: ../V3Width.cpp:1180: AstSelPlus should disappear after widthSel
+                                        : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  589 |                             A\[m_idx * TOTAL_3x3 +: TOTAL_3x3],
+      |                              ^
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-03-20/01-verilator-lint/verilator-lint.log'

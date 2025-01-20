@@ -1,0 +1,12 @@
+{
+  "name": "asic_accelerator",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "asic_accelerator"
+  },
+  "template": "empty_hls_component"
+}

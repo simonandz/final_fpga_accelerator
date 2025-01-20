@@ -1,0 +1,12 @@
+❌ [red][bold]   288 |                         q8_24_t avg;
+      |                                 ^~~
+%Error: overall.v:537:25: syntax error, unexpected IDENTIFIER, expecting "'{"
+  537 |             logic [7:0] tx_data_tmp;
+      |                         ^~~~~~~~~~~
+%Error: overall.v:604:37: syntax error, unexpected IDENTIFIER, expecting "'{"
+  604 |                         logic [7:0] out_val;
+      |                                     ^~~~~~~
+%Error: Exiting due to 8 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-43-14/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 8 Lint errors found.

@@ -1,0 +1,7 @@
+❌ [red][bold] %Error: overall.v:511:17: syntax error, unexpected IDENTIFIER, expecting "'{"
+  511 |         integer mm;
+      |                 ^~
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_07-35-20/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

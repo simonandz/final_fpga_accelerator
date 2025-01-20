@@ -1,0 +1,12 @@
+❌ [red][bold]   498 |     systolic_state_t states [NUM_ARRAYS];
+      |                      ^~~~~~
+                   overall.v:652:31: ... Location of blocking assignment
+  652 |                         states[3],
+      |                               ^
+                   overall.v:540:17: ... Location of nonblocking assignment
+  540 |                 states\[m].state <= IDLE;
+      |                 ^~~~~~
+%Error: Exiting due to 46 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-23-31/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 46 Lint errors found.

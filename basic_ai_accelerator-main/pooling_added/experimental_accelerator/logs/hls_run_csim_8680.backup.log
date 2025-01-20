@@ -1,0 +1,38 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/experimental_accelerator/experimental_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top_systolic_controller_flat' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as test bench code with instrumentation
+systolic_array.cpp:34:1: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=x core=FAddSub_nodsp
+^
+1 warning generated.
+systolic_array.cpp:34:1: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=x core=FAddSub_nodsp
+^
+1 warning generated.
+INFO: [HLS 211-200] Linking hardware code
+error: Linking globals named '_Z28top_systolic_controller_flatbbhP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EEPb': symbol multiply defined!
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Linking hardware code'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 4 seconds. Total elapsed time: 36.662 seconds; peak allocated memory: 619.645 MB.

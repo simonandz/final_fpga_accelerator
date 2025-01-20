@@ -1,0 +1,348 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/ultra_experimental_accelerator/ultra_experimental_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/ultra_experimental_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/ultra_experimental_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_top_cpu.h' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/ultra_experimental_accelerator/systolic_top_cpu.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_top_cpu.cpp' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/ultra_experimental_accelerator/systolic_top_cpu.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top_systolic_controller_flat' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/ultra_experimental_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_top_cpu.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_top_cpu.cpp as test bench code with instrumentation
+systolic_array.cpp:34:1: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=x core=FAddSub_nodsp
+^
+1 warning generated.
+systolic_top_cpu.cpp:29:13: warning: unexpected pragma argument '__attribute__', expects identifier [-Winvalid-hls-pragmas]
+#pragma HLS INLINE
+            ^
+c:\fpga\vitis\2024.2\vcxx\data\autopilot/etc/ap_common.h:138:23: note: expanded from macro 'INLINE'
+#define INLINE inline __attribute__((always_inline))
+                      ^
+1 warning generated.
+systolic_array.cpp:34:1: warning: 'Resource pragma' is deprecated, use 'bind_op/bind_storage pragma' instead [-Wignored-hls-pragmas]
+#pragma HLS RESOURCE variable=x core=FAddSub_nodsp
+^
+1 warning generated.
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+
+[0x0 : No-Op]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x1 : 3x3 Multiply]
+ Array 0 (done=true):
+                 -6                 -9                -12                 -5
+                 10                 11                  6                 -1
+                 -1                 -8                 -9                  4
+                 10                 13                  9                -12
+
+ Array 1 (done=true):
+                -15                -11                 -1                  0
+                  1                 -1                 -1                 -1
+                  4                  3                  2                 15
+                 18                  7                -17                 -6
+
+ Array 2 (done=true):
+                 -9                  1                 -5                 10
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x2 : ReLU]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x3 : Leaky ReLU]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x4 : Softmax]
+ Array 0 (done=true):
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+
+ Array 1 (done=true):
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+           0.111111           0.111111           0.111111           0.111111
+
+ Array 2 (done=true):
+           0.111111           0.111111           0.111111           0.111111
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x8 : Min Pooling]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0x9 : SGD]
+ Array 0 (done=true):
+              -2.01              -1.02-0.0299978           0.960003
+               1.95              -2.06           -1.06999-0.00999928
+           0.980001               1.97              -2.04              -1.05
+-0.0599957           0.930005               1.99              -2.02
+
+ Array 1 (done=true):
+              -1.03-0.0399971           0.950004               1.94
+           -2.06999              -1.01-0.0199986           0.970002
+               1.96              -2.05              -1.06-0.0699949
+           0.990001               1.98              -2.03              -1.04
+
+ Array 2 (done=true):
+-0.0499964           0.940004            1.93001              -2.01
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0xA : Sigmoid]
+ Array 0 (done=true):
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+
+ Array 1 (done=true):
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+                0.5                0.5                0.5                0.5
+
+ Array 2 (done=true):
+                0.5                0.5                0.5                0.5
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0xB : Compute Loss]
+ Array 0 (done=true):
+            19.4444                  0                  0                  0
+                  0                  0                  0                  0
+                  0            21.5556                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0            25.2222                  0
+                  0                  0                  0                  0
+                  0                  0                  0            20.3333
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0xC : Average Pooling]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+
+[0xE : Max Pooling]
+ Array 0 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 1 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 2 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+ Array 3 (done=true):
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+                  0                  0                  0                  0
+
+All tests finished.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:313:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:307:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:308:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:309:1)
+WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:310:1)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:316:1)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\ultra_experimental_accelerator:0:0) as the pipelined function is not the top-level hardware function
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 4 seconds. Total elapsed time: 86.296 seconds; peak allocated memory: 619.535 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 34s

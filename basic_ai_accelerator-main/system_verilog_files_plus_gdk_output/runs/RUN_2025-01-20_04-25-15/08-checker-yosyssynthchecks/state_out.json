@@ -1,0 +1,31 @@
+{
+    "nl": "/foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_04-25-15/06-yosys-synthesis/systolic_top_uart_4parallel_q8_24.nl.v",
+    "pnl": null,
+    "pnl-sdf-friendly": null,
+    "pnl-npc": null,
+    "def": null,
+    "lef": null,
+    "openroad-lef": null,
+    "odb": null,
+    "sdc": null,
+    "sdf": null,
+    "spef": null,
+    "lib": null,
+    "spice": null,
+    "mag": null,
+    "gds": null,
+    "mag_gds": null,
+    "klayout_gds": null,
+    "json_h": "/foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_04-25-15/05-yosys-jsonheader/systolic_top_uart_4parallel_q8_24.h.json",
+    "vh": null,
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 509,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 15,
+        "design__instance__area": 142.6368,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

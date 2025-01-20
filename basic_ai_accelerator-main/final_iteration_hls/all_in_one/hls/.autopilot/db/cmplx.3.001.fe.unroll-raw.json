@@ -1,0 +1,124 @@
+{
+  "0": {
+    "basicblocks": 337,
+    "calls": "2 4 8 8 8 8",
+    "file": "systolic_array.cpp",
+    "fileloc": 356,
+    "instructions": 631,
+    "loads": {
+      "G": 25
+    },
+    "name": "systolic_top_uart_4parallel",
+    "stores": {
+      "G": 195,
+      "T": 10
+    },
+    "total_instructions": 23737
+  },
+  "1": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 32,
+    "instructions": 29,
+    "name": "leaky_relu",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 29
+  },
+  "2": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 268,
+    "instructions": 47,
+    "loads": {
+      "G": 7
+    },
+    "name": "uart_rx",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 47
+  },
+  "3": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 43,
+    "instructions": 66,
+    "name": "sigmoid",
+    "total_instructions": 128
+  },
+  "4": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 306,
+    "instructions": 43,
+    "loads": {
+      "G": 6
+    },
+    "name": "uart_tx",
+    "stores": {
+      "G": 11,
+      "L": 1
+    },
+    "total_instructions": 43
+  },
+  "5": {
+    "basicblocks": 213,
+    "calls": "6 6 6 6 6 6 6 6 6",
+    "file": "systolic_array.cpp",
+    "fileloc": 59,
+    "instructions": 549,
+    "loads": {
+      "L": 72
+    },
+    "name": "softmax",
+    "stores": {
+      "L": 18
+    },
+    "total_instructions": 2205
+  },
+  "6": {
+    "basicblocks": 108,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 50,
+    "instructions": 184,
+    "name": "exp_fixed",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 184
+  },
+  "7": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 28,
+    "instructions": 14,
+    "name": "relu",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 14
+  },
+  "8": {
+    "basicblocks": 775,
+    "calls": "7 7 7 7 7 7 7 7 7 1 1 1 1 1 1 1 1 1 5 3 3 3 3 3 3 3 3 3",
+    "file": "systolic_array.cpp",
+    "fileloc": 88,
+    "instructions": 2010,
+    "loads": {
+      "L": 247
+    },
+    "name": "systolic_array",
+    "stores": {
+      "L": 109
+    },
+    "total_instructions": 5754
+  }
+}

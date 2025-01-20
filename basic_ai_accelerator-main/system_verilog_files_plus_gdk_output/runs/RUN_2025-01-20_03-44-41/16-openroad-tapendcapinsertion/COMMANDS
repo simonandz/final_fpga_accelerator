@@ -1,0 +1,1 @@
+openroad -exit -no_splash -metrics /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_03-44-41/16-openroad-tapendcapinsertion/or_metrics_out.json /usr/local/lib/python3.10/dist-packages/openlane/scripts/openroad/tapcell.tcl

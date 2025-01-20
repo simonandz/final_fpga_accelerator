@@ -1,0 +1,11 @@
+❌ [red][bold] [TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+Reading SCL library '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib' as a blackboxâ¦
+
+1. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: overall.v
+overall.v:463: ERROR: Unsupported expression on dynamic range select on signal `\A_blk_packed'!
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-49-37/04-yosys-jsonheader/yosys-jsonheader.log'

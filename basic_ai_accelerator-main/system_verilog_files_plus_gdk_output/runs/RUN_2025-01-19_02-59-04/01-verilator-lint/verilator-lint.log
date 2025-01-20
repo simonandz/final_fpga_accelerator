@@ -1,0 +1,4 @@
+%Error: overall.v:588:49: syntax error, unexpected ';', expecting ',' or ':' or :-begin or :-fork
+  588 |                 C_blk_packed <= C_blk_packed_tmp;
+      |                                                 ^
+%Error: Exiting due to 1 error(s)

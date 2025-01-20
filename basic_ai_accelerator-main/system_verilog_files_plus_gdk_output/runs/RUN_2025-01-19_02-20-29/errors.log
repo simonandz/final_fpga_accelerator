@@ -1,0 +1,12 @@
+❌ [red][bold] %Error: overall.v:1138:13: Missing argument on non-defaulted argument 'tx_dummy' in function call to TASK 'uart_tx'
+                         : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+ 1138 |             uart_tx(  , 1'b0, 8'd0, 1'b0, tx_st);
+      |             ^~~~~~~
+%Warning-WIDTHTRUNC: overall.v:1138:13: Function output argument 'tx_dummy' requires 1 bits, but connection's CONST '?32?h0' generates 32 bits.
+                                      : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+ 1138 |             uart_tx(  , 1'b0, 8'd0, 1'b0, tx_st);
+      |             ^~~~~~~
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-20-29/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

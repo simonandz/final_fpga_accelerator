@@ -1,0 +1,7 @@
+%Error: overall.v:463:21: syntax error, unexpected IDENTIFIER, expecting "'{"
+  463 |             integer m;
+      |                     ^
+%Error: overall.v:528:37: syntax error, unexpected IDENTIFIER, expecting "'{"
+  528 |                             integer b, k;
+      |                                     ^
+%Error: Exiting due to 2 error(s)

@@ -1,0 +1,11 @@
+❌ [red][bold] Warning: wire '\states[2].state' is assigned in a block at overall.v:1125.17-1125.46.
+Warning: wire '\states[2].k' is assigned in a block at overall.v:1126.17-1126.43.
+Warning: wire '\states[2].busy' is assigned in a block at overall.v:1127.17-1127.46.
+Warning: wire '\states[2].partial_sum' is assigned in a block at overall.v:1128.17-1128.53.
+Warning: wire '\states[3].state' is assigned in a block at overall.v:1125.17-1125.46.
+Warning: wire '\states[3].k' is assigned in a block at overall.v:1126.17-1126.43.
+Warning: wire '\states[3].busy' is assigned in a block at overall.v:1127.17-1127.46.
+Warning: wire '\states[3].partial_sum' is assigned in a block at overall.v:1128.17-1128.53.
+overall.v:1142: ERROR: Invalid nesting of always blocks and/or initializations.
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-35-06/04-yosys-jsonheader/yosys-jsonheader.log'

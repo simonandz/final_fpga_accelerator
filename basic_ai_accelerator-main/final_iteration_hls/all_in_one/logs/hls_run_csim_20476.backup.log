@@ -1,0 +1,31 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/all_in_one/all_in_one 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/all_in_one/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/all_in_one/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/all_in_one/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=systolic_top_uart_4parallel' from C:/fpga/simon/all_in_one/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/all_in_one/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/all_in_one/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/all_in_one/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/all_in_one/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+ld.lld: error: undefined symbol: systolic_top_uart(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)
+>>> referenced by C:/fpga/simon/asic_accelerator/overall_tb.cpp
+>>>               C:\fpga\simon\all_in_one\all_in_one\hls\csim\code_analyzer\.internal\build\overall_tb.cpp.0.o
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Linking executable'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 19.177 seconds; peak allocated memory: 619.230 MB.

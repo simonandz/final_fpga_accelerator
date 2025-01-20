@@ -1,0 +1,151 @@
+%Error: overall.v:171:9: syntax error, unexpected IDENTIFIER, expecting TYPE-IDENTIFIER
+  171 |         state_enum state;
+      |         ^~~~~~~~~~
+%Error: overall.v:175:5: syntax error, unexpected '}'
+  175 |     } systolic_state_t;
+      |     ^
+%Error: overall.v:193:33: syntax error, unexpected IDENTIFIER, expecting ')'
+  193 |         inout  systolic_state_t s,
+      |                                 ^
+%Error: overall.v:200:14: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  200 |         done = 1'b0;
+      |              ^
+%Error: overall.v:202:21: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  202 |             s.state = IDLE;
+      |                     ^
+%Error: overall.v:203:21: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  203 |             s.k     = 0;
+      |                     ^
+%Error: overall.v:204:21: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  204 |             s.busy  = 1'b0;
+      |                     ^
+%Error: overall.v:207:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  207 |                 s.partial_sum[i] = 0;
+      |                              ^
+%Error: overall.v:215:22: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  215 |                 done = 1'b0;
+      |                      ^
+%Error: overall.v:217:28: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  217 |                     s.busy = 1'b1;
+      |                            ^
+%Error: overall.v:220:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  220 |                         s.state = CALC;
+      |                                 ^
+%Error: overall.v:221:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  221 |                         s.k     = 0;
+      |                                 ^
+%Error: overall.v:223:42: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  223 |                             s.partial_sum[i] = 0;
+      |                                          ^
+%Error: overall.v:226:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  226 |                         s.state = FINISH;
+      |                                 ^
+%Error: overall.v:235:35: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  235 |                             idx   = i * N + j;
+      |                                   ^
+%Error: overall.v:239:42: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  239 |                             s.partial_sum[idx] = s.partial_sum[idx] + prod;
+      |                                          ^
+%Error: overall.v:242:25: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  242 |                     s.k = s.k + 1;
+      |                         ^
+%Error: overall.v:244:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  244 |                         s.state = FINISH;
+      |                                 ^
+%Error: overall.v:251:22: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  251 |                     C[i] = s.partial_sum[i];
+      |                      ^
+%Error: overall.v:266:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  266 |                             C[i] = q8_24_relu(C[i]);
+      |                              ^
+%Error: overall.v:273:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  273 |                             C[i] = q8_24_leaky_relu(C[i]);
+      |                              ^
+%Error: overall.v:279:38: syntax error, unexpected '(', expecting IDENTIFIER or randomize
+  279 |                         q8_24_softmax(C);
+      |                                      ^
+%Error: overall.v:285:28: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  285 |                         mn = C[0];
+      |                            ^
+%Error: overall.v:288:36: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  288 |                                 mn = C[i];
+      |                                    ^
+%Error: overall.v:290:26: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  290 |                         C[0] = mn;
+      |                          ^
+%Error: overall.v:292:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  292 |                             C[i] = 0;
+      |                              ^
+%Error: overall.v:300:41: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  300 |                             scaled_grad = q8_24_mul(B[i], LR);
+      |                                         ^
+%Error: overall.v:308:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  308 |                             C[i] = q8_24_sigmoid(C[i]);
+      |                              ^
+%Error: overall.v:315:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  315 |                         sum_val = 0;
+      |                                 ^
+%Error: overall.v:317:37: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  317 |                             sum_val = sum_val + C[i];
+      |                                     ^
+%Error: overall.v:319:34: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  319 |                         nine_q24 = 32'd150994944;  
+      |                                  ^
+%Error: overall.v:323:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  323 |                             C[i] = 0;
+      |                              ^
+%Error: overall.v:330:28: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  330 |                         mx = C[0];
+      |                            ^
+%Error: overall.v:333:36: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  333 |                                 mx = C[i];
+      |                                    ^
+%Error: overall.v:335:26: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  335 |                         C[0] = mx;
+      |                          ^
+%Error: overall.v:337:30: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  337 |                             C[i] = 0;
+      |                              ^
+%Error: overall.v:346:25: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  346 |                 done    = 1'b1;
+      |                         ^
+%Error: overall.v:347:25: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  347 |                 s.busy  = 1'b0;
+      |                         ^
+%Error: overall.v:348:25: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  348 |                 s.state = IDLE;
+      |                         ^
+%Error: overall.v:356:5: syntax error, unexpected endtask
+  356 |     endtask
+      |     ^~~~~~~
+%Error: overall.v:366:5: syntax error, unexpected '}'
+  366 |     } UartRxState_t;
+      |     ^
+%Error: overall.v:385:30: syntax error, unexpected IDENTIFIER, expecting ')'
+  385 |         inout  UartRxState_t st
+      |                              ^~
+%Error: overall.v:389:18: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  389 |         rx_valid = 1'b0;
+      |                  ^
+%Error: overall.v:391:29: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  391 |             st.active       = 1'b0;
+      |                             ^
+%Error: overall.v:392:29: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  392 |             st.bitcount     = 0;
+      |                             ^
+%Error: overall.v:393:29: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  393 |             st.sample_count = 0;
+      |                             ^
+%Error: overall.v:394:29: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  394 |             st.shift_reg    = 0;
+      |                             ^
+%Error: overall.v:402:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  402 |                 st.active       = 1'b1;
+      |                                 ^
+%Error: overall.v:403:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  403 |                 st.bitcount     = 0;
+      |                                 ^
+%Error: overall.v:404:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  404 |                 st.sample_count = 0;
+      |                                 ^
+%Error: Exiting due to too many errors encountered; --error-limit=50

@@ -1,0 +1,151 @@
+{
+  "0": {
+    "basicblocks": 47,
+    "calls": "9 7 5",
+    "file": "systolic_array.cpp",
+    "fileloc": 356,
+    "instructions": 300,
+    "loads": {
+      "G": 20,
+      "L": 6
+    },
+    "name": "systolic_top_uart_4parallel",
+    "stores": {
+      "G": 43,
+      "T": 15
+    },
+    "total_instructions": 10211
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 23,
+    "instructions": 2,
+    "name": "__cxx_global_var_init.1",
+    "total_instructions": 385
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "1",
+    "file": "systolic_array.pp.0.cpp",
+    "fileloc": 0,
+    "instructions": 2,
+    "name": "",
+    "total_instructions": 387
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 43,
+    "instructions": 8,
+    "name": "sigmoid",
+    "total_instructions": 517
+  },
+  "3": {
+    "basicblocks": 8,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 3
+    },
+    "name": "exp_fixed",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5225
+  },
+  "4": {
+    "basicblocks": 15,
+    "calls": "3",
+    "file": "systolic_array.cpp",
+    "fileloc": 59,
+    "instructions": 68,
+    "loads": {
+      "L": 3
+    },
+    "name": "softmax",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 5765
+  },
+  "5": {
+    "basicblocks": 123,
+    "calls": "8 6 4 2",
+    "file": "systolic_array.cpp",
+    "fileloc": 88,
+    "instructions": 476,
+    "loads": {
+      "L": 28
+    },
+    "name": "systolic_array",
+    "stores": {
+      "L": 35
+    },
+    "total_instructions": 9256
+  },
+  "6": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 32,
+    "instructions": 31,
+    "loads": {
+      "L": 1
+    },
+    "name": "leaky_relu",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 671
+  },
+  "7": {
+    "basicblocks": 19,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 306,
+    "instructions": 101,
+    "loads": {
+      "L": 10
+    },
+    "name": "uart_tx",
+    "stores": {
+      "L": 26
+    },
+    "total_instructions": 101
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 28,
+    "instructions": 16,
+    "loads": {
+      "L": 1
+    },
+    "name": "relu",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 122
+  },
+  "9": {
+    "basicblocks": 17,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 268,
+    "instructions": 82,
+    "loads": {
+      "L": 10
+    },
+    "name": "uart_rx",
+    "stores": {
+      "L": 17
+    },
+    "total_instructions": 82
+  }
+}

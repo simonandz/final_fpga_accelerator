@@ -1,0 +1,2558 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'C:/fpga/simon/all_in_one/all_in_one/hls/.autopilot/db\systolic_array.pp.0.cpp', 
+                   Line: 0, Column: 0 }
+Function:        _GLOBAL__sub_I_systolic_array.pp.0.cpp
+Args:            
+  - Callee:          __cxx_global_var_init.1
+    DebugLoc:        { File: systolic_array.cpp, Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          _GLOBAL__sub_I_systolic_array.pp.0.cpp
+    DebugLoc:        { File: 'C:/fpga/simon/all_in_one/all_in_one/hls/.autopilot/db\systolic_array.pp.0.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 174, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'leaky_relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 32, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 168, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 471, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'uart_tx(bool&, bool, unsigned int, bool, UartTxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 306, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 468, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'uart_rx(bool, unsigned int&, bool&, bool, UartRxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 268, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 431, Column: 27 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_431_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 436, Column: 31 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_436_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 515, Column: 27 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_515_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 122, Column: 35 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_122_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 137, Column: 31 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_137_3
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 139, Column: 20 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_139_4
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 166, Column: 31 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_166_6
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 172, Column: 31 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_172_7
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 188, Column: 31 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_188_9
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 183, Column: 31 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_183_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 195, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_195_10
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 201, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_201_11
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 215, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_215_13
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 209, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_209_12
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 229, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_229_15
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 224, Column: 32 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_224_14
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 155, Column: 27 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_155_5
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 67, Column: 26 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_67_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 61, Column: 22 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_431_1
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:431:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_436_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:436:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_436_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:436:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_436_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:436:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_436_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:436:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_515_3
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:515:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_top_uart_4parallel
+  - String:          ''' completely with a factor of '
+  - Factor:          '4'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_122_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:122:35'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_137_3
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:137:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:139:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:139:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_139_4
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:139:20'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_166_6
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:166:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_172_7
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:172:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_188_9
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:188:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_183_8
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:183:31'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_195_10
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:195:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_201_11
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:201:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_215_13
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:215:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_209_12
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:209:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_229_15
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:229:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_224_14
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:224:32'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_155_5
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:155:27'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          systolic_array
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_67_2
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:67:26'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          softmax
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_61_1
+  - String:          ''' ('
+  - LoopLoc:         'systolic_array.cpp:61:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          softmax
+  - String:          ''' completely with a factor of '
+  - Factor:          '9'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _ZL7softmaxP8ap_fixedILi32ELi12EL9ap_q_mode5EL9ap_o_mode3ELi0EE
+Args:            
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 168, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 28, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 174, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'leaky_relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 32, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 468, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'uart_rx(bool, unsigned int&, bool&, bool, UartRxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 268, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 471, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'uart_tx(bool&, bool, unsigned int, bool, UartTxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 306, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_systolic_top_uart_4parallel_ir
+Args:            
+  - Callee:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_systolic_top_uart_4parallel_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 28, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+Function:        _ZL14systolic_arraybbP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EERbR16systolic_state_th
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'leaky_relu(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 32, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 468, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'uart_rx(bool, unsigned int&, bool&, bool, UartRxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 268, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 471, Column: 5 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'uart_tx(bool&, bool, unsigned int, bool, UartTxState&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 306, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 517, Column: 2 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'systolic_array(bool, bool, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, bool&, systolic_state_t&, unsigned char)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 97, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 178, Column: 13 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'softmax(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 59, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 203, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'sigmoid(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 43, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: systolic_array.cpp, Line: 62, Column: 19 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'exp_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 50, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)'
+    DebugLoc:        { File: systolic_array.cpp, Line: 377, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.state
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.k
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.busy
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.partial_sum
+  - String:          ''' dimension '
+  - Dim:             '1'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayPromotion
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.partial_sum
+  - String:          ''' dimension '
+  - Dim:             '2'
+  - String:          ' completely based on constant index.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoSmallArrayPartition
+DebugLoc:        { File: systolic_array.cpp, Line: 414, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Automatically partitioning small array '''
+  - Value:           _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E10done_array
+  - String:          ''' completely based on array size.'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 414, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E10done_array'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:414:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::done_array'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::done_array'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 408, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1A'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:408:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::A'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::A'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 409, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1B'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:409:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::B'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::B'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 410, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1C'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:410:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::C'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::C'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.busy'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:413:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.busy)'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.busy)'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.k'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:413:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.k)'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.k)'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.partial_sum'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:413:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.partial_sum)'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.partial_sum)'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=2 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.partial_sum'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:413:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.partial_sum)'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '2'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.partial_sum)'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.state'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  systolic_top_uart_4parallel
+  - String:          ' '
+  - varLoc:          'systolic_array.cpp:413:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'systolic_array.cpp:397:9'
+    DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+  - VarName:         'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.state)'
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 397, Column: 9 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            'systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.state)'
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.state
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.partial_sum
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '2'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.k
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 413, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.busy
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 410, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1C
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 409, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1B
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 408, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1A
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: systolic_array.cpp, Line: 414, Column: 0 }
+Function:        _Z27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E10done_array
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...

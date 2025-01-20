@@ -1,0 +1,25 @@
+%Error: overall.v:59:29: syntax error, unexpected IDENTIFIER, expecting "'{"
+   59 |         logic signed [63:0] shifted = product >>> 24;
+      |                             ^~~~~~~
+%Error: overall.v:68:29: syntax error, unexpected IDENTIFIER, expecting "'{"
+   68 |         logic signed [63:0] quotient;
+      |                             ^~~~~~~~
+%Error: overall.v:114:17: syntax error, unexpected IDENTIFIER, expecting "'{"
+  114 |         integer x_int = x >>> 24;
+      |                 ^~~~~
+%Error: overall.v:130:25: Too many digits for 32 bit number: 32'd5459815005
+  130 |             e_lut[ 4] = 32'd5459815005;  
+      |                         ^~~~~~~~~~~~~~
+%Error: overall.v:131:25: Too many digits for 32 bit number: 32'd14841315910
+  131 |             e_lut[ 5] = 32'd14841315910; 
+      |                         ^~~~~~~~~~~~~~~
+%Error: overall.v:132:25: Too many digits for 32 bit number: 32'd40342879349
+  132 |             e_lut[ 6] = 32'd40342879349; 
+      |                         ^~~~~~~~~~~~~~~
+%Error: overall.v:133:9: syntax error, unexpected end
+  133 |         end
+      |         ^~~
+%Error: overall.v:295:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  295 |                         q8_24_t avg = q8_24_div(sum_val, 9);  
+      |                                 ^~~
+%Error: Exiting due to 8 error(s)

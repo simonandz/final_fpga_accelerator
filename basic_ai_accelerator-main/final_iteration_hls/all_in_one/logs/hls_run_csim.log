@@ -1,0 +1,35 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/all_in_one/all_in_one 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/all_in_one/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/all_in_one/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/all_in_one/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=systolic_top_uart_4parallel' from C:/fpga/simon/all_in_one/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/all_in_one/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/all_in_one/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/all_in_one/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/all_in_one/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Received 0 bytes from the design:
+
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-207] Code Analyzer does not display the impact of the pipeline pragma in dataflow regions (C:\fpga\simon\all_in_one\systolic_array.cpp:397:1)
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\all_in_one\systolic_array.cpp:516:1)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (C:\fpga\simon\all_in_one\systolic_array.cpp:106:1) as the loop has been optimized out
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one\systolic_array.cpp:269:1) as the pipelined function is not the top-level hardware function
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one\systolic_array.cpp:307:1) as the pipelined function is not the top-level hardware function
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one:0:0) as the pipelined function is not the top-level hardware function
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 5 seconds. Total CPU system time: 2 seconds. Total elapsed time: 19.656 seconds; peak allocated memory: 619.750 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 24s

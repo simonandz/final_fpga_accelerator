@@ -1,0 +1,15 @@
+%Error: overall.v:153:25: syntax error, unexpected signed, expecting '('
+  153 |         localC[i] = reg'signed(s_partial_in[i*32 +: 32]);
+      |                         ^~~~~~
+%Error: overall.v:158:25: syntax error, unexpected signed, expecting '('
+  158 |         localA[i] = reg'signed(A_blk[i*32 +: 32]);
+      |                         ^~~~~~
+%Error: overall.v:159:25: syntax error, unexpected signed, expecting '('
+  159 |         localB[i] = reg'signed(B_blk[i*32 +: 32]);
+      |                         ^~~~~~
+%Error: overall.v:246:14: syntax error, unexpected '.', expecting ')'
+  246 | task uart_rx(...);
+      |              ^
+%Error: Internal Error: overall.v:52:8: ../V3ParseSym.h:124: Symbols suggest ending TASK 'uart_rx' but parser thinks ending MODULE 'systolic_top_uart_4parallel_q8_24'
+   52 | module systolic_top_uart_4parallel_q8_24 (
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

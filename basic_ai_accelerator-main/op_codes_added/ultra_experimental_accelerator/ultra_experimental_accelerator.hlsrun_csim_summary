@@ -1,0 +1,159 @@
+<ENTRY>
+{
+ "thisFile": "C:/fpga\\simon\\ultra_experimental_accelerator\\ultra_experimental_accelerator\\ultra_experimental_accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/12/25 00:15:02",
+ "timestampMillis": "1736658902249",
+ "buildStep": {
+  "cmdId": "dd6d4723-756f-48a9-aced-efb198e7444e",
+  "name": "vitis-run",
+  "logFile": "C:/fpga\\simon\\ultra_experimental_accelerator\\ultra_experimental_accelerator\\logs\\ultra_experimental_accelerator.steps.log",
+  "commandLine": "C:/fpga/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\fpga\\simon\\ultra_experimental_accelerator\\hls_config.cfg --work_dir ultra_experimental_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\fpga\\simon\\ultra_experimental_accelerator\\hls_config.cfg",
+   "--work_dir",
+   "ultra_experimental_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\ultra_experimental_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/12/25 00:15:02",
+ "timestampMillis": "1736658902250",
+ "status": {
+  "cmdId": "dd6d4723-756f-48a9-aced-efb198e7444e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/12/25 00:15:19",
+ "timestampMillis": "1736658919348",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top_systolic_controller_flat",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/fpga\\simon\\ultra_experimental_accelerator\\systolic_controller.h",
+     "C:/fpga\\simon\\ultra_experimental_accelerator\\systolic_array.cpp",
+     "C:/fpga\\simon\\ultra_experimental_accelerator\\systolic_top_cpu.h",
+     "C:/fpga\\simon\\ultra_experimental_accelerator\\systolic_top_cpu.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/12/25 00:15:19",
+ "timestampMillis": "1736658919351",
+ "buildStep": {
+  "cmdId": "7bd5c8fb-5df6-424d-8672-b5816bb26060",
+  "name": "",
+  "logFile": "C:/fpga\\simon\\ultra_experimental_accelerator\\ultra_experimental_accelerator\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\ultra_experimental_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/12/25 00:15:19",
+ "timestampMillis": "1736658919352",
+ "status": {
+  "cmdId": "7bd5c8fb-5df6-424d-8672-b5816bb26060",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/12/25 00:16:33",
+ "timestampMillis": "1736658993541",
+ "status": {
+  "cmdId": "7bd5c8fb-5df6-424d-8672-b5816bb26060",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/12/25 00:16:34",
+ "timestampMillis": "1736658994026",
+ "status": {
+  "cmdId": "dd6d4723-756f-48a9-aced-efb198e7444e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/12/25 00:16:34",
+ "timestampMillis": "1736658994028",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/12/25 00:16:34",
+ "timestampMillis": "1736658994029",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

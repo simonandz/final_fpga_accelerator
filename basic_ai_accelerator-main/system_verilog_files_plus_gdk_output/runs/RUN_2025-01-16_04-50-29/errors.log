@@ -1,0 +1,11 @@
+❌ [red][bold]   402 |                 st.active       = 1'b1;
+      |                                 ^
+%Error: overall.v:403:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  403 |                 st.bitcount     = 0;
+      |                                 ^
+%Error: overall.v:404:33: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  404 |                 st.sample_count = 0;
+      |                                 ^
+%Error: Exiting due to too many errors encountered; --error-limit=50
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-50-29/01-verilator-lint/verilator-lint.log'

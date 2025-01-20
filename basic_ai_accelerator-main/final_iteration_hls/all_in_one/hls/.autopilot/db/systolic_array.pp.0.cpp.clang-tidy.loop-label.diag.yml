@@ -1,0 +1,220 @@
+---
+MainSourceFile:  'C:/fpga/simon/all_in_one/all_in_one/hls/.autopilot/db/systolic_array.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'C:\fpga\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          279730
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'C:\fpga\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          280196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'C:\fpga\Vitis\2024.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          280663
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1248_1:  '
+    FileOffset:      1248
+    FilePath:        'C:\fpga\Vitis\2024.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          563951
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1248_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_61_1:  '
+    FileOffset:      61
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1725896
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_61_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_67_2:  '
+    FileOffset:      67
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1726044
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_67_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_105_1:  '
+    FileOffset:      105
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1726616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_105_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_122_2:  '
+    FileOffset:      122
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1727086
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_122_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_137_3:  '
+    FileOffset:      137
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1727393
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_137_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_139_4:  '
+    FileOffset:      139
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1727439
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_139_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_155_5:  '
+    FileOffset:      155
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1727873
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_155_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_166_6:  '
+    FileOffset:      166
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728090
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_166_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_172_7:  '
+    FileOffset:      172
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728221
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_172_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_183_8:  '
+    FileOffset:      183
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728458
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_183_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_188_9:  '
+    FileOffset:      188
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728582
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_188_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_195_10:  '
+    FileOffset:      195
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728714
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_195_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_201_11:  '
+    FileOffset:      201
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1728863
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_201_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_209_12:  '
+    FileOffset:      209
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1729036
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_209_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_215_13:  '
+    FileOffset:      215
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1729196
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_215_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_224_14:  '
+    FileOffset:      224
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1729358
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_224_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_229_15:  '
+    FileOffset:      229
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1729470
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_229_15: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_431_1:  '
+    FileOffset:      431
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1734457
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_431_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_436_2:  '
+    FileOffset:      436
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1734628
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_436_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_515_3:  '
+    FileOffset:      515
+    FilePath:        systolic_array.cpp
+    Replacements:    
+      - FilePath:        'C:\fpga\simon\all_in_one\all_in_one\hls\.autopilot\db\systolic_array.pp.0.cpp'
+        Offset:          1736845
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_515_3: '
+...

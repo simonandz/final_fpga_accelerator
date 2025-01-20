@@ -1,0 +1,25 @@
+%Error: overall.v:55:29: syntax error, unexpected IDENTIFIER, expecting "'{"
+   55 |         logic signed [63:0] shifted;
+      |                             ^~~~~~~
+%Error: overall.v:106:17: syntax error, unexpected IDENTIFIER, expecting "'{"
+  106 |         integer x_int;
+      |                 ^~~~~
+%Error: overall.v:110:17: syntax error, unexpected IDENTIFIER, expecting "'{"
+  110 |         q8_24_t e_lut [ -6 : 6 ];
+      |                 ^~~~~
+%Error: overall.v:223:37: syntax error, unexpected IDENTIFIER, expecting "'{"
+  223 |                             q8_24_t prod;
+      |                                     ^~~~
+%Error: overall.v:286:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  286 |                         q8_24_t nine_q24;
+      |                                 ^~~~~~~~
+%Error: overall.v:288:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  288 |                         q8_24_t avg;
+      |                                 ^~~
+%Error: overall.v:537:25: syntax error, unexpected IDENTIFIER, expecting "'{"
+  537 |             logic [7:0] tx_data_tmp;
+      |                         ^~~~~~~~~~~
+%Error: overall.v:604:37: syntax error, unexpected IDENTIFIER, expecting "'{"
+  604 |                         logic [7:0] out_val;
+      |                                     ^~~~~~~
+%Error: Exiting due to 8 error(s)

@@ -1,0 +1,4 @@
+%Error: overall.v:134:33: syntax error, unexpected '[', expecting ';'
+  134 |     q8_24_mul = (product >>> 24)[31:0];
+      |                                 ^
+%Error: Exiting due to 1 error(s)

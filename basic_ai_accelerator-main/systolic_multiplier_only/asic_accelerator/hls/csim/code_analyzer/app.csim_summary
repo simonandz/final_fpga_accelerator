@@ -1,0 +1,80 @@
+<ENTRY>
+{
+ "thisFile": "C:/fpga\\simon\\asic_accelerator\\asic_accelerator\\hls\\csim\\code_analyzer\\app.csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jan 10 22:44:03 2025",
+ "timestampMillis": "1736567043914",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [],
+  "toolVersion": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jan 10 22:44:03 2025",
+ "timestampMillis": "1736567043915",
+ "buildStep": {
+  "cmdId": "4d512a20-cfce-11ef-b83d-10510787bd14",
+  "name": "vitis_c++",
+  "logFile": "",
+  "commandLine": "vitis_c++ code_analyzer",
+  "args": [
+   "code_analyzer"
+  ],
+  "iniFiles": [],
+  "cwd": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 10 22:44:03 2025",
+ "timestampMillis": "1736567043917",
+ "status": {
+  "cmdId": "4d512a20-cfce-11ef-b83d-10510787bd14",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jan 10 22:44:32 2025",
+ "timestampMillis": "1736567072757",
+ "status": {
+  "cmdId": "4d512a20-cfce-11ef-b83d-10510787bd14",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jan 10 22:44:32 2025",
+ "timestampMillis": "1736567072758",
+ "report": {
+  "path": "C:\\fpga\\simon\\asic_accelerator",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "VCXX_CODE_ANALYZER",
+  "cmdId": "4d512a20-cfce-11ef-b83d-10510787bd14"
+ }
+}
+</ENTRY>

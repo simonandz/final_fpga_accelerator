@@ -1,0 +1,143 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.34 (git sha1 4a1b55992, gcc 11.4.0-1ubuntu1~22.04 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+Reading SCL library '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib' as a blackboxâ¦
+
+1. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: overall.v
+Parsing SystemVerilog input from `overall.v' to AST representation.
+Generating RTLIL representation for module `\systolic_top_uart_4parallel_q8_24'.
+Warning: wire '\states[0].state' is assigned in a block at overall.v:533.13-533.42.
+Warning: wire '\states[0].k' is assigned in a block at overall.v:534.13-534.39.
+Warning: wire '\states[0].busy' is assigned in a block at overall.v:535.13-535.42.
+Warning: wire '\states[0].partial_sum' is assigned in a block at overall.v:536.13-536.40.
+Warning: wire '\states[1].state' is assigned in a block at overall.v:533.13-533.42.
+Warning: wire '\states[1].k' is assigned in a block at overall.v:534.13-534.39.
+Warning: wire '\states[1].busy' is assigned in a block at overall.v:535.13-535.42.
+Warning: wire '\states[1].partial_sum' is assigned in a block at overall.v:536.13-536.40.
+Warning: wire '\states[2].state' is assigned in a block at overall.v:533.13-533.42.
+Warning: wire '\states[2].k' is assigned in a block at overall.v:534.13-534.39.
+Warning: wire '\states[2].busy' is assigned in a block at overall.v:535.13-535.42.
+Warning: wire '\states[2].partial_sum' is assigned in a block at overall.v:536.13-536.40.
+Warning: wire '\states[3].state' is assigned in a block at overall.v:533.13-533.42.
+Warning: wire '\states[3].k' is assigned in a block at overall.v:534.13-534.39.
+Warning: wire '\states[3].busy' is assigned in a block at overall.v:535.13-535.42.
+Warning: wire '\states[3].partial_sum' is assigned in a block at overall.v:536.13-536.40.
+Warning: wire '$unnamed_block$20.rx_st_tmp' is assigned in a block at overall.v:570.9-570.32.
+Warning: wire '$unnamed_block$20.tx_st_tmp' is assigned in a block at overall.v:571.9-571.32.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:365.17-365.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:366.17-366.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:367.17-367.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:368.17-368.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:371.19-372.30.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:377.21-377.62.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:381.17-381.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:381.40-382.30.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:384.21-384.37.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:414.17-414.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:415.17-415.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:416.17-416.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:417.17-417.42.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:418.17-418.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:419.17-419.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:422.17-422.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:423.17-423.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:426.19-427.30.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:429.17-429.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:429.40-430.30.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:432.21-432.50.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:433.21-433.52.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:436.21-436.37.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:439.21-439.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:440.21-440.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:441.21-441.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:442.21-442.43.
+Warning: wire '\states[0].state' is assigned in a block at overall.v:674.21-674.62.
+Warning: wire '\states[0].k' is assigned in a block at overall.v:675.21-675.62.
+Warning: wire '\states[0].busy' is assigned in a block at overall.v:676.21-676.65.
+Warning: wire '\states[0].partial_sum' is assigned in a block at overall.v:677.21-677.63.
+Warning: wire '\states[1].state' is assigned in a block at overall.v:674.21-674.62.
+Warning: wire '\states[1].k' is assigned in a block at overall.v:675.21-675.62.
+Warning: wire '\states[1].busy' is assigned in a block at overall.v:676.21-676.65.
+Warning: wire '\states[1].partial_sum' is assigned in a block at overall.v:677.21-677.63.
+Warning: wire '\states[2].state' is assigned in a block at overall.v:674.21-674.62.
+Warning: wire '\states[2].k' is assigned in a block at overall.v:675.21-675.62.
+Warning: wire '\states[2].busy' is assigned in a block at overall.v:676.21-676.65.
+Warning: wire '\states[2].partial_sum' is assigned in a block at overall.v:677.21-677.63.
+Warning: wire '\states[3].state' is assigned in a block at overall.v:674.21-674.62.
+Warning: wire '\states[3].k' is assigned in a block at overall.v:675.21-675.62.
+Warning: wire '\states[3].busy' is assigned in a block at overall.v:676.21-676.65.
+Warning: wire '\states[3].partial_sum' is assigned in a block at overall.v:677.21-677.63.
+Warning: Replacing memory \q8_24_softmax$func$overall.v:317$261.local_array with list of registers. See overall.v:194, overall.v:191
+Warning: Replacing memory \systolic_array$func$overall.v:662$224.localB with list of registers. See overall.v:288, overall.v:253
+Warning: Replacing memory \systolic_array$func$overall.v:662$224.localA with list of registers. See overall.v:288, overall.v:252
+Warning: Replacing memory \systolic_array$func$overall.v:662$224.localC with list of registers. See overall.v:288, overall.v:248
+Warning: Replacing memory \q8_24_softmax$func$overall.v:317$196.local_array with list of registers. See overall.v:194, overall.v:191
+Warning: Replacing memory \systolic_array$func$overall.v:653$159.localB with list of registers. See overall.v:288, overall.v:253
+Warning: Replacing memory \systolic_array$func$overall.v:653$159.localA with list of registers. See overall.v:288, overall.v:252
+Warning: Replacing memory \systolic_array$func$overall.v:653$159.localC with list of registers. See overall.v:288, overall.v:248
+Warning: Replacing memory \q8_24_softmax$func$overall.v:317$131.local_array with list of registers. See overall.v:194, overall.v:191
+Warning: Replacing memory \systolic_array$func$overall.v:644$94.localB with list of registers. See overall.v:288, overall.v:253
+Warning: Replacing memory \systolic_array$func$overall.v:644$94.localA with list of registers. See overall.v:288, overall.v:252
+Warning: Replacing memory \systolic_array$func$overall.v:644$94.localC with list of registers. See overall.v:288, overall.v:248
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_ps_out_arr with list of registers. See overall.v:641, overall.v:0
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_busy_out_arr with list of registers. See overall.v:641, overall.v:0
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_k_out_arr with list of registers. See overall.v:641, overall.v:0
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_state_out with list of registers. See overall.v:641, overall.v:0
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.done_flag with list of registers. See overall.v:639, overall.v:0
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.tempC with list of registers. See overall.v:639, overall.v:0
+Warning: Replacing memory \q8_24_softmax$func$overall.v:317$66.local_array with list of registers. See overall.v:194, overall.v:191
+Warning: Replacing memory \systolic_array$func$overall.v:635$29.localB with list of registers. See overall.v:288, overall.v:253
+Warning: Replacing memory \systolic_array$func$overall.v:635$29.localA with list of registers. See overall.v:288, overall.v:252
+Warning: Replacing memory \systolic_array$func$overall.v:635$29.localC with list of registers. See overall.v:288, overall.v:248
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_ps_in_arr with list of registers. See overall.v:640, overall.v:631
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_busy_in_arr with list of registers. See overall.v:640, overall.v:630
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_k_in_arr with list of registers. See overall.v:640, overall.v:629
+Warning: Replacing memory $unnamed_block$20.$unnamed_block$19.s_state_in with list of registers. See overall.v:640, overall.v:628
+overall.v:533: Warning: Identifier `\states[0].state' is implicitly declared.
+overall.v:534: Warning: Identifier `\states[0].k' is implicitly declared.
+overall.v:535: Warning: Identifier `\states[0].busy' is implicitly declared.
+overall.v:536: Warning: Identifier `\states[0].partial_sum' is implicitly declared.
+overall.v:533: Warning: Identifier `\states[1].state' is implicitly declared.
+overall.v:534: Warning: Identifier `\states[1].k' is implicitly declared.
+overall.v:535: Warning: Identifier `\states[1].busy' is implicitly declared.
+overall.v:536: Warning: Identifier `\states[1].partial_sum' is implicitly declared.
+overall.v:533: Warning: Identifier `\states[2].state' is implicitly declared.
+overall.v:534: Warning: Identifier `\states[2].k' is implicitly declared.
+overall.v:535: Warning: Identifier `\states[2].busy' is implicitly declared.
+overall.v:536: Warning: Identifier `\states[2].partial_sum' is implicitly declared.
+overall.v:533: Warning: Identifier `\states[3].state' is implicitly declared.
+overall.v:534: Warning: Identifier `\states[3].k' is implicitly declared.
+overall.v:535: Warning: Identifier `\states[3].busy' is implicitly declared.
+overall.v:536: Warning: Identifier `\states[3].partial_sum' is implicitly declared.
+overall.v:570: Warning: Identifier `$unnamed_block$20.rx_st_tmp' is implicitly declared.
+overall.v:571: Warning: Identifier `$unnamed_block$20.tx_st_tmp' is implicitly declared.
+overall.v:365: Warning: Identifier `\uart_rx$func$overall' is implicitly declared.
+ERROR: Assert `chunk.offset + chunk.width <= chunk.wire->width' failed in kernel/rtlil.cc:4509.

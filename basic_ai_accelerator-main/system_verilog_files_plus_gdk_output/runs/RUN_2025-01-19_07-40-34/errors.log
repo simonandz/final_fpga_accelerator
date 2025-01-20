@@ -1,0 +1,12 @@
+❌ [red][bold]   194 | function q8_24_t q8_24_exp_fixed(input q8_24_t x);
+      |                  ^~~~~~~~~~~~~~~
+        overall.v:118:18: ... Location of original declaration
+  118 | function q8_24_t q8_24_exp_fixed(input q8_24_t x);
+      |                  ^~~~~~~~~~~~~~~
+%Error: overall.v:204:23: Can't find definition of variable: 'E_LUT'
+  204 |     q8_24_exp_fixed = E_LUT\[lut_index];
+      |                       ^~~~~
+%Error: Exiting due to 2 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_07-40-34/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 2 Lint errors found.

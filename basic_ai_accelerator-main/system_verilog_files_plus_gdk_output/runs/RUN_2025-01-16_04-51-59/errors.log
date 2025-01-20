@@ -1,0 +1,7 @@
+❌ [red][bold] %Error: overall.v:505:21: syntax error, unexpected IDENTIFIER, expecting "'{"
+  505 |             integer m, i;
+      |                     ^
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-51-59/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

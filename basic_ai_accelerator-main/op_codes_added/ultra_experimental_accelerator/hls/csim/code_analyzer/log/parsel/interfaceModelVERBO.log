@@ -1,0 +1,4 @@
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable flat_A which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable flat_B which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable flat_C which has the interface type default
+interfaceModel::INFOR: interfaceModel:0:0: note: Applying interface constraints on the variable done which has the interface type default

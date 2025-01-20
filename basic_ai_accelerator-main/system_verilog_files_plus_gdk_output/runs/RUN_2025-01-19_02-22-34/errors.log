@@ -1,0 +1,12 @@
+❌ [red][bold]  1075 |     logic [NUM_ARRAYS-1:0] done_array;
+      |                            ^~~~~~~~~~
+                   overall.v:1197:35: ... Location of blocking assignment
+ 1197 |                         done_array[3], states[3], opcode);
+      |                                   ^
+                   overall.v:1122:17: ... Location of nonblocking assignment
+ 1122 |                 done_array\[m]        <= 1'b0;
+      |                 ^~~~~~~~~~
+%Error: Exiting due to 12 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-22-34/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 12 Lint errors found.

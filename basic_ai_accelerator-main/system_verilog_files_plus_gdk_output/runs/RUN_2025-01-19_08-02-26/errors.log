@@ -1,0 +1,12 @@
+❌ [red][bold]   338 |                 systolic_array(
+      |                 ^~~~~~~~~~~~~~
+%Error: overall.v:347:17: Can't find definition of task/function: 'systolic_array'
+  347 |                 systolic_array(
+      |                 ^~~~~~~~~~~~~~
+%Error: overall.v:356:17: Can't find definition of task/function: 'systolic_array'
+  356 |                 systolic_array(
+      |                 ^~~~~~~~~~~~~~
+%Error: Exiting due to 4 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_08-02-26/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 4 Lint errors found.

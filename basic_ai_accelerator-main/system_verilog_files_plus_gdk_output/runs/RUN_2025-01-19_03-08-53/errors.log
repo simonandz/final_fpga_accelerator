@@ -1,0 +1,11 @@
+❌ [red][bold] Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:432.21-432.50.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:434.25-434.52.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:435.25-435.57.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:437.25-437.41.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:439.25-439.47.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:440.25-440.47.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:441.25-441.47.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:442.25-442.47.
+overall.v:0: ERROR: Failed to resolve identifier \systolic_array$func$overall for width detection!
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_03-08-53/04-yosys-jsonheader/yosys-jsonheader.log'

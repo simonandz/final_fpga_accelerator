@@ -1,0 +1,6 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-207] Code Analyzer does not display the impact of the pipeline pragma in dataflow regions (C:\fpga\simon\all_in_one\systolic_array.cpp:397:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\all_in_one\systolic_array.cpp:516:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'unroll' (C:\fpga\simon\all_in_one\systolic_array.cpp:106:1) as the loop has been optimized out
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one\systolic_array.cpp:269:1) as the pipelined function is not the top-level hardware function
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one\systolic_array.cpp:307:1) as the pipelined function is not the top-level hardware function
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\all_in_one:0:0) as the pipelined function is not the top-level hardware function

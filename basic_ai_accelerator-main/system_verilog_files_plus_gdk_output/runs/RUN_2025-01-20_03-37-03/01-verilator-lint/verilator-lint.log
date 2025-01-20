@@ -1,0 +1,31 @@
+%Error: overall.v:277:12: syntax error, unexpected wire, expecting IDENTIFIER or randomize
+  277 |     input  wire        rst;
+      |            ^~~~
+%Error: overall.v:297:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  297 |     reg [31:0] localA[0:8];
+      |                ^~~~~~
+%Error: overall.v:298:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  298 |     reg [31:0] localB[0:8];
+      |                ^~~~~~
+%Error: overall.v:299:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  299 |     reg [31:0] localC[0:8];
+      |                ^~~~~~
+%Error: overall.v:300:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  300 |     reg [1:0]  local_state;
+      |                ^~~~~~~~~~~
+%Error: overall.v:301:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  301 |     reg [31:0] local_k;
+      |                ^~~~~~~
+%Error: overall.v:303:16: syntax error, unexpected IDENTIFIER, expecting "'{"
+  303 |     reg [287:0]tempC;
+      |                ^~~~~
+%Error: overall.v:421:12: syntax error, unexpected wire, expecting IDENTIFIER or randomize
+  421 |     input  wire        rx_pin;
+      |            ^~~~
+%Error: overall.v:476:12: syntax error, unexpected wire, expecting IDENTIFIER or randomize
+  476 |     input  wire      tx_req;
+      |            ^~~~
+%Error: overall.v:564:9: syntax error, unexpected wire
+  564 |         wire tmp_tx_wire;
+      |         ^~~~
+%Error: Exiting due to 10 error(s)

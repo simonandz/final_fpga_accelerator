@@ -1,0 +1,57 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             | 10,211       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 23,737       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  9,250       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  9,034       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  8,478       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  8,646       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  8,646       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  8,646       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  8,646       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  8,602       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  8,602       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  7,941       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  8,501       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  7,944       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  7,960       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           |  7,962       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------------------+------------------------+--------------+------------------+------------------+-------------+---------------+
+| Function                      | Location               | Compile/Link | Unroll/Inline    | Array/Struct     | Performance | HW Transforms |
++-------------------------------+------------------------+--------------+------------------+------------------+-------------+---------------+
+| + systolic_top_uart_4parallel | systolic_array.cpp:356 | 10,211       | 8,478            | 8,602            | 7,944       | 7,962         |
+|    uart_rx                    | systolic_array.cpp:268 |    82        |   45             |   45             |             |               |
+|    uart_tx                    | systolic_array.cpp:306 |   101        |   37             |    3             |             |               |
+|  + systolic_array             | systolic_array.cpp:88  | 9,256        | 8,096 (4 calls)  | 8,264 (4 calls)  |             |               |
+|     relu                      | systolic_array.cpp:28  |   122        |                  |                  |             |               |
+|     leaky_relu                | systolic_array.cpp:32  |   671        |                  |                  |             |               |
+|   + softmax                   | systolic_array.cpp:59  | 5,765        | 2,180 (4 calls)  | 2,216 (4 calls)  |             |               |
+|      exp_fixed                | systolic_array.cpp:50  | 5,225        | 1,692 (36 calls) | 1,692 (36 calls) |             |               |
+|     sigmoid                   | systolic_array.cpp:43  |   517        | 3,528 (36 calls) | 3,528 (36 calls) |             |               |
++-------------------------------+------------------------+--------------+------------------+------------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

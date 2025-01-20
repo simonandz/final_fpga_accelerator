@@ -1,0 +1,322 @@
+
+
+================================================================
+== Synthesis Summary Report of 'systolic_top_uart_4parallel'
+================================================================
++ General Information: 
+    * Date:           Tue Jan 14 22:03:01 2025
+    * Version:        2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:        all_in_one
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu2cg-sfvc784-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-------------------------------+------+------+---------+--------+----------+---------+------+----------+------+-----------+-----------+------------+-----+
+    |            Modules            | Issue|      | Latency | Latency| Iteration|         | Trip |          |      |           |           |            |     |
+    |            & Loops            | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |    DSP    |     FF    |     LUT    | URAM|
+    +-------------------------------+------+------+---------+--------+----------+---------+------+----------+------+-----------+-----------+------------+-----+
+    |+ systolic_top_uart_4parallel  |     -|  0.03|        1|  10.000|         -|        1|     -|       yes|     -|  144 (60%)|  2071 (2%)|  8679 (18%)|    -|
+    +-------------------------------+------+------+---------+--------+----------+---------+------+----------+------+-----------+-----------+------------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++------------+---------+-----------+----------+
+| Port       | Mode    | Direction | Bitwidth |
++------------+---------+-----------+----------+
+| busy_out   | ap_none | out       | 1        |
+| clk_in     | ap_none | in        | 1        |
+| done_out   | ap_none | out       | 1        |
+| opcode_in0 | ap_none | in        | 1        |
+| opcode_in1 | ap_none | in        | 1        |
+| opcode_in2 | ap_none | in        | 1        |
+| opcode_in3 | ap_none | in        | 1        |
+| out4       | ap_none | out       | 1        |
+| out5       | ap_none | out       | 1        |
+| out6       | ap_none | out       | 1        |
+| out7       | ap_none | out       | 1        |
+| out8       | ap_none | out       | 1        |
+| rst_in     | ap_none | in        | 1        |
+| rx_out     | ap_none | out       | 1        |
+| start_in   | ap_none | in        | 1        |
+| tx_in      | ap_none | in        | 1        |
++------------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+--------+
+| Interface | Type         | Ports  |
++-----------+--------------+--------+
+| ap_clk    | clock        | ap_clk |
+| ap_rst    | reset        | ap_rst |
+| ap_ctrl   | ap_ctrl_none |        |
++-----------+--------------+--------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++------------+-----------+----------+
+| Argument   | Direction | Datatype |
++------------+-----------+----------+
+| opcode_in0 | in        | bool     |
+| opcode_in1 | in        | bool     |
+| opcode_in2 | in        | bool     |
+| opcode_in3 | in        | bool     |
+| start_in   | in        | bool     |
+| tx_in      | in        | bool     |
+| clk_in     | in        | bool     |
+| rst_in     | in        | bool     |
+| done_out   | out       | bool&    |
+| busy_out   | out       | bool&    |
+| rx_out     | out       | bool&    |
+| out4       | out       | bool&    |
+| out5       | out       | bool&    |
+| out6       | out       | bool&    |
+| out7       | out       | bool&    |
+| out8       | out       | bool&    |
++------------+-----------+----------+
+
+* SW-to-HW Mapping
++------------+--------------+---------+
+| Argument   | HW Interface | HW Type |
++------------+--------------+---------+
+| opcode_in0 | opcode_in0   | port    |
+| opcode_in1 | opcode_in1   | port    |
+| opcode_in2 | opcode_in2   | port    |
+| opcode_in3 | opcode_in3   | port    |
+| start_in   | start_in     | port    |
+| tx_in      | tx_in        | port    |
+| clk_in     | clk_in       | port    |
+| rst_in     | rst_in       | port    |
+| done_out   | done_out     | port    |
+| busy_out   | busy_out     | port    |
+| rx_out     | rx_out       | port    |
+| out4       | out4         | port    |
+| out5       | out5         | port    |
+| out6       | out6         | port    |
+| out7       | out7         | port    |
+| out8       | out8         | port    |
++------------+--------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------------+-----+--------+--------------+-----------+--------------------------+---------+
+| Name                          | DSP | Pragma | Variable     | Op        | Impl                     | Latency |
++-------------------------------+-----+--------+--------------+-----------+--------------------------+---------+
+| + systolic_top_uart_4parallel | 144 |        |              |           |                          |         |
+|   icmp_ln119_fu_1238_p2       |     |        | icmp_ln119   | seteq     | auto                     | 0       |
+|   add_ln285_fu_1262_p2        |     |        | add_ln285    | add       | fabric                   | 0       |
+|   icmp_ln286_fu_1269_p2       |     |        | icmp_ln286   | seteq     | auto                     | 0       |
+|   icmp_ln287_fu_1275_p2       |     |        | icmp_ln287   | setne     | auto                     | 0       |
+|   icmp_ln287_1_fu_1281_p2     |     |        | icmp_ln287_1 | setlt     | auto                     | 0       |
+|   and_ln287_fu_1287_p2        |     |        | and_ln287    | and       | auto                     | 0       |
+|   icmp_ln292_fu_1318_p2       |     |        | icmp_ln292   | setgt     | auto                     | 0       |
+|   add_ln294_fu_1324_p2        |     |        | add_ln294    | add       | fabric                   | 0       |
+|   icmp_ln295_fu_1336_p2       |     |        | icmp_ln295   | setgt     | auto                     | 0       |
+|   icmp_ln135_fu_1362_p2       |     |        | icmp_ln135   | setlt     | auto                     | 0       |
+|   sparsemux_7_4_32_1_1_U37    |     |        | tmp          | sparsemux | compactencoding_dontcare | 0       |
+|   sparsemux_7_4_32_1_1_U38    |     |        | tmp_1        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U1       | 4   |        | mul_ln142    | mul       | auto                     | 0       |
+|   add_ln141_fu_2328_p2        |     |        | add_ln141    | add       | fabric                   | 0       |
+|   sparsemux_7_4_32_1_1_U39    |     |        | tmp_2        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U2       | 4   |        | mul_ln142_1  | mul       | auto                     | 0       |
+|   add_ln141_1_fu_2398_p2      |     |        | add_ln141_1  | add       | fabric                   | 0       |
+|   sparsemux_7_4_32_1_1_U40    |     |        | tmp_3        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U3       | 4   |        | mul_ln142_2  | mul       | auto                     | 0       |
+|   add_ln141_2_fu_2468_p2      |     |        | add_ln141_2  | add       | fabric                   | 0       |
+|   sparsemux_13_4_32_1_1_U41   |     |        | tmp_4        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U4       | 4   |        | mul_ln142_3  | mul       | auto                     | 0       |
+|   add_ln141_3_fu_2550_p2      |     |        | add_ln141_3  | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U5       | 4   |        | mul_ln142_4  | mul       | auto                     | 0       |
+|   add_ln141_4_fu_2584_p2      |     |        | add_ln141_4  | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U6       | 4   |        | mul_ln142_5  | mul       | auto                     | 0       |
+|   add_ln141_5_fu_2618_p2      |     |        | add_ln141_5  | add       | fabric                   | 0       |
+|   sparsemux_19_4_32_1_1_U42   |     |        | tmp_5        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U7       | 4   |        | mul_ln142_6  | mul       | auto                     | 0       |
+|   add_ln141_6_fu_2712_p2      |     |        | add_ln141_6  | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U8       | 4   |        | mul_ln142_7  | mul       | auto                     | 0       |
+|   add_ln141_7_fu_2746_p2      |     |        | add_ln141_7  | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U9       | 4   |        | mul_ln142_8  | mul       | auto                     | 0       |
+|   add_ln141_8_fu_2780_p2      |     |        | add_ln141_8  | add       | fabric                   | 0       |
+|   add_ln145_fu_1368_p2        |     |        | add_ln145    | add       | fabric                   | 0       |
+|   icmp_ln146_fu_1380_p2       |     |        | icmp_ln146   | seteq     | auto                     | 0       |
+|   icmp_ln135_1_fu_1444_p2     |     |        | icmp_ln135_1 | setlt     | auto                     | 0       |
+|   sub_ln142_fu_1462_p2        |     |        | sub_ln142    | sub       | fabric                   | 0       |
+|   sparsemux_25_5_32_1_1_U43   |     |        | tmp_6        | sparsemux | compactencoding_dontcare | 0       |
+|   sparsemux_73_6_32_1_1_U44   |     |        | tmp_7        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U10      | 4   |        | mul_ln142_9  | mul       | auto                     | 0       |
+|   add_ln141_9_fu_3108_p2      |     |        | add_ln141_9  | add       | fabric                   | 0       |
+|   tmp_8_fu_3139_p74           |     |        | add_ln142    | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U45   |     |        | tmp_8        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U11      | 4   |        | mul_ln142_10 | mul       | auto                     | 0       |
+|   add_ln141_10_fu_3316_p2     |     |        | add_ln141_10 | add       | fabric                   | 0       |
+|   tmp_9_fu_3347_p74           |     |        | add_ln142_1  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U46   |     |        | tmp_9        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U12      | 4   |        | mul_ln142_11 | mul       | auto                     | 0       |
+|   add_ln141_11_fu_3524_p2     |     |        | add_ln141_11 | add       | fabric                   | 0       |
+|   tmp_s_fu_3555_p32           |     |        | add_1_i486   | add       | fabric                   | 0       |
+|   sparsemux_31_5_32_1_1_U47   |     |        | tmp_s        | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U13      | 4   |        | mul_ln142_12 | mul       | auto                     | 0       |
+|   add_ln141_12_fu_3648_p2     |     |        | add_ln141_12 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U14      | 4   |        | mul_ln142_13 | mul       | auto                     | 0       |
+|   add_ln141_13_fu_3682_p2     |     |        | add_ln141_13 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U15      | 4   |        | mul_ln142_14 | mul       | auto                     | 0       |
+|   add_ln141_14_fu_3716_p2     |     |        | add_ln141_14 | add       | fabric                   | 0       |
+|   tmp_10_fu_3747_p38          |     |        | add_2_i458   | add       | fabric                   | 0       |
+|   sparsemux_37_5_32_1_1_U48   |     |        | tmp_10       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U16      | 4   |        | mul_ln142_15 | mul       | auto                     | 0       |
+|   add_ln141_15_fu_3852_p2     |     |        | add_ln141_15 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U17      | 4   |        | mul_ln142_16 | mul       | auto                     | 0       |
+|   add_ln141_16_fu_3886_p2     |     |        | add_ln141_16 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U18      | 4   |        | mul_ln142_17 | mul       | auto                     | 0       |
+|   add_ln141_17_fu_3920_p2     |     |        | add_ln141_17 | add       | fabric                   | 0       |
+|   add_ln145_1_fu_1468_p2      |     |        | add_ln145_1  | add       | fabric                   | 0       |
+|   icmp_ln146_1_fu_1480_p2     |     |        | icmp_ln146_1 | seteq     | auto                     | 0       |
+|   icmp_ln135_2_fu_1544_p2     |     |        | icmp_ln135_2 | setlt     | auto                     | 0       |
+|   sub_ln142_1_fu_1562_p2      |     |        | sub_ln142_1  | sub       | fabric                   | 0       |
+|   sparsemux_43_6_32_1_1_U49   |     |        | tmp_11       | sparsemux | compactencoding_dontcare | 0       |
+|   sparsemux_73_6_32_1_1_U50   |     |        | tmp_12       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U19      | 4   |        | mul_ln142_18 | mul       | auto                     | 0       |
+|   add_ln141_18_fu_4284_p2     |     |        | add_ln141_18 | add       | fabric                   | 0       |
+|   tmp_13_fu_4315_p74          |     |        | add_ln142_2  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U51   |     |        | tmp_13       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U20      | 4   |        | mul_ln142_19 | mul       | auto                     | 0       |
+|   add_ln141_19_fu_4492_p2     |     |        | add_ln141_19 | add       | fabric                   | 0       |
+|   tmp_14_fu_4523_p74          |     |        | add_ln142_3  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U52   |     |        | tmp_14       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U21      | 4   |        | mul_ln142_20 | mul       | auto                     | 0       |
+|   add_ln141_20_fu_4700_p2     |     |        | add_ln141_20 | add       | fabric                   | 0       |
+|   tmp_15_fu_4731_p50          |     |        | add_1_i836   | add       | fabric                   | 0       |
+|   sparsemux_49_6_32_1_1_U53   |     |        | tmp_15       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U22      | 4   |        | mul_ln142_21 | mul       | auto                     | 0       |
+|   add_ln141_21_fu_4860_p2     |     |        | add_ln141_21 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U23      | 4   |        | mul_ln142_22 | mul       | auto                     | 0       |
+|   add_ln141_22_fu_4894_p2     |     |        | add_ln141_22 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U24      | 4   |        | mul_ln142_23 | mul       | auto                     | 0       |
+|   add_ln141_23_fu_4928_p2     |     |        | add_ln141_23 | add       | fabric                   | 0       |
+|   tmp_16_fu_4959_p56          |     |        | add_2_i806   | add       | fabric                   | 0       |
+|   sparsemux_55_6_32_1_1_U54   |     |        | tmp_16       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U25      | 4   |        | mul_ln142_24 | mul       | auto                     | 0       |
+|   add_ln141_24_fu_5100_p2     |     |        | add_ln141_24 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U26      | 4   |        | mul_ln142_25 | mul       | auto                     | 0       |
+|   add_ln141_25_fu_5134_p2     |     |        | add_ln141_25 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U27      | 4   |        | mul_ln142_26 | mul       | auto                     | 0       |
+|   add_ln141_26_fu_5168_p2     |     |        | add_ln141_26 | add       | fabric                   | 0       |
+|   add_ln145_2_fu_1568_p2      |     |        | add_ln145_2  | add       | fabric                   | 0       |
+|   icmp_ln146_2_fu_1580_p2     |     |        | icmp_ln146_2 | seteq     | auto                     | 0       |
+|   icmp_ln135_3_fu_1644_p2     |     |        | icmp_ln135_3 | setlt     | auto                     | 0       |
+|   sub_ln142_2_fu_1662_p2      |     |        | sub_ln142_2  | sub       | fabric                   | 0       |
+|   sparsemux_61_6_32_1_1_U55   |     |        | tmp_17       | sparsemux | compactencoding_dontcare | 0       |
+|   sparsemux_73_6_32_1_1_U56   |     |        | tmp_18       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U28      | 4   |        | mul_ln142_27 | mul       | auto                     | 0       |
+|   add_ln141_27_fu_5604_p2     |     |        | add_ln141_27 | add       | fabric                   | 0       |
+|   tmp_19_fu_5635_p74          |     |        | add_ln142_4  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U57   |     |        | tmp_19       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U29      | 4   |        | mul_ln142_28 | mul       | auto                     | 0       |
+|   add_ln141_28_fu_5812_p2     |     |        | add_ln141_28 | add       | fabric                   | 0       |
+|   tmp_20_fu_5843_p74          |     |        | add_ln142_5  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U58   |     |        | tmp_20       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U30      | 4   |        | mul_ln142_29 | mul       | auto                     | 0       |
+|   add_ln141_29_fu_6020_p2     |     |        | add_ln141_29 | add       | fabric                   | 0       |
+|   tmp_21_fu_6051_p68          |     |        | add_1_i1187  | add       | fabric                   | 0       |
+|   sparsemux_67_6_32_1_1_U59   |     |        | tmp_21       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U31      | 4   |        | mul_ln142_30 | mul       | auto                     | 0       |
+|   add_ln141_30_fu_6216_p2     |     |        | add_ln141_30 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U32      | 4   |        | mul_ln142_31 | mul       | auto                     | 0       |
+|   add_ln141_31_fu_6250_p2     |     |        | add_ln141_31 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U33      | 4   |        | mul_ln142_32 | mul       | auto                     | 0       |
+|   add_ln141_32_fu_6284_p2     |     |        | add_ln141_32 | add       | fabric                   | 0       |
+|   tmp_22_fu_6315_p74          |     |        | add_2_i1157  | add       | fabric                   | 0       |
+|   sparsemux_73_6_32_1_1_U60   |     |        | tmp_22       | sparsemux | compactencoding_dontcare | 0       |
+|   mul_28s_28s_52_1_1_U34      | 4   |        | mul_ln142_33 | mul       | auto                     | 0       |
+|   add_ln141_33_fu_6492_p2     |     |        | add_ln141_33 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U35      | 4   |        | mul_ln142_34 | mul       | auto                     | 0       |
+|   add_ln141_34_fu_6526_p2     |     |        | add_ln141_34 | add       | fabric                   | 0       |
+|   mul_28s_28s_52_1_1_U36      | 4   |        | mul_ln142_35 | mul       | auto                     | 0       |
+|   add_ln141_35_fu_6560_p2     |     |        | add_ln141_35 | add       | fabric                   | 0       |
+|   add_ln145_3_fu_1668_p2      |     |        | add_ln145_3  | add       | fabric                   | 0       |
+|   icmp_ln146_3_fu_1680_p2     |     |        | icmp_ln146_3 | seteq     | auto                     | 0       |
+|   and_ln522_fu_1740_p2        |     |        | and_ln522    | and       | auto                     | 0       |
+|   and_ln522_1_fu_1746_p2      |     |        | and_ln522_1  | and       | auto                     | 0       |
+|   all_done_1_fu_1752_p2       |     |        | all_done_1   | and       | auto                     | 0       |
+|   grp_fu_1104_p2              |     |        | add_ln501    | add       | fabric                   | 0       |
+|   grp_fu_1113_p2              |     |        | icmp_ln502   | seteq     | auto                     | 0       |
+|   grp_fu_1104_p2              |     |        | add_ln489    | add       | fabric                   | 0       |
+|   grp_fu_1113_p2              |     |        | icmp_ln490   | seteq     | auto                     | 0       |
+|   add_ln539_fu_1782_p2        |     |        | add_ln539    | add       | fabric                   | 0       |
+|   icmp_ln540_fu_1794_p2       |     |        | icmp_ln540   | seteq     | auto                     | 0       |
++-------------------------------+-----+--------+--------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+-------------------------------------------------------------------+
+| Type      | Options                  | Location                                                          |
++-----------+--------------------------+-------------------------------------------------------------------+
+| pipeline  | II=1                     | systolic_array.cpp:98 in systolic_array                           |
+| unroll    |                          | systolic_array.cpp:106 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:123 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:138 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:140 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:156 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:167 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:173 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:184 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:189 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:196 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:202 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:210 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:216 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:225 in systolic_array                          |
+| unroll    |                          | systolic_array.cpp:230 in systolic_array                          |
+| pipeline  | II=1                     | systolic_array.cpp:269 in uart_rx                                 |
+| pipeline  | II=1                     | systolic_array.cpp:307 in uart_tx                                 |
+| interface | ap_none port=opcode_in0  | systolic_array.cpp:378 in systolic_top_uart_4parallel, opcode_in0 |
+| interface | ap_none port=opcode_in1  | systolic_array.cpp:379 in systolic_top_uart_4parallel, opcode_in1 |
+| interface | ap_none port=opcode_in2  | systolic_array.cpp:380 in systolic_top_uart_4parallel, opcode_in2 |
+| interface | ap_none port=opcode_in3  | systolic_array.cpp:381 in systolic_top_uart_4parallel, opcode_in3 |
+| interface | ap_none port=start_in    | systolic_array.cpp:382 in systolic_top_uart_4parallel, start_in   |
+| interface | ap_none port=tx_in       | systolic_array.cpp:383 in systolic_top_uart_4parallel, tx_in      |
+| interface | ap_none port=clk_in      | systolic_array.cpp:384 in systolic_top_uart_4parallel, clk_in     |
+| interface | ap_none port=rst_in      | systolic_array.cpp:385 in systolic_top_uart_4parallel, rst_in     |
+| interface | ap_none port=done_out    | systolic_array.cpp:387 in systolic_top_uart_4parallel, done_out   |
+| interface | ap_none port=busy_out    | systolic_array.cpp:388 in systolic_top_uart_4parallel, busy_out   |
+| interface | ap_none port=rx_out      | systolic_array.cpp:389 in systolic_top_uart_4parallel, rx_out     |
+| interface | ap_none port=out4        | systolic_array.cpp:390 in systolic_top_uart_4parallel, out4       |
+| interface | ap_none port=out5        | systolic_array.cpp:391 in systolic_top_uart_4parallel, out5       |
+| interface | ap_none port=out6        | systolic_array.cpp:392 in systolic_top_uart_4parallel, out6       |
+| interface | ap_none port=out7        | systolic_array.cpp:393 in systolic_top_uart_4parallel, out7       |
+| interface | ap_none port=out8        | systolic_array.cpp:394 in systolic_top_uart_4parallel, out8       |
+| interface | ap_ctrl_none port=return | systolic_array.cpp:396 in systolic_top_uart_4parallel, return     |
+| pipeline  | II=1                     | systolic_array.cpp:397 in systolic_top_uart_4parallel             |
+| unroll    |                          | systolic_array.cpp:516 in systolic_top_uart_4parallel             |
++-----------+--------------------------+-------------------------------------------------------------------+
+
+* Inferred Pragmas
++----------------------------------+-----------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Source                           | Inferred Pragma | Options                                                                                             | Location                                                                                                                                                                                                           |
++----------------------------------+-----------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| pipeline  systolic_array.cpp:397 | array_partition | dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E10done_array | variable systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::done_array in systolic_top_uart_4parallel systolic_array.cpp:414     |
+| pipeline  systolic_array.cpp:397 | array_partition | dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1A           | variable systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::A in systolic_top_uart_4parallel systolic_array.cpp:408              |
+| pipeline  systolic_array.cpp:397 | array_partition | dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1B           | variable systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::B in systolic_top_uart_4parallel systolic_array.cpp:409              |
+| pipeline  systolic_array.cpp:397 | array_partition | dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E1C           | variable systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::C in systolic_top_uart_4parallel systolic_array.cpp:410              |
+| pipeline  systolic_array.cpp:397 | array_partition | dim=1 type=complete  variable=_ZZ27systolic_top_uart_4parallelbbbbbbbbRbS_S_S_S_S_S_S_E6states.busy | variable systolic_top_uart_4parallel(bool, bool, bool, bool, bool, bool, bool, bool, bool&, bool&, bool&, bool&, bool&, bool&, bool&, bool&)::states (.busy) in systolic_top_uart_4parallel systolic_array.cpp:413 |
++----------------------------------+-----------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

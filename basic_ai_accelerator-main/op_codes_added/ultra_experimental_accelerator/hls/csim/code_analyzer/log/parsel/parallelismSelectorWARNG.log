@@ -1,0 +1,7 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:313:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:307:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:308:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:309:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:310:1)
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\ultra_experimental_accelerator\systolic_array.cpp:316:1)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\ultra_experimental_accelerator:0:0) as the pipelined function is not the top-level hardware function

@@ -1,0 +1,82 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.34 (git sha1 4a1b55992, gcc 11.4.0-1ubuntu1~22.04 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+Reading SCL library '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib' as a blackboxâ¦
+
+1. Executing Liberty frontend: /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+Imported 428 cell types from liberty file.
+
+2. Executing Verilog-2005 frontend: overall.v
+Parsing SystemVerilog input from `overall.v' to AST representation.
+Generating RTLIL representation for module `\systolic_top_uart_4parallel_q8_24'.
+Warning: wire '\states[0].state' is assigned in a block at overall.v:464.17-464.46.
+Warning: wire '\states[0].k' is assigned in a block at overall.v:465.17-465.43.
+Warning: wire '\states[0].busy' is assigned in a block at overall.v:466.17-466.46.
+Warning: wire '\states[0].partial_sum' is assigned in a block at overall.v:467.17-467.53.
+Warning: wire '\states[1].state' is assigned in a block at overall.v:464.17-464.46.
+Warning: wire '\states[1].k' is assigned in a block at overall.v:465.17-465.43.
+Warning: wire '\states[1].busy' is assigned in a block at overall.v:466.17-466.46.
+Warning: wire '\states[1].partial_sum' is assigned in a block at overall.v:467.17-467.53.
+Warning: wire '\states[2].state' is assigned in a block at overall.v:464.17-464.46.
+Warning: wire '\states[2].k' is assigned in a block at overall.v:465.17-465.43.
+Warning: wire '\states[2].busy' is assigned in a block at overall.v:466.17-466.46.
+Warning: wire '\states[2].partial_sum' is assigned in a block at overall.v:467.17-467.53.
+Warning: wire '\states[3].state' is assigned in a block at overall.v:464.17-464.46.
+Warning: wire '\states[3].k' is assigned in a block at overall.v:465.17-465.43.
+Warning: wire '\states[3].busy' is assigned in a block at overall.v:466.17-466.46.
+Warning: wire '\states[3].partial_sum' is assigned in a block at overall.v:467.17-467.53.
+Warning: wire '$unnamed_block$16.rx_st_tmp' is assigned in a block at overall.v:488.13-488.30.
+Warning: wire '$unnamed_block$16.tx_st_tmp' is assigned in a block at overall.v:489.13-489.30.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:331.17-331.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:332.17-332.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:333.17-333.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:334.17-334.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:337.13-337.50.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:341.21-341.58.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:345.17-345.39.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:346.17-346.46.
+Warning: wire '\uart_rx$func$overall' is assigned in a block at overall.v:348.21-348.37.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:378.17-378.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:379.17-379.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:380.17-380.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:381.17-381.42.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:382.17-382.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:383.17-383.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:385.17-385.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:386.17-386.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:389.13-389.50.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:391.17-391.39.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:392.17-392.46.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:394.21-394.48.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:395.21-395.53.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:397.21-397.37.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:399.21-399.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:400.21-400.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:401.21-401.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:402.21-402.43.
+overall.v:526: ERROR: Unsupported expression on dynamic range select on signal `\A_blk_packed'!

@@ -1,0 +1,12 @@
+❌ [red][bold] %Warning-BLKSEQ: overall.v:218:24: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  218 |             local_array\[i] = q8_24_div(local_array\[i], sum_val);
+      |                        ^
+%Warning-BLKSEQ: overall.v:224:12: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  224 |         arr[((i+1)*32 - 1) -: 32] = local_array\[i];
+      |            ^
+%Error: Exiting due to 4 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_07-32-32/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 4 Lint errors found.

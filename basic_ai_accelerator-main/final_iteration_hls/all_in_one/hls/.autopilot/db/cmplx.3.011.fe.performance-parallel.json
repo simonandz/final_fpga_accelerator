@@ -1,0 +1,104 @@
+{
+  "0": {
+    "basicblocks": 815,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 356,
+    "instructions": 7941,
+    "loads": {
+      "G": 198
+    },
+    "name": "systolic_top_uart_4parallel",
+    "stores": {
+      "G": 711,
+      "L": 144,
+      "T": 11
+    },
+    "total_instructions": 7941
+  },
+  "1": {
+    "basicblocks": 16,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 43,
+    "instructions": 98,
+    "name": "sigmoid",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 98
+  },
+  "2": {
+    "basicblocks": 3,
+    "calls": "4 4 4 4 4 4 4 4 4",
+    "file": "systolic_array.cpp",
+    "fileloc": 59,
+    "instructions": 131,
+    "loads": {
+      "G": 9,
+      "L": 9
+    },
+    "name": "softmax",
+    "stores": {
+      "G": 18
+    },
+    "total_instructions": 554
+  },
+  "3": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 306,
+    "instructions": 3,
+    "name": "uart_tx",
+    "stores": {
+      "G": 1,
+      "L": 1
+    },
+    "total_instructions": 3
+  },
+  "4": {
+    "basicblocks": 3,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 50,
+    "instructions": 47,
+    "name": "exp_fixed",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 47
+  },
+  "5": {
+    "basicblocks": 41,
+    "calls": "2 1 1 1 1 1 1 1 1 1",
+    "file": "systolic_array.cpp",
+    "fileloc": 88,
+    "instructions": 630,
+    "loads": {
+      "G": 24,
+      "L": 30
+    },
+    "name": "systolic_array",
+    "stores": {
+      "G": 72,
+      "L": 37
+    },
+    "total_instructions": 2066
+  },
+  "6": {
+    "basicblocks": 14,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 268,
+    "instructions": 45,
+    "loads": {
+      "G": 6
+    },
+    "name": "uart_rx",
+    "stores": {
+      "G": 12
+    },
+    "total_instructions": 45
+  }
+}

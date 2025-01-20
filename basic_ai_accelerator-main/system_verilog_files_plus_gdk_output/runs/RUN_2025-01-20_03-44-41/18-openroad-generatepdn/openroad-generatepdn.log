@@ -1,0 +1,16 @@
+Reading OpenROAD database at '/foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_03-44-41/16-openroad-tapendcapinsertion/systolic_top_uart_4parallel_q8_24.odb'…
+Reading library file at '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading design constraints file at '/usr/local/lib/python3.10/dist-packages/openlane/scripts/base.sdc'…
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 4
+[INFO] Setting input delay to: 4
+[WARNING STA-0366] port 'clk' not found.
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[WARNING STA-0419] transition time can not be specified for virtual clocks.
+[INFO] Setting timing derate to: 5%
+[INFO] Setting global connections...
+[ERROR PDN-0185] Insufficient width (16.56 um) to add straps on layer met4 in grid "stdcell_grid" with total strap width 4.9 um and offset 16.32 um.
+Error: pdn_cfg.tcl, 89 PDN-0185

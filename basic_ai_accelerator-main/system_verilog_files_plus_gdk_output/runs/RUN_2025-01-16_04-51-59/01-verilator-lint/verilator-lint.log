@@ -1,0 +1,4 @@
+%Error: overall.v:505:21: syntax error, unexpected IDENTIFIER, expecting "'{"
+  505 |             integer m, i;
+      |                     ^
+%Error: Exiting due to 1 error(s)

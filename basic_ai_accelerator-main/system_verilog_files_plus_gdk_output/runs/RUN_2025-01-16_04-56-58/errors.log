@@ -1,0 +1,11 @@
+❌ [red][bold]   613 |                             fsm_state <= FSM_IDLE;
+      |                                       ^~
+%Error: overall.v:621:31: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  621 |                     fsm_state <= FSM_IDLE;
+      |                               ^~
+%Error: overall.v:625:22: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  625 |             done_out <= internal_done;
+      |                      ^~
+%Error: Cannot continue
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-56-58/01-verilator-lint/verilator-lint.log'

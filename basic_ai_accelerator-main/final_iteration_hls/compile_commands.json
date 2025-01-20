@@ -1,0 +1,27 @@
+[
+  {
+    "directory": "C:\\fpga\\simon\\all_in_one",
+    "arguments": [
+      "C:\\fpga\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\fpga\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\fpga\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=systolic_top_uart_4parallel",
+      "-c",
+      "C:\\fpga\\simon\\all_in_one\\systolic_array.cpp"
+    ],
+    "file": "C:\\fpga\\simon\\all_in_one\\systolic_array.cpp"
+  },
+  {
+    "directory": "C:\\fpga\\simon\\all_in_one",
+    "arguments": [
+      "C:\\fpga\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\fpga\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\fpga\\Vitis\\2024.2\\include",
+      "-c",
+      "C:/fpga/simon/asic_accelerator/overall_tb.cpp"
+    ],
+    "file": "C:/fpga/simon/asic_accelerator/overall_tb.cpp"
+  }
+]

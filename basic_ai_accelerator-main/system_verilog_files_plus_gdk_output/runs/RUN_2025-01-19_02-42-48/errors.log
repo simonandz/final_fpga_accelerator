@@ -1,0 +1,11 @@
+❌ [red][bold] Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:392.17-392.46.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:394.21-394.48.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:395.21-395.53.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:397.21-397.37.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:399.21-399.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:400.21-400.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:401.21-401.43.
+Warning: wire '\uart_tx$func$overall' is assigned in a block at overall.v:402.21-402.43.
+overall.v:526: ERROR: Unsupported expression on dynamic range select on signal `\A_blk_packed'!
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-42-48/04-yosys-jsonheader/yosys-jsonheader.log'

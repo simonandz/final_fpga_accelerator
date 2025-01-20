@@ -1,0 +1,45 @@
+{
+   "creator": "Yosys 0.34 (git sha1 4a1b55992, gcc 11.4.0-1ubuntu1~22.04 -fPIC -Os)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\systolic_top_uart_4parallel_q8_24": {
+         "num_wires":         24,
+         "num_wire_bits":     24,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 18,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         16,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_1": 1,
+            "sky130_fd_sc_hd__buf_2": 7,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__dfstp_2": 1,
+            "sky130_fd_sc_hd__inv_2": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         24,
+         "num_wire_bits":     24,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 18,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         16,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_1": 1,
+            "sky130_fd_sc_hd__buf_2": 7,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__dfstp_2": 1,
+            "sky130_fd_sc_hd__inv_2": 3
+         }
+      }
+}
+

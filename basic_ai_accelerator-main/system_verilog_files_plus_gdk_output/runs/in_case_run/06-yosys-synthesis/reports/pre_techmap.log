@@ -1,0 +1,26 @@
+47. Printing statistics.
+
+=== systolic_top_uart_4parallel_q8_24 ===
+
+   Number of wires:                 20
+   Number of wire bits:             21
+   Number of public wires:          18
+   Number of public wire bits:      19
+   Number of ports:                 16
+   Number of port bits:             16
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                  5
+     $_ANDNOT_                       1
+     $_AND_                          1
+     $_DFFE_PP0P_                    1
+     $_DFF_PP0_                      1
+     $_DFF_PP1_                      1
+
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_DFF_PP1_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+

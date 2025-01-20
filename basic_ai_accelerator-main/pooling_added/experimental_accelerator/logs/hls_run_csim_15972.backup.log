@@ -1,0 +1,24 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/experimental_accelerator/experimental_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top_systolic_controller_flat' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 4 seconds. Total elapsed time: 18.217 seconds; peak allocated memory: 619.492 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 0m 25s

@@ -1,0 +1,1 @@
+verilator --lint-only --Wall --Wno-DECLFILENAME --Wno-EOFNEWLINE --top-module systolic_top_uart_4parallel_q8_24 /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-19_03-08-21/01-verilator-lint/bb.v overall.v --Wno-fatal --relative-includes --Werror-LATCH

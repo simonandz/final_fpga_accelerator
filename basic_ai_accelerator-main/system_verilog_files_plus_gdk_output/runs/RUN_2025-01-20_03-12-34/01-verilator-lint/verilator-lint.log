@@ -1,0 +1,7 @@
+%Error: overall.v:416:7: syntax error, unexpected ref, expecting IDENTIFIER or randomize
+  416 |       ref rx_active, rx_bitcount, rx_sample_count, rx_shift_reg;
+      |       ^~~
+%Error: overall.v:464:13: syntax error, unexpected ref, expecting IDENTIFIER or randomize
+  464 |     inout   ref tx_active, tx_bitcount, tx_sample_count, tx_shift_reg, tx_tx_out, tx_data_latched;
+      |             ^~~
+%Error: Exiting due to 2 error(s)

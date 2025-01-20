@@ -1,0 +1,12 @@
+❌ [red][bold]   368 |     inout  UartRxState_t  st
+      |                           ^~
+                   overall.v:576:57: ... Location of blocking assignment
+  576 |         uart_rx(tx_in, rx_data_tmp, rx_valid_tmp, 1'b0, rx_st_tmp);
+      |                                                         ^~~~~~~~~
+                   overall.v:400:31: ... Location of nonblocking assignment
+  400 |                     st.active <= 1'b0;
+      |                               ^~
+%Error: Exiting due to 13 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-20_01-35-39/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 13 Lint errors found.

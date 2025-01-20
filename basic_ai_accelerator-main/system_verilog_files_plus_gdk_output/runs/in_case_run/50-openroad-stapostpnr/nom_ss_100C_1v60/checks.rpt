@@ -1,0 +1,88 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= nom_ss_100C_1v60 Corner ===================================
+
+Startpoint: start_in (input port clocked by clk)
+Endpoint: _10_ (rising edge-triggered flip-flop)
+Path Group: unconstrained
+Path Type: max
+
+Fanout         Cap        Slew       Delay        Time   Description
+---------------------------------------------------------------------------------------------
+                                  4.000000    4.000000 ^ input external delay
+     1    0.003778    0.038808    0.020963    4.020963 ^ start_in (in)
+                                                         start_in (net)
+                      0.038808    0.000000    4.020963 ^ input3/A (sky130_fd_sc_hd__clkbuf_1)
+     2    0.007483    0.155548    0.197543    4.218506 ^ input3/X (sky130_fd_sc_hd__clkbuf_1)
+                                                         net3 (net)
+                      0.155548    0.000210    4.218716 ^ _07_/A_N (sky130_fd_sc_hd__and2b_1)
+     1    0.004538    0.080824    0.408997    4.627713 v _07_/X (sky130_fd_sc_hd__and2b_1)
+                                                         _00_ (net)
+                      0.080824    0.000158    4.627871 v _10_/D (sky130_fd_sc_hd__dfstp_1)
+                                              4.627871   data arrival time
+---------------------------------------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= nom_ss_100C_1v60 Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= nom_ss_100C_1v60 Corner ===================================
+
+
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 12 unannotated drivers.
+ opcode_in0
+ opcode_in1
+ opcode_in2
+ opcode_in3
+ tx_in
+ _13__4/HI
+ _14__5/HI
+ _15__6/HI
+ _16__7/HI
+ _17__8/HI
+ _18__9/HI
+ _19__10/HI
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 3 unclocked register/latch pins.
+  _10_/CLK
+  _11_/CLK
+  _12_/CLK
+Warning: There are 11 unconstrained endpoints.
+  busy_out
+  done_out
+  out4
+  out5
+  out6
+  out7
+  out8
+  rx_out
+  _10_/D
+  _11_/D
+  _12_/D

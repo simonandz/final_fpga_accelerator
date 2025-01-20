@@ -1,0 +1,7 @@
+%Error: overall.v:558:9: syntax error, unexpected wire
+  558 |         wire [7:0]   rx_data_tmp;
+      |         ^~~~
+%Error: overall.v:565:9: syntax error, unexpected wire
+  565 |         wire dummy_tx_wire;
+      |         ^~~~
+%Error: Exiting due to 2 error(s)

@@ -1,0 +1,46 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/asic_accelerator/asic_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+WARNING: [HLS 200-2001] file not found 'C:/fpga/simon/asic_accelerator/tb_overall.cpp' see [hls] from C:/fpga/simon/asic_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/asic_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/asic_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/tb_overall.cpp' from C:/fpga/simon/asic_accelerator/hls_config.cfg(11)
+WARNING: [HLS 200-40] Cannot find test bench file 'C:/fpga/simon/asic_accelerator/tb_overall.cpp'
+INFO: [HLS 200-1465] Applying ini 'tb.file=overall_tb.cpp' from C:/fpga/simon/asic_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=systolic_array' from C:/fpga/simon/asic_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/asic_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/asic_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/asic_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/asic_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking executable
+ld.lld: error: duplicate symbol: print_matrix(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>*, int)
+>>> defined at C:/fpga/simon/asic_accelerator/tb_overall.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\tb_overall.cpp.0.o
+>>> defined at C:/fpga/simon/asic_accelerator/overall_tb.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\overall_tb.cpp.0.o
+
+ld.lld: error: duplicate symbol: compare_fixed(ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<32, 12, (ap_q_mode)5, (ap_o_mode)3, 0>)
+>>> defined at C:/fpga/simon/asic_accelerator/tb_overall.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\tb_overall.cpp.0.o
+>>> defined at C:/fpga/simon/asic_accelerator/overall_tb.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\overall_tb.cpp.0.o
+
+ld.lld: error: duplicate symbol: main
+>>> defined at C:/fpga/simon/asic_accelerator/tb_overall.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\tb_overall.cpp.0.o
+>>> defined at C:/fpga/simon/asic_accelerator/overall_tb.cpp
+>>>            C:\fpga\simon\asic_accelerator\asic_accelerator\hls\csim\code_analyzer\.internal\build\overall_tb.cpp.0.o
+clang++: error: linker command failed with exit code 1 (use -v to see invocation)
+slxcmd:0:0: warning: Non-zero exit code: 1 returned by 'INFO: [HLS 211-200] Linking executable'
+ERROR: [SIM 211-200] Code Analyzer execution failed. Consider running the classic C simulation instead by disabling the hls.csim.code_analyzer option in the config file.
+ERROR: Problem running csim: child process exited abnormally
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 2 seconds. Total elapsed time: 10.497 seconds; peak allocated memory: 619.234 MB.

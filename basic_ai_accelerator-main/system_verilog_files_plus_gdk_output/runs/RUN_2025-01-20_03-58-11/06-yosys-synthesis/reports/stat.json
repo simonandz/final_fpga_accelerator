@@ -1,0 +1,49 @@
+{
+   "creator": "Yosys 0.43 (git sha1 ead4718e5, g++ 11.4.0-1ubuntu1~22.04 -fPIC -Os)",
+   "invocation": "stat -json -liberty /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_03-58-11/tmp/1afd791b16404ac7b2d2179af8ffd1bf.lib ",
+   "modules": {
+      "\\systolic_top_uart_4parallel_q8_24": {
+         "num_wires":         23,
+         "num_wire_bits":     23,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 18,
+         "num_ports":         16,
+         "num_port_bits":     16,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         15,
+         "area":              142.636800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_2": 7,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__dfstp_2": 1,
+            "sky130_fd_sc_hd__inv_2": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         23,
+         "num_wire_bits":     23,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 18,
+         "num_ports":         16,
+         "num_port_bits":     16,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         15,
+         "area":              142.636800,
+         "num_cells_by_type": {
+            "sky130_fd_sc_hd__a21o_2": 1,
+            "sky130_fd_sc_hd__and2b_2": 1,
+            "sky130_fd_sc_hd__buf_2": 7,
+            "sky130_fd_sc_hd__dfrtp_2": 2,
+            "sky130_fd_sc_hd__dfstp_2": 1,
+            "sky130_fd_sc_hd__inv_2": 3
+         }
+      }
+}
+

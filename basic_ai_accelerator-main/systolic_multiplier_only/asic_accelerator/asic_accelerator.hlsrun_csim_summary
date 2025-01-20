@@ -1,0 +1,158 @@
+<ENTRY>
+{
+ "thisFile": "C:/fpga\\simon\\asic_accelerator\\asic_accelerator\\asic_accelerator.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/10/25 22:43:54",
+ "timestampMillis": "1736567034352",
+ "buildStep": {
+  "cmdId": "03d67dd9-4ea0-4b8f-ac02-e2521dc6a357",
+  "name": "vitis-run",
+  "logFile": "C:/fpga\\simon\\asic_accelerator\\asic_accelerator\\logs\\asic_accelerator.steps.log",
+  "commandLine": "C:/fpga/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\fpga\\simon\\asic_accelerator\\hls_config.cfg --work_dir asic_accelerator ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\fpga\\simon\\asic_accelerator\\hls_config.cfg",
+   "--work_dir",
+   "asic_accelerator"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\asic_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/10/25 22:43:54",
+ "timestampMillis": "1736567034352",
+ "status": {
+  "cmdId": "03d67dd9-4ea0-4b8f-ac02-e2521dc6a357",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/10/25 22:44:01",
+ "timestampMillis": "1736567041870",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "top_systolic_controller_flat",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/fpga\\simon\\asic_accelerator\\systolic_controller.h",
+     "C:/fpga\\simon\\asic_accelerator\\systolic_array.cpp",
+     "C:/fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/10/25 22:44:01",
+ "timestampMillis": "1736567041872",
+ "buildStep": {
+  "cmdId": "d1755100-1d50-49ed-8224-57a22ac46883",
+  "name": "",
+  "logFile": "C:/fpga\\simon\\asic_accelerator\\asic_accelerator\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\asic_accelerator"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/10/25 22:44:01",
+ "timestampMillis": "1736567041873",
+ "status": {
+  "cmdId": "d1755100-1d50-49ed-8224-57a22ac46883",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/10/25 22:44:32",
+ "timestampMillis": "1736567072841",
+ "status": {
+  "cmdId": "d1755100-1d50-49ed-8224-57a22ac46883",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/10/25 22:44:33",
+ "timestampMillis": "1736567073117",
+ "status": {
+  "cmdId": "03d67dd9-4ea0-4b8f-ac02-e2521dc6a357",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/10/25 22:44:33",
+ "timestampMillis": "1736567073117",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/10/25 22:44:33",
+ "timestampMillis": "1736567073118",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

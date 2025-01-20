@@ -1,0 +1,12 @@
+❌ [red][bold]   238 |             disable systolic_array;
+      |             ^~~~~~~
+%Error: overall.v:327:13: disable isn't underneath a begin with name: 'uart_rx'
+  327 |             disable uart_rx;
+      |             ^~~~~~~
+%Error: overall.v:374:13: disable isn't underneath a begin with name: 'uart_tx'
+  374 |             disable uart_tx;
+      |             ^~~~~~~
+%Error: Exiting due to 3 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-39-32/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 3 Lint errors found.

@@ -1,0 +1,3 @@
+relativeroot=C:/fpga/simon/all_in_one
+original_argv=-c --mode hls --config C:\fpga\simon\all_in_one\hls_config.cfg --work_dir all_in_one 
+

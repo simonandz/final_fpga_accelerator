@@ -1,0 +1,41 @@
+{
+   "creator": "Yosys 0.34 (git sha1 4a1b55992, gcc 11.4.0-1ubuntu1~22.04 -fPIC -Os)",
+   "invocation": "stat -json ",
+   "modules": {
+      "\\systolic_top_uart_4parallel_q8_24": {
+         "num_wires":         20,
+         "num_wire_bits":     21,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1,
+            "$_AND_": 1,
+            "$_DFFE_PP0P_": 1,
+            "$_DFF_PP0_": 1,
+            "$_DFF_PP1_": 1
+         }
+      }
+   },
+      "design": {
+         "num_wires":         20,
+         "num_wire_bits":     21,
+         "num_pub_wires":     18,
+         "num_pub_wire_bits": 19,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         5,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1,
+            "$_AND_": 1,
+            "$_DFFE_PP0P_": 1,
+            "$_DFF_PP0_": 1,
+            "$_DFF_PP1_": 1
+         }
+      }
+}
+

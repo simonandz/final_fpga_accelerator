@@ -1,0 +1,18 @@
+{
+  "0": {
+    "basicblocks": 817,
+    "calls": "",
+    "file": "systolic_array.cpp",
+    "fileloc": 356,
+    "instructions": 7962,
+    "loads": {
+      "G": 462
+    },
+    "name": "systolic_top_uart_4parallel",
+    "stores": {
+      "G": 781,
+      "T": 11
+    },
+    "total_instructions": 7962
+  }
+}

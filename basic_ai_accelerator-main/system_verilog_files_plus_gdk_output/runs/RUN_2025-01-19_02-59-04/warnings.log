@@ -1,0 +1,7 @@
+❌ [red][bold] %Error: overall.v:588:49: syntax error, unexpected ';', expecting ',' or ':' or :-begin or :-fork
+  588 |                 C_blk_packed <= C_blk_packed_tmp;
+      |                                                 ^
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-59-04/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

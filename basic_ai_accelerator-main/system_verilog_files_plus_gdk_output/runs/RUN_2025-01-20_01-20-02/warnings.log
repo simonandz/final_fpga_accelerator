@@ -1,0 +1,11 @@
+❌ [red][bold] overall.v:640: Warning: Identifier `$unnamed_block$29.rx_st_tmp.shift_reg' is implicitly declared.
+overall.v:642: Warning: Identifier `$unnamed_block$29.tx_st_tmp.active' is implicitly declared.
+overall.v:643: Warning: Identifier `$unnamed_block$29.tx_st_tmp.bitcount' is implicitly declared.
+overall.v:644: Warning: Identifier `$unnamed_block$29.tx_st_tmp.sample_count' is implicitly declared.
+overall.v:645: Warning: Identifier `$unnamed_block$29.tx_st_tmp.shift_reg' is implicitly declared.
+overall.v:646: Warning: Identifier `$unnamed_block$29.tx_st_tmp.tx_out' is implicitly declared.
+overall.v:647: Warning: Identifier `$unnamed_block$29.tx_st_tmp.data_latched' is implicitly declared.
+overall.v:449: Warning: Identifier `\uart_rx$func$overall' is implicitly declared.
+ERROR: Assert `chunk.offset + chunk.width <= chunk.wire->width' failed in kernel/rtlil.cc:4509.
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-20_01-20-02/04-yosys-jsonheader/yosys-jsonheader.log'

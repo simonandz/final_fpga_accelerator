@@ -1,0 +1,342 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/experimental_accelerator/experimental_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top_systolic_controller_flat' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../asic_accelerator/top_systolic_controller.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../asic_accelerator/top_systolic_controller.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+Deasserting reset at cycle 5
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+Asserting start and setting opcode to 0x1 (Multiplication Only) at cycle 10
+All test cases passed successfully.
+Deasserting start at cycle 11
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+All test cases passed successfully.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:24:9)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\experimental_accelerator:0:0) as the pipelined function is not the top-level hardware function
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 5 seconds. Total elapsed time: 88.5 seconds; peak allocated memory: 619.578 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 36s

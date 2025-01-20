@@ -1,0 +1,6 @@
+❌ [red][bold] %Error: overall.v:632:5: syntax error, unexpected end
+  632 |     end
+      |     ^~~
+%Error: Cannot continue
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-02-16/01-verilator-lint/verilator-lint.log'

@@ -1,0 +1,1610 @@
+[
+    {
+        "name": "_Z28top_systolic_controller_flatbbhP8ap_fixedILi32ELi8EL9ap_q_mode5EL9ap_o_mode3ELi0EES3_PS_ILi32ELi12ELS0_5ELS1_3ELi0EEPb",
+        "df_function": "%F1869",
+        "df_type": "Function",
+        "project": "SLX",
+        "processes": {
+            "1": {
+                "id": "1",
+                "name": "Artificial<Start>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 3,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 35,
+                        "column": 1
+                    }
+                },
+                "display_name": "<START>",
+                "kind": "start"
+            },
+            "2": {
+                "id": "2",
+                "name": "Artificial<End>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 3,
+                        "column": 1
+                    },
+                    "end_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 35,
+                        "column": 1
+                    }
+                },
+                "display_name": "<END>",
+                "kind": "end"
+            },
+            "3": {
+                "id": "3",
+                "name": "Region<OutlineCall(R2 top_systolic_controller_flat) BB 'codeRepl' [Atomic,Loop,Atomic] 'Outline_T3_F1869_R2_Loop'>",
+                "src_range": {
+                    "start_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 22,
+                        "column": 5
+                    },
+                    "end_loc": {
+                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                        "line": 34,
+                        "column": 5
+                    }
+                },
+                "display_name": "Process 1",
+                "io_signatures": {
+                    "has_unresolved_accesses": false,
+                    "accesses": [
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 7,
+                                    "column": 0
+                                },
+                                "id": "VId_6435_[?(?,32)]dc",
+                                "name": "flat_A[*]",
+                                "display_name": "data_t flat_A[64]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 118,
+                                        "column": 59
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 190,
+                                        "column": 36
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 199,
+                                        "column": 42
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 3
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 8,
+                                    "column": 0
+                                },
+                                "id": "VId_6436_[?(?,32)]dc",
+                                "name": "flat_B[*]",
+                                "display_name": "data_t flat_B[64]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 119,
+                                        "column": 61
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 190,
+                                        "column": 68
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 199,
+                                        "column": 69
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 4
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 9,
+                                    "column": 0
+                                },
+                                "id": "VId_6437_[?(?,32)]dc",
+                                "name": "flat_C[*]",
+                                "display_name": "acc_t flat_C[64]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 175,
+                                        "column": 38
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 145,
+                                        "column": 33
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 160,
+                                        "column": 38
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 32
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 5
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 10,
+                                    "column": 0
+                                },
+                                "id": "VId_6438_[?(?,8)]dc",
+                                "name": "done[*]",
+                                "display_name": "bool done[4]"
+                            },
+                            "reads": [],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 90,
+                                        "column": 14
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 217,
+                                        "column": 22
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 100,
+                                        "column": 22
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false,
+                            "arg_idx": 6
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 4,
+                                    "column": 0
+                                },
+                                "id": "VId_6432_!c?(?,?)",
+                                "name": "rst",
+                                "display_name": "bool rst"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 0
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 5,
+                                    "column": 0
+                                },
+                                "id": "VId_6433_!c?(?,?)",
+                                "name": "start",
+                                "display_name": "bool start"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 1
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 6,
+                                    "column": 0
+                                },
+                                "id": "VId_6434_!c?(?,?)",
+                                "name": "opcode",
+                                "display_name": "opcode_t opcode"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "SSA",
+                                    "range": {
+                                        "is_exact": true,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "exec_count": 1
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "SSA",
+                            "has_alias": false,
+                            "arg_idx": 2
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                    "line": 14,
+                                    "column": 0
+                                },
+                                "id": "VId_22_!c?(?,?)",
+                                "name": "LR",
+                                "display_name": "const acc_t LR"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "ranges": [
+                                            {
+                                                "start": 0,
+                                                "end": 4,
+                                                "is_exact": false
+                                            }
+                                        ]
+                                    },
+                                    "instr": "load",
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 19,
+                                    "column": 0
+                                },
+                                "id": "VId_24_[?(?,608)].A0(0,32)",
+                                "name": "states[*].state",
+                                "display_name": "state_enum systolic_state_t::state"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 98,
+                                        "column": 23
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "call",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 88,
+                                        "column": 17
+                                    },
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 219,
+                                        "column": 29
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 102,
+                                        "column": 33
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 124,
+                                        "column": 37
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 19,
+                                    "column": 0
+                                },
+                                "id": "VId_24_[?(?,608)].A3(96,288)[?(?,32)]",
+                                "name": "states[*].partial_sum[*]",
+                                "display_name": "acc_t systolic_state_t::partial_sum[9]"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 118,
+                                        "column": 56
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 4294967295,
+                                        "column": 0
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 118,
+                                        "column": 56
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 36
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 19,
+                                    "column": 0
+                                },
+                                "id": "VId_24_[?(?,608)].A2(64,8)",
+                                "name": "states[*].busy",
+                                "display_name": "bool systolic_state_t::busy"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 101,
+                                        "column": 37
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 218,
+                                        "column": 28
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 103,
+                                        "column": 33
+                                    },
+                                    "access_type": "i1",
+                                    "access_bit_width": 1,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        },
+                        {
+                            "variable": {
+                                "location": {
+                                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                    "line": 19,
+                                    "column": 0
+                                },
+                                "id": "VId_24_[?(?,608)].A1(32,32)",
+                                "name": "states[*].k",
+                                "display_name": "int systolic_state_t::k"
+                            },
+                            "reads": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "load",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 113,
+                                        "column": 27
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "writes": [
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 104,
+                                        "column": 33
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                },
+                                {
+                                    "access_kind": "Ptr",
+                                    "range": {
+                                        "is_exact": false,
+                                        "is_empty": false
+                                    },
+                                    "instr": "store",
+                                    "src_loc": {
+                                        "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                                        "line": 122,
+                                        "column": 28
+                                    },
+                                    "access_type": "i32",
+                                    "access_bit_width": 32,
+                                    "exec_count": 4
+                                }
+                            ],
+                            "kind": "Ptr",
+                            "has_alias": false
+                        }
+                    ]
+                },
+                "metrics": {
+                    "initiation_interval": 314
+                },
+                "subregions": [
+                    {
+                        "id": "%F1871_R1",
+                        "description": "<function entry>"
+                    },
+                    {
+                        "id": "%F1871_R2",
+                        "description": "<loop 'for.body'>",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 22,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 34,
+                                "column": 5
+                            }
+                        }
+                    },
+                    {
+                        "id": "%F1871_R6",
+                        "description": "<function exit>"
+                    }
+                ],
+                "subdataflow": [
+                    {
+                        "id": "%F1870",
+                        "region_type": "Function",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 24,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 24,
+                                "column": 9
+                            }
+                        }
+                    }
+                ],
+                "guidance": [
+                    {
+                        "type": "LoopGuidance",
+                        "ti": {
+                            "min": 312,
+                            "max": 312
+                        },
+                        "ii": {
+                            "min": 78,
+                            "max": 78
+                        },
+                        "effective_tc": {
+                            "min": 4,
+                            "max": 4
+                        },
+                        "tc": {
+                            "min": 4,
+                            "max": 4
+                        },
+                        "ureg_id": "%L434",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 22,
+                                "column": 5
+                            },
+                            "end_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 34,
+                                "column": 5
+                            }
+                        },
+                        "details": []
+                    },
+                    {
+                        "type": "CallGuidance",
+                        "ti": {
+                            "min": 78,
+                            "max": 78
+                        },
+                        "ureg_id": "%F1870",
+                        "src_range": {
+                            "start_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 24,
+                                "column": 9
+                            },
+                            "end_loc": {
+                                "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                                "line": 24,
+                                "column": 9
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "channels": {
+            "rst_RAW_1_3_#0": {
+                "name": "rst_RAW_1_3_#0",
+                "variable_id": "VId_6432_!c?(?,?)",
+                "variable_name": "rst",
+                "declaration": "bool rst",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 4,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 1,
+                    "channel_rate": 3.1847133757961785E-3
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "start_RAW_1_3_#1": {
+                "name": "start_RAW_1_3_#1",
+                "variable_id": "VId_6433_!c?(?,?)",
+                "variable_name": "start",
+                "declaration": "bool start",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 5,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 1,
+                    "channel_rate": 3.1847133757961785E-3
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "opcode_RAW_1_3_#2": {
+                "name": "opcode_RAW_1_3_#2",
+                "variable_id": "VId_6434_!c?(?,?)",
+                "variable_name": "opcode",
+                "declaration": "opcode_t opcode",
+                "kind": "SSA",
+                "dependence": "RAW",
+                "channel_width": 8,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 6,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8,
+                    "channel_rate": 2.5477707006369428E-2
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "flat_A[*]_RAW_1_3_#3": {
+                "name": "flat_A[*]_RAW_1_3_#3",
+                "variable_id": "VId_6435_[?(?,32)]dc",
+                "variable_name": "flat_A[*]",
+                "declaration": "data_t flat_A[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 7,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 3456,
+                    "channel_rate": 1.1006369426751592E1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "flat_B[*]_RAW_1_3_#4": {
+                "name": "flat_B[*]_RAW_1_3_#4",
+                "variable_id": "VId_6436_[?(?,32)]dc",
+                "variable_name": "flat_B[*]",
+                "declaration": "data_t flat_B[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 8,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 3456,
+                    "channel_rate": 1.1006369426751592E1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "flat_C[*]_RAW_1_3_#5": {
+                "name": "flat_C[*]_RAW_1_3_#5",
+                "variable_id": "VId_6437_[?(?,32)]dc",
+                "variable_name": "flat_C[*]",
+                "declaration": "acc_t flat_C[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 3456,
+                    "channel_rate": 1.1006369426751592E1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "LR_RAW_1_3_#6": {
+                "name": "LR_RAW_1_3_#6",
+                "variable_id": "VId_22_!c?(?,?)",
+                "variable_name": "LR",
+                "declaration": "const acc_t LR",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\experimental_accelerator\\systolic_array.cpp",
+                    "line": 14,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 128,
+                    "channel_rate": 4.0764331210191085E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].state_RAW_1_3_#7": {
+                "name": "states[*].state_RAW_1_3_#7",
+                "variable_id": "VId_24_[?(?,608)].A0(0,32)",
+                "variable_name": "states[*].state",
+                "declaration": "state_enum systolic_state_t::state",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 128,
+                    "channel_rate": 4.0764331210191085E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].k_RAW_1_3_#8": {
+                "name": "states[*].k_RAW_1_3_#8",
+                "variable_id": "VId_24_[?(?,608)].A1(32,32)",
+                "variable_name": "states[*].k",
+                "declaration": "int systolic_state_t::k",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 128,
+                    "channel_rate": 4.0764331210191085E-1
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].busy_RAW_1_3_#9": {
+                "name": "states[*].busy_RAW_1_3_#9",
+                "variable_id": "VId_24_[?(?,608)].A2(64,8)",
+                "variable_name": "states[*].busy",
+                "declaration": "bool systolic_state_t::busy",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 4,
+                    "channel_rate": 1.2738853503184714E-2
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].partial_sum[*]_RAW_1_3_#10": {
+                "name": "states[*].partial_sum[*]_RAW_1_3_#10",
+                "variable_id": "VId_24_[?(?,608)].A3(96,288)[?(?,32)]",
+                "variable_name": "states[*].partial_sum[*]",
+                "declaration": "acc_t systolic_state_t::partial_sum[9]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 2304,
+                    "channel_rate": 7.337579617834395E0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "flat_C[*]_WAW_1_3_#11": {
+                "name": "flat_C[*]_WAW_1_3_#11",
+                "variable_id": "VId_6437_[?(?,32)]dc",
+                "variable_name": "flat_C[*]",
+                "declaration": "acc_t flat_C[64]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].state_WAW_1_3_#12": {
+                "name": "states[*].state_WAW_1_3_#12",
+                "variable_id": "VId_24_[?(?,608)].A0(0,32)",
+                "variable_name": "states[*].state",
+                "declaration": "state_enum systolic_state_t::state",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].k_WAW_1_3_#13": {
+                "name": "states[*].k_WAW_1_3_#13",
+                "variable_id": "VId_24_[?(?,608)].A1(32,32)",
+                "variable_name": "states[*].k",
+                "declaration": "int systolic_state_t::k",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].busy_WAW_1_3_#14": {
+                "name": "states[*].busy_WAW_1_3_#14",
+                "variable_id": "VId_24_[?(?,608)].A2(64,8)",
+                "variable_name": "states[*].busy",
+                "declaration": "bool systolic_state_t::busy",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "states[*].partial_sum[*]_WAW_1_3_#15": {
+                "name": "states[*].partial_sum[*]_WAW_1_3_#15",
+                "variable_id": "VId_24_[?(?,608)].A3(96,288)[?(?,32)]",
+                "variable_name": "states[*].partial_sum[*]",
+                "declaration": "acc_t systolic_state_t::partial_sum[9]",
+                "kind": "Ptr",
+                "dependence": "WAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "1",
+                "sink": "3"
+            },
+            "flat_C[*]_RAW_3_2_#16": {
+                "name": "flat_C[*]_RAW_3_2_#16",
+                "variable_id": "VId_6437_[?(?,32)]dc",
+                "variable_name": "flat_C[*]",
+                "declaration": "acc_t flat_C[64]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8064,
+                    "channel_rate": 2.5681528662420384E1
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "done[*]_RAW_3_2_#17": {
+                "name": "done[*]_RAW_3_2_#17",
+                "variable_id": "VId_6438_[?(?,8)]dc",
+                "variable_name": "done[*]",
+                "declaration": "bool done[4]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 10,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 12,
+                    "channel_rate": 3.821656050955414E-2
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].state_RAW_3_2_#18": {
+                "name": "states[*].state_RAW_3_2_#18",
+                "variable_id": "VId_24_[?(?,608)].A0(0,32)",
+                "variable_name": "states[*].state",
+                "declaration": "state_enum systolic_state_t::state",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 672,
+                    "channel_rate": 2.140127388535032E0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].k_RAW_3_2_#19": {
+                "name": "states[*].k_RAW_3_2_#19",
+                "variable_id": "VId_24_[?(?,608)].A1(32,32)",
+                "variable_name": "states[*].k",
+                "declaration": "int systolic_state_t::k",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 256,
+                    "channel_rate": 8.152866242038217E-1
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].busy_RAW_3_2_#20": {
+                "name": "states[*].busy_RAW_3_2_#20",
+                "variable_id": "VId_24_[?(?,608)].A2(64,8)",
+                "variable_name": "states[*].busy",
+                "declaration": "bool systolic_state_t::busy",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 8,
+                    "channel_rate": 2.5477707006369428E-2
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].partial_sum[*]_RAW_3_2_#21": {
+                "name": "states[*].partial_sum[*]_RAW_3_2_#21",
+                "variable_id": "VId_24_[?(?,608)].A3(96,288)[?(?,32)]",
+                "variable_name": "states[*].partial_sum[*]",
+                "declaration": "acc_t systolic_state_t::partial_sum[9]",
+                "kind": "Ptr",
+                "dependence": "RAW",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "metrics": {
+                    "volume": 3456,
+                    "channel_rate": 1.1006369426751592E1
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "flat_C[*]_RAR_3_2_#22": {
+                "name": "flat_C[*]_RAR_3_2_#22",
+                "variable_id": "VId_6437_[?(?,32)]dc",
+                "variable_name": "flat_C[*]",
+                "declaration": "acc_t flat_C[64]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 9,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].state_RAR_3_2_#23": {
+                "name": "states[*].state_RAR_3_2_#23",
+                "variable_id": "VId_24_[?(?,608)].A0(0,32)",
+                "variable_name": "states[*].state",
+                "declaration": "state_enum systolic_state_t::state",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].k_RAR_3_2_#24": {
+                "name": "states[*].k_RAR_3_2_#24",
+                "variable_id": "VId_24_[?(?,608)].A1(32,32)",
+                "variable_name": "states[*].k",
+                "declaration": "int systolic_state_t::k",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].busy_RAR_3_2_#25": {
+                "name": "states[*].busy_RAR_3_2_#25",
+                "variable_id": "VId_24_[?(?,608)].A2(64,8)",
+                "variable_name": "states[*].busy",
+                "declaration": "bool systolic_state_t::busy",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 1,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            },
+            "states[*].partial_sum[*]_RAR_3_2_#26": {
+                "name": "states[*].partial_sum[*]_RAR_3_2_#26",
+                "variable_id": "VId_24_[?(?,608)].A3(96,288)[?(?,32)]",
+                "variable_name": "states[*].partial_sum[*]",
+                "declaration": "acc_t systolic_state_t::partial_sum[9]",
+                "kind": "Ptr",
+                "dependence": "RAR",
+                "channel_width": 32,
+                "src_loc": {
+                    "file": "C:\\fpga\\simon\\asic_accelerator\\top_systolic_controller.cpp",
+                    "line": 19,
+                    "column": 0
+                },
+                "source": "3",
+                "sink": "2"
+            }
+        },
+        "control": [
+            {
+                "source": "1",
+                "sink": "3"
+            },
+            {
+                "source": "3",
+                "sink": "2"
+            }
+        ]
+    }
+]

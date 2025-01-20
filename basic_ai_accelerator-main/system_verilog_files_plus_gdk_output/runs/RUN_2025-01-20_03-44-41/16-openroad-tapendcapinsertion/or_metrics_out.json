@@ -1,0 +1,15 @@
+{
+	"design__io": 16,
+	"design__die__area": 500.415,
+	"design__core__area": 270.259,
+	"design__instance__count": 20,
+	"design__instance__area": 151.395,
+	"design__instance__count__stdcell": 20,
+	"design__instance__area__stdcell": 151.395,
+	"design__instance__count__macros": 0,
+	"design__instance__area__macros": 0,
+	"design__instance__utilization": 0.560185,
+	"design__instance__utilization__stdcell": 0.560185,
+	"flow__warnings__count": 3,
+	"flow__errors__count": 0
+}

@@ -1,0 +1,385 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO systolic_top_uart_4parallel_q8_24
+  CLASS BLOCK ;
+  FOREIGN systolic_top_uart_4parallel_q8_24 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 1000.000 BY 1000.000 ;
+  PIN VGND
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 37.715 10.640 39.315 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 76.585 10.640 78.185 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 115.455 10.640 117.055 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 154.325 10.640 155.925 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 193.195 10.640 194.795 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 232.065 10.640 233.665 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 270.935 10.640 272.535 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 309.805 10.640 311.405 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 348.675 10.640 350.275 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 387.545 10.640 389.145 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 426.415 10.640 428.015 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 465.285 10.640 466.885 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 504.155 10.640 505.755 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 543.025 10.640 544.625 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 581.895 10.640 583.495 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 620.765 10.640 622.365 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 659.635 10.640 661.235 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 698.505 10.640 700.105 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 737.375 10.640 738.975 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 776.245 10.640 777.845 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 815.115 10.640 816.715 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 853.985 10.640 855.585 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 892.855 10.640 894.455 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 931.725 10.640 933.325 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 970.595 10.640 972.195 987.600 ;
+    END
+  END VGND
+  PIN VPWR
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 18.280 10.640 19.880 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 57.150 10.640 58.750 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 96.020 10.640 97.620 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 134.890 10.640 136.490 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 173.760 10.640 175.360 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 212.630 10.640 214.230 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 251.500 10.640 253.100 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 290.370 10.640 291.970 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 329.240 10.640 330.840 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 368.110 10.640 369.710 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 406.980 10.640 408.580 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 445.850 10.640 447.450 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 484.720 10.640 486.320 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 523.590 10.640 525.190 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 562.460 10.640 564.060 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 601.330 10.640 602.930 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 640.200 10.640 641.800 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 679.070 10.640 680.670 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 717.940 10.640 719.540 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 756.810 10.640 758.410 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 795.680 10.640 797.280 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 834.550 10.640 836.150 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 873.420 10.640 875.020 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 912.290 10.640 913.890 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 951.160 10.640 952.760 987.600 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 990.030 10.640 991.630 987.600 ;
+    END
+  END VPWR
+  PIN busy_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 998.000 486.240 1000.000 486.840 ;
+    END
+  END busy_out
+  PIN clk_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 479.870 0.000 480.150 2.000 ;
+    END
+  END clk_in
+  PIN done_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 503.240 2.000 503.840 ;
+    END
+  END done_out
+  PIN opcode_in0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.090 0.000 0.370 2.000 ;
+    END
+  END opcode_in0
+  PIN opcode_in1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 3.310 0.000 3.590 2.000 ;
+    END
+  END opcode_in1
+  PIN opcode_in2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 6.530 0.000 6.810 2.000 ;
+    END
+  END opcode_in2
+  PIN opcode_in3
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 9.750 0.000 10.030 2.000 ;
+    END
+  END opcode_in3
+  PIN out4
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 513.440 2.000 514.040 ;
+    END
+  END out4
+  PIN out5
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 516.840 2.000 517.440 ;
+    END
+  END out5
+  PIN out6
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 520.240 2.000 520.840 ;
+    END
+  END out6
+  PIN out7
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 506.640 2.000 507.240 ;
+    END
+  END out7
+  PIN out8
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 510.040 2.000 510.640 ;
+    END
+  END out8
+  PIN rst_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 486.310 0.000 486.590 2.000 ;
+    END
+  END rst_in
+  PIN rx_out
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 523.640 2.000 524.240 ;
+    END
+  END rx_out
+  PIN start_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 489.530 0.000 489.810 2.000 ;
+    END
+  END start_in
+  PIN tx_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 12.970 0.000 13.250 2.000 ;
+    END
+  END tx_in
+  OBS
+      LAYER li1 ;
+        RECT 2.760 10.795 996.820 987.445 ;
+      LAYER met1 ;
+        RECT 2.760 10.640 996.820 987.600 ;
+      LAYER met2 ;
+        RECT 4.230 2.280 991.600 987.545 ;
+        RECT 4.230 2.000 6.250 2.280 ;
+        RECT 7.090 2.000 9.470 2.280 ;
+        RECT 10.310 2.000 12.690 2.280 ;
+        RECT 13.530 2.000 479.590 2.280 ;
+        RECT 480.430 2.000 486.030 2.280 ;
+        RECT 486.870 2.000 489.250 2.280 ;
+        RECT 490.090 2.000 991.600 2.280 ;
+      LAYER met3 ;
+        RECT 2.000 524.640 998.000 987.525 ;
+        RECT 2.400 523.240 998.000 524.640 ;
+        RECT 2.000 521.240 998.000 523.240 ;
+        RECT 2.400 519.840 998.000 521.240 ;
+        RECT 2.000 517.840 998.000 519.840 ;
+        RECT 2.400 516.440 998.000 517.840 ;
+        RECT 2.000 514.440 998.000 516.440 ;
+        RECT 2.400 513.040 998.000 514.440 ;
+        RECT 2.000 511.040 998.000 513.040 ;
+        RECT 2.400 509.640 998.000 511.040 ;
+        RECT 2.000 507.640 998.000 509.640 ;
+        RECT 2.400 506.240 998.000 507.640 ;
+        RECT 2.000 504.240 998.000 506.240 ;
+        RECT 2.400 502.840 998.000 504.240 ;
+        RECT 2.000 487.240 998.000 502.840 ;
+        RECT 2.000 485.840 997.600 487.240 ;
+        RECT 2.000 10.715 998.000 485.840 ;
+  END
+END systolic_top_uart_4parallel_q8_24
+END LIBRARY
+

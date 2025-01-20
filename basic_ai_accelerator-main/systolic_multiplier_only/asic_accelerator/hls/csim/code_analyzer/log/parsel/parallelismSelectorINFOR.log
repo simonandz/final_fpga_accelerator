@@ -1,0 +1,6 @@
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:14:5)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:15:5)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:16:5)
+parallelismSelector::WARNG: WARNING: [SIM 211-206] Code Analyzer does not display the impact of the partition pragma for dataflow channels (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:17:5)
+parallelismSelector::WARNG: WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:24:9)
+parallelismSelector::WARNG: WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\asic_accelerator:0:0) as the pipelined function is not the top-level hardware function

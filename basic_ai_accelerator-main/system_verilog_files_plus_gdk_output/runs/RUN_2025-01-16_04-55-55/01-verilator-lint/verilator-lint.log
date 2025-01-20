@@ -1,0 +1,88 @@
+%Error: overall.v:490:13: syntax error, unexpected IDENTIFIER, expecting "'{"
+  490 |     integer m, i;
+      |             ^
+%Error: overall.v:492:23: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  492 |             done_out  <= 1'b0;
+      |                       ^~
+%Error: overall.v:507:23: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  507 |                 states[m].state = IDLE;
+      |                       ^
+%Error: overall.v:511:27: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  511 |                     states[m].partial_sum[i] = 0;
+      |                           ^
+%Error: overall.v:513:27: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  513 |                 done_array[m] = 1'b0;
+      |                           ^
+%Error: overall.v:516:18: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  516 |                 A[i] <= 0;
+      |                  ^
+%Error: overall.v:520:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  520 |             rx_st.active       <= 1'b0;
+      |                                ^~
+%Error: overall.v:521:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  521 |             rx_st.bitcount     <= 0;
+      |                                ^~
+%Error: overall.v:522:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  522 |             rx_st.sample_count <= 0;
+      |                                ^~
+%Error: overall.v:523:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  523 |             rx_st.shift_reg    <= 0;
+      |                                ^~
+%Error: overall.v:526:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  526 |             tx_st.active       <= 1'b0;
+      |                                ^~
+%Error: overall.v:527:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  527 |             tx_st.bitcount     <= 0;
+      |                                ^~
+%Error: overall.v:528:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  528 |             tx_st.sample_count <= 0;
+      |                                ^~
+%Error: overall.v:529:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  529 |             tx_st.shift_reg    <= 0;
+      |                                ^~
+%Error: overall.v:530:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  530 |             tx_st.tx_out       <= 1'b1;
+      |                                ^~
+%Error: overall.v:531:32: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  531 |             tx_st.data_latched <= 1'b0;
+      |                                ^~
+%Error: overall.v:537:20: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  537 |             tx_req = 1'b0;
+      |                    ^
+%Error: overall.v:546:35: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  546 |                         fsm_state <= FSM_LOAD_A;
+      |                                   ^~
+%Error: overall.v:555:26: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  555 |                         A[load_count] <= { {24{rx_data[7]}}, rx_data };
+      |                          ^
+%Error: overall.v:558:40: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  558 |                             load_count <= 0;
+      |                                        ^~
+%Error: overall.v:566:26: syntax error, unexpected '[', expecting IDENTIFIER or randomize
+  566 |                         B[load_count] <= { {24{rx_data[7]}}, rx_data };
+      |                          ^
+%Error: overall.v:569:40: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  569 |                             load_count <= 0;
+      |                                        ^~
+%Error: overall.v:579:30: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  579 |                     all_done = 1'b1;
+      |                              ^
+%Error: overall.v:584:39: syntax error, unexpected '(', expecting IDENTIFIER or randomize
+  584 |                         systolic_array(
+      |                                       ^
+%Error: overall.v:598:35: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  598 |                         fsm_state <= FSM_SEND_C;
+      |                                   ^~
+%Error: overall.v:607:32: syntax error, unexpected '=', expecting IDENTIFIER or randomize
+  607 |                         val_32 = C[send_count];
+      |                                ^
+%Error: overall.v:613:39: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  613 |                             fsm_state <= FSM_IDLE;
+      |                                       ^~
+%Error: overall.v:621:31: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  621 |                     fsm_state <= FSM_IDLE;
+      |                               ^~
+%Error: overall.v:625:22: syntax error, unexpected <=, expecting IDENTIFIER or randomize
+  625 |             done_out <= internal_done;
+      |                      ^~
+%Error: Cannot continue

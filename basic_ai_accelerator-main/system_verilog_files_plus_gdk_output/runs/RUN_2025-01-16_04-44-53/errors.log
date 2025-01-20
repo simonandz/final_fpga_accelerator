@@ -1,0 +1,10 @@
+❌ [red][bold] %Error: overall.v:298:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  298 |                         q8_24_t nine_q24;
+      |                                 ^~~~~~~~
+%Error: overall.v:300:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  300 |                         q8_24_t avg;
+      |                                 ^~~
+%Error: Exiting due to 2 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-44-53/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 2 Lint errors found.

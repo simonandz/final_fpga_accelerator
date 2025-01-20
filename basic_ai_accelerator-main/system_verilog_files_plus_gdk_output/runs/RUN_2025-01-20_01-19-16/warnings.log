@@ -1,0 +1,7 @@
+❌ [red][bold] %Error: overall.v:1:1: syntax error, unexpected "'"
+    1 | 'timescale 1ns/1ps
+      | ^
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-20_01-19-16/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

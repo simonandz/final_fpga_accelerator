@@ -1,0 +1,31 @@
+%Error: overall.v:4:30: syntax error, unexpected IDENTIFIER, expecting ')'
+    4 |         input  q8_24_t       A [0:TOTAL_3x3-1],
+      |                              ^
+%Error: overall.v:8:9: syntax error, unexpected inout
+    8 |         inout  systolic_state_t s,
+      |         ^~~~~
+%Error: overall.v:10:5: syntax error, unexpected ')', expecting ',' or ';'
+   10 |     );
+      |     ^
+%Error: overall.v:13:9: syntax error, unexpected IDENTIFIER
+   13 |         q8_24_t prod;
+      |         ^~~~~~~
+%Error: overall.v:300:5: syntax error, unexpected IDENTIFIER
+  300 |     q8_24_t A [0:TOTAL_ARRAY-1];
+      |     ^~~~~~~
+%Error: overall.v:313:5: syntax error, unexpected IDENTIFIER
+  313 |     top_fsm_e fsm_state;
+      |     ^~~~~~~~~
+%Error: overall.v:322:5: syntax error, unexpected always_comb
+  322 |     always_comb begin
+      |     ^~~~~~~~~~~
+%Error: overall.v:344:33: syntax error, unexpected IDENTIFIER
+  344 |             for (integer m = 0; m < NUM_ARRAYS; m = m + 1) begin
+      |                                 ^
+%Error: overall.v:348:37: syntax error, unexpected IDENTIFIER
+  348 |                 for (integer i = 0; i < TOTAL_3x3; i = i + 1) begin
+      |                                     ^
+%Error: overall.v:353:33: syntax error, unexpected IDENTIFIER
+  353 |             for (integer i = 0; i < TOTAL_ARRAY; i = i + 1) begin
+      |                                 ^
+%Error: Exiting due to 10 error(s)

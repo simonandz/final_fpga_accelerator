@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\all_in_one.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/14/25 22:01:09",
+ "timestampMillis": "1736910069399",
+ "buildStep": {
+  "cmdId": "3f65895c-792a-494d-af00-9b0a3b70307b",
+  "name": "vitis-run",
+  "logFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\logs\\all_in_one.steps.log",
+  "commandLine": "C:/fpga/Vitis/2024.2/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\fpga\\simon\\all_in_one\\hls_config.cfg --work_dir all_in_one ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\fpga\\simon\\all_in_one\\hls_config.cfg",
+   "--work_dir",
+   "all_in_one"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\all_in_one"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:01:09",
+ "timestampMillis": "1736910069399",
+ "status": {
+  "cmdId": "3f65895c-792a-494d-af00-9b0a3b70307b",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/14/25 22:01:17",
+ "timestampMillis": "1736910077994",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_top_uart_4parallel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/fpga\\simon\\all_in_one\\systolic_array.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/14/25 22:01:17",
+ "timestampMillis": "1736910077995",
+ "buildStep": {
+  "cmdId": "86bfc354-67d1-4c92-a4ff-46ef1afc80ef",
+  "name": "",
+  "logFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\all_in_one"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:01:17",
+ "timestampMillis": "1736910077996",
+ "status": {
+  "cmdId": "86bfc354-67d1-4c92-a4ff-46ef1afc80ef",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:01:31",
+ "timestampMillis": "1736910091322",
+ "status": {
+  "cmdId": "86bfc354-67d1-4c92-a4ff-46ef1afc80ef",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:01:31",
+ "timestampMillis": "1736910091598",
+ "status": {
+  "cmdId": "3f65895c-792a-494d-af00-9b0a3b70307b",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:01:31",
+ "timestampMillis": "1736910091599",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:01:31",
+ "timestampMillis": "1736910091599",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

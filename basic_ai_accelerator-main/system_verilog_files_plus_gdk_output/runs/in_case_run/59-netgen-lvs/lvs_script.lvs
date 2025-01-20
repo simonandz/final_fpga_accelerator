@@ -1,0 +1,11 @@
+puts "Reading SPICE netlist file '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice'..."
+readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice 1
+puts "Reading SPICE netlist file '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice'..."
+readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_12.spice 1
+puts "Reading SPICE netlist file '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice'..."
+readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_4.spice 1
+puts "Reading SPICE netlist file '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice'..."
+readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__fill_8.spice 1
+puts "Reading SPICE netlist file '/foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice'..."
+readnet spice /foss/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice 1
+lvs { /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_04-34-08/57-magic-spiceextraction/systolic_top_uart_4parallel_q8_24.spice systolic_top_uart_4parallel_q8_24 } { /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_04-34-08/48-openroad-fillinsertion/systolic_top_uart_4parallel_q8_24.pnl.v systolic_top_uart_4parallel_q8_24 } /usr/local/lib/python3.10/dist-packages/openlane/scripts/netgen/setup.tcl /foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_04-34-08/59-netgen-lvs/reports/lvs.netgen.rpt -json

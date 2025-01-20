@@ -1,0 +1,4 @@
+%Error: overall.v:511:17: syntax error, unexpected IDENTIFIER, expecting "'{"
+  511 |         integer mm;
+      |                 ^~
+%Error: Exiting due to 1 error(s)

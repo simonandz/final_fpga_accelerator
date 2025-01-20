@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"systolic_top_uart_4parallel": {
+			"proto_instances": {
+			}
+		}
+	}
+}

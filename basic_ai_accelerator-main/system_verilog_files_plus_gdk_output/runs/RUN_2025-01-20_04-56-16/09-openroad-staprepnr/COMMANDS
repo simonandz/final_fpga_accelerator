@@ -1,0 +1,1 @@
+sta -no_splash -exit /usr/local/lib/python3.10/dist-packages/openlane/scripts/openroad/sta/corner.tcl

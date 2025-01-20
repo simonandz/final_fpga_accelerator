@@ -1,0 +1,12 @@
+❌ [red][bold]   717 | module systolic_top_uart_4parallel_q8_24 (
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+%Error: overall.v:1115:13: Can't find definition of task/function: 'uart_rx'
+ 1115 |             uart_rx(tx_in, rx_data_tmp, rx_valid_tmp, 1'b0, rx_st_tmp);
+      |             ^~~~~~~
+%Error: overall.v:1116:13: Can't find definition of task/function: 'uart_tx'
+ 1116 |             uart_tx(rx_out, 1'b0, 8'd0, 1'b0, tx_st_tmp);
+      |             ^~~~~~~
+%Error: Exiting due to 2 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-19_02-14-39/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 2 Lint errors found.

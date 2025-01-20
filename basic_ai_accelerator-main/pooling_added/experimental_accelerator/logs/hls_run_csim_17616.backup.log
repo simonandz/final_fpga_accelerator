@@ -1,0 +1,1230 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir C:/fpga/simon/experimental_accelerator/experimental_accelerator 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_controller.h' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_controller.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=systolic_array.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/experimental_accelerator/systolic_array.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'C:/fpga/simon/asic_accelerator/top_systolic_controller.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'tb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga/simon/asic_accelerator/overall_tb.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=top_systolic_controller_flat' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu2cg-sfvc784-1-e' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu2cg-sfvc784-1-e'
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=1' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(8)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga/simon/experimental_accelerator/hls_config.cfg(5)
+INFO: [SIM 211-200] Executing Code Analyzer instead of classic HLS C simulation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../asic_accelerator/top_systolic_controller.cpp as hardware code with instrumentation
+INFO: [HLS 211-200] Compiling source code C:/fpga/simon/asic_accelerator/overall_tb.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code ../asic_accelerator/top_systolic_controller.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Compiling source code systolic_array.cpp as test bench code with instrumentation
+INFO: [HLS 211-200] Linking hardware code
+INFO: [HLS 211-200] Transforming hardware bitcode
+INFO: [HLS 211-200] Linking executable
+INFO: [HLS 211-200] Computing HLS IR Information
+INFO: [HLS 211-200] Determining source code dependencies
+INFO: [SIM 211-200] Running executable
+Beginning simulation...
+Cycle 0: test case = 0, rst = 1, start = 0
+Cycle 0, Array 0 done = 0
+Cycle 0, Array 1 done = 0
+Cycle 0, Array 2 done = 0
+Cycle 0, Array 3 done = 0
+----------------------------------------
+Cycle 1: test case = 0, rst = 1, start = 0
+Cycle 1, Array 0 done = 0
+Cycle 1, Array 1 done = 0
+Cycle 1, Array 2 done = 0
+Cycle 1, Array 3 done = 0
+----------------------------------------
+Cycle 2: test case = 0, rst = 1, start = 0
+Cycle 2, Array 0 done = 0
+Cycle 2, Array 1 done = 0
+Cycle 2, Array 2 done = 0
+Cycle 2, Array 3 done = 0
+----------------------------------------
+Cycle 3: test case = 0, rst = 1, start = 0
+Cycle 3, Array 0 done = 0
+Cycle 3, Array 1 done = 0
+Cycle 3, Array 2 done = 0
+Cycle 3, Array 3 done = 0
+----------------------------------------
+Cycle 4: test case = 0, rst = 1, start = 0
+Cycle 4, Array 0 done = 0
+Cycle 4, Array 1 done = 0
+Cycle 4, Array 2 done = 0
+Cycle 4, Array 3 done = 0
+----------------------------------------
+Cycle 5: test case = 0, rst = 1, start = 0
+Deasserting reset at cycle 5
+Cycle 5, Array 0 done = 0
+Cycle 5, Array 1 done = 0
+Cycle 5, Array 2 done = 0
+Cycle 5, Array 3 done = 0
+----------------------------------------
+Cycle 6: test case = 0, rst = 0, start = 0
+Cycle 6, Array 0 done = 0
+Cycle 6, Array 1 done = 0
+Cycle 6, Array 2 done = 0
+Cycle 6, Array 3 done = 0
+----------------------------------------
+Cycle 7: test case = 0, rst = 0, start = 0
+Cycle 7, Array 0 done = 0
+Cycle 7, Array 1 done = 0
+Cycle 7, Array 2 done = 0
+Cycle 7, Array 3 done = 0
+----------------------------------------
+Cycle 8: test case = 0, rst = 0, start = 0
+Cycle 8, Array 0 done = 0
+Cycle 8, Array 1 done = 0
+Cycle 8, Array 2 done = 0
+Cycle 8, Array 3 done = 0
+----------------------------------------
+Cycle 9: test case = 0, rst = 0, start = 0
+Cycle 9, Array 0 done = 0
+Cycle 9, Array 1 done = 0
+Cycle 9, Array 2 done = 0
+Cycle 9, Array 3 done = 0
+----------------------------------------
+Cycle 10: test case = 0, rst = 0, start = 0
+Cycle 10: Starting Multiplication test
+Cycle 10, Array 0 done = 0
+Cycle 10, Array 1 done = 0
+Cycle 10, Array 2 done = 0
+Cycle 10, Array 3 done = 0
+----------------------------------------
+Cycle 11: test case = 0, rst = 0, start = 1
+Cycle 11, Array 0 done = 0
+Cycle 11, Array 1 done = 0
+Cycle 11, Array 2 done = 0
+Cycle 11, Array 3 done = 0
+----------------------------------------
+Cycle 12: test case = 0, rst = 0, start = 1
+Cycle 12, Array 0 done = 0
+Cycle 12, Array 1 done = 0
+Cycle 12, Array 2 done = 0
+Cycle 12, Array 3 done = 0
+----------------------------------------
+Cycle 13: test case = 0, rst = 0, start = 1
+Cycle 13, Array 0 done = 0
+Cycle 13, Array 1 done = 0
+Cycle 13, Array 2 done = 0
+Cycle 13, Array 3 done = 0
+----------------------------------------
+Cycle 14: test case = 0, rst = 0, start = 1
+Cycle 14, Array 0 done = 1
+Array 0 Output C:
+3 3 3 3 
+3 3 3 3 
+3 0 0 0 
+0 0 0 0 
+Cycle 14, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 3 
+3 3 3 3 
+3 3 3 3 
+Cycle 14, Array 2 done = 1
+Array 2 Output C:
+3 3 3 3 
+3 3 3 0 
+0 0 0 0 
+0 0 3 3 
+Cycle 14, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 3 3 3 
+3 3 3 3 
+3 3 0 0 
+----------------------------------------
+Cycle 15: test case = 0, rst = 0, start = 1
+Cycle 15: Deasserting start for Multiplication test
+Cycle 15, Array 0 done = 0
+Cycle 15, Array 1 done = 0
+Cycle 15, Array 2 done = 0
+Cycle 15, Array 3 done = 0
+----------------------------------------
+Cycle 16: test case = 0, rst = 0, start = 0
+Cycle 16, Array 0 done = 0
+Cycle 16, Array 1 done = 0
+Cycle 16, Array 2 done = 0
+Cycle 16, Array 3 done = 0
+----------------------------------------
+Cycle 17: test case = 0, rst = 0, start = 0
+Cycle 17, Array 0 done = 0
+Cycle 17, Array 1 done = 0
+Cycle 17, Array 2 done = 0
+Cycle 17, Array 3 done = 0
+----------------------------------------
+Cycle 18: test case = 0, rst = 0, start = 0
+Cycle 18, Array 0 done = 0
+Cycle 18, Array 1 done = 0
+Cycle 18, Array 2 done = 0
+Cycle 18, Array 3 done = 0
+----------------------------------------
+Cycle 19: test case = 0, rst = 0, start = 0
+Cycle 19, Array 0 done = 0
+Cycle 19, Array 1 done = 0
+Cycle 19, Array 2 done = 0
+Cycle 19, Array 3 done = 0
+----------------------------------------
+Cycle 20: test case = 0, rst = 0, start = 0
+Cycle 20, Array 0 done = 0
+Cycle 20, Array 1 done = 0
+Cycle 20, Array 2 done = 0
+Cycle 20, Array 3 done = 0
+----------------------------------------
+Cycle 21: test case = 0, rst = 0, start = 0
+Cycle 21, Array 0 done = 0
+Cycle 21, Array 1 done = 0
+Cycle 21, Array 2 done = 0
+Cycle 21, Array 3 done = 0
+----------------------------------------
+Cycle 22: test case = 0, rst = 0, start = 0
+Cycle 22, Array 0 done = 0
+Cycle 22, Array 1 done = 0
+Cycle 22, Array 2 done = 0
+Cycle 22, Array 3 done = 0
+----------------------------------------
+Cycle 23: test case = 0, rst = 0, start = 0
+Cycle 23, Array 0 done = 0
+Cycle 23, Array 1 done = 0
+Cycle 23, Array 2 done = 0
+Cycle 23, Array 3 done = 0
+----------------------------------------
+Cycle 24: test case = 0, rst = 0, start = 0
+Cycle 24, Array 0 done = 0
+Cycle 24, Array 1 done = 0
+Cycle 24, Array 2 done = 0
+Cycle 24, Array 3 done = 0
+----------------------------------------
+Cycle 25: test case = 0, rst = 0, start = 0
+Mismatch in Multiplication, Array 0, Element 9: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 10: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 11: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 12: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 13: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 14: Expected 3, Got 0
+Mismatch in Multiplication, Array 0, Element 15: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 9: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 10: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 11: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 12: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 13: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 14: Expected 3, Got 0
+Mismatch in Multiplication, Array 1, Element 15: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 9: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 10: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 11: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 12: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 13: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 14: Expected 3, Got 0
+Mismatch in Multiplication, Array 2, Element 15: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 9: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 10: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 11: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 12: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 13: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 14: Expected 3, Got 0
+Mismatch in Multiplication, Array 3, Element 15: Expected 3, Got 0
+Multiplication test FAILED!
+Cycle 25, Array 0 done = 0
+Cycle 25, Array 1 done = 0
+Cycle 25, Array 2 done = 0
+Cycle 25, Array 3 done = 0
+----------------------------------------
+Cycle 26: test case = 1, rst = 0, start = 0
+Cycle 26, Array 0 done = 0
+Cycle 26, Array 1 done = 0
+Cycle 26, Array 2 done = 0
+Cycle 26, Array 3 done = 0
+----------------------------------------
+Cycle 27: test case = 1, rst = 0, start = 0
+Cycle 27, Array 0 done = 0
+Cycle 27, Array 1 done = 0
+Cycle 27, Array 2 done = 0
+Cycle 27, Array 3 done = 0
+----------------------------------------
+Cycle 28: test case = 1, rst = 0, start = 0
+Cycle 28, Array 0 done = 0
+Cycle 28, Array 1 done = 0
+Cycle 28, Array 2 done = 0
+Cycle 28, Array 3 done = 0
+----------------------------------------
+Cycle 29: test case = 1, rst = 0, start = 0
+Cycle 29, Array 0 done = 0
+Cycle 29, Array 1 done = 0
+Cycle 29, Array 2 done = 0
+Cycle 29, Array 3 done = 0
+----------------------------------------
+Cycle 30: test case = 1, rst = 0, start = 0
+Cycle 30, Array 0 done = 0
+Cycle 30, Array 1 done = 0
+Cycle 30, Array 2 done = 0
+Cycle 30, Array 3 done = 0
+----------------------------------------
+Cycle 31: test case = 1, rst = 0, start = 0
+Cycle 31, Array 0 done = 0
+Cycle 31, Array 1 done = 0
+Cycle 31, Array 2 done = 0
+Cycle 31, Array 3 done = 0
+----------------------------------------
+Cycle 32: test case = 1, rst = 0, start = 0
+Cycle 32, Array 0 done = 0
+Cycle 32, Array 1 done = 0
+Cycle 32, Array 2 done = 0
+Cycle 32, Array 3 done = 0
+----------------------------------------
+Cycle 33: test case = 1, rst = 0, start = 0
+Cycle 33, Array 0 done = 0
+Cycle 33, Array 1 done = 0
+Cycle 33, Array 2 done = 0
+Cycle 33, Array 3 done = 0
+----------------------------------------
+Cycle 34: test case = 1, rst = 0, start = 0
+Cycle 34, Array 0 done = 0
+Cycle 34, Array 1 done = 0
+Cycle 34, Array 2 done = 0
+Cycle 34, Array 3 done = 0
+----------------------------------------
+Cycle 35: test case = 1, rst = 0, start = 0
+Cycle 35, Array 0 done = 0
+Cycle 35, Array 1 done = 0
+Cycle 35, Array 2 done = 0
+Cycle 35, Array 3 done = 0
+----------------------------------------
+Cycle 36: test case = 1, rst = 0, start = 0
+Cycle 36, Array 0 done = 0
+Cycle 36, Array 1 done = 0
+Cycle 36, Array 2 done = 0
+Cycle 36, Array 3 done = 0
+----------------------------------------
+Cycle 37: test case = 1, rst = 0, start = 0
+Cycle 37, Array 0 done = 0
+Cycle 37, Array 1 done = 0
+Cycle 37, Array 2 done = 0
+Cycle 37, Array 3 done = 0
+----------------------------------------
+Cycle 38: test case = 1, rst = 0, start = 0
+Cycle 38, Array 0 done = 0
+Cycle 38, Array 1 done = 0
+Cycle 38, Array 2 done = 0
+Cycle 38, Array 3 done = 0
+----------------------------------------
+Cycle 39: test case = 1, rst = 0, start = 0
+Cycle 39, Array 0 done = 0
+Cycle 39, Array 1 done = 0
+Cycle 39, Array 2 done = 0
+Cycle 39, Array 3 done = 0
+----------------------------------------
+Cycle 40: test case = 1, rst = 0, start = 0
+Cycle 40: Starting Average Pooling test
+Cycle 40, Array 0 done = 0
+Cycle 40, Array 1 done = 0
+Cycle 40, Array 2 done = 0
+Cycle 40, Array 3 done = 0
+----------------------------------------
+Cycle 41: test case = 1, rst = 0, start = 1
+Cycle 41, Array 0 done = 0
+Cycle 41, Array 1 done = 0
+Cycle 41, Array 2 done = 0
+Cycle 41, Array 3 done = 0
+----------------------------------------
+Cycle 42: test case = 1, rst = 0, start = 1
+Cycle 42, Array 0 done = 0
+Cycle 42, Array 1 done = 0
+Cycle 42, Array 2 done = 0
+Cycle 42, Array 3 done = 0
+----------------------------------------
+Cycle 43: test case = 1, rst = 0, start = 1
+Cycle 43, Array 0 done = 0
+Cycle 43, Array 1 done = 0
+Cycle 43, Array 2 done = 0
+Cycle 43, Array 3 done = 0
+----------------------------------------
+Cycle 44: test case = 1, rst = 0, start = 1
+Cycle 44, Array 0 done = 1
+Array 0 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 44, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 44, Array 2 done = 1
+Array 2 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 5.33333 0 
+Cycle 44, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 5.33333 0 0 
+0 0 0 0 
+0 0 0 0 
+----------------------------------------
+Cycle 45: test case = 1, rst = 0, start = 1
+Cycle 45: Deasserting start for Avg Pooling
+Cycle 45, Array 0 done = 0
+Cycle 45, Array 1 done = 0
+Cycle 45, Array 2 done = 0
+Cycle 45, Array 3 done = 0
+----------------------------------------
+Cycle 46: test case = 1, rst = 0, start = 0
+Cycle 46, Array 0 done = 0
+Cycle 46, Array 1 done = 0
+Cycle 46, Array 2 done = 0
+Cycle 46, Array 3 done = 0
+----------------------------------------
+Cycle 47: test case = 1, rst = 0, start = 0
+Cycle 47, Array 0 done = 0
+Cycle 47, Array 1 done = 0
+Cycle 47, Array 2 done = 0
+Cycle 47, Array 3 done = 0
+----------------------------------------
+Cycle 48: test case = 1, rst = 0, start = 0
+Cycle 48, Array 0 done = 0
+Cycle 48, Array 1 done = 0
+Cycle 48, Array 2 done = 0
+Cycle 48, Array 3 done = 0
+----------------------------------------
+Cycle 49: test case = 1, rst = 0, start = 0
+Cycle 49, Array 0 done = 0
+Cycle 49, Array 1 done = 0
+Cycle 49, Array 2 done = 0
+Cycle 49, Array 3 done = 0
+----------------------------------------
+Cycle 50: test case = 1, rst = 0, start = 0
+Cycle 50, Array 0 done = 0
+Cycle 50, Array 1 done = 0
+Cycle 50, Array 2 done = 0
+Cycle 50, Array 3 done = 0
+----------------------------------------
+Cycle 51: test case = 1, rst = 0, start = 0
+Cycle 51, Array 0 done = 0
+Cycle 51, Array 1 done = 0
+Cycle 51, Array 2 done = 0
+Cycle 51, Array 3 done = 0
+----------------------------------------
+Cycle 52: test case = 1, rst = 0, start = 0
+Cycle 52, Array 0 done = 0
+Cycle 52, Array 1 done = 0
+Cycle 52, Array 2 done = 0
+Cycle 52, Array 3 done = 0
+----------------------------------------
+Cycle 53: test case = 1, rst = 0, start = 0
+Cycle 53, Array 0 done = 0
+Cycle 53, Array 1 done = 0
+Cycle 53, Array 2 done = 0
+Cycle 53, Array 3 done = 0
+----------------------------------------
+Cycle 54: test case = 1, rst = 0, start = 0
+Cycle 54, Array 0 done = 0
+Cycle 54, Array 1 done = 0
+Cycle 54, Array 2 done = 0
+Cycle 54, Array 3 done = 0
+----------------------------------------
+Cycle 55: test case = 1, rst = 0, start = 0
+Mismatch in Avg Pooling, Array 0: Expected 5, Got 0
+Mismatch in Avg Pooling, Array 1: Expected 5, Got 0
+Mismatch in Avg Pooling, Array 2: Expected 5, Got 0
+Mismatch in Avg Pooling, Array 3: Expected 5, Got 0
+Average Pooling test FAILED!
+Cycle 55, Array 0 done = 0
+Cycle 55, Array 1 done = 0
+Cycle 55, Array 2 done = 0
+Cycle 55, Array 3 done = 0
+----------------------------------------
+Cycle 56: test case = 2, rst = 0, start = 0
+Cycle 56, Array 0 done = 0
+Cycle 56, Array 1 done = 0
+Cycle 56, Array 2 done = 0
+Cycle 56, Array 3 done = 0
+----------------------------------------
+Cycle 57: test case = 2, rst = 0, start = 0
+Cycle 57, Array 0 done = 0
+Cycle 57, Array 1 done = 0
+Cycle 57, Array 2 done = 0
+Cycle 57, Array 3 done = 0
+----------------------------------------
+Cycle 58: test case = 2, rst = 0, start = 0
+Cycle 58, Array 0 done = 0
+Cycle 58, Array 1 done = 0
+Cycle 58, Array 2 done = 0
+Cycle 58, Array 3 done = 0
+----------------------------------------
+Cycle 59: test case = 2, rst = 0, start = 0
+Cycle 59, Array 0 done = 0
+Cycle 59, Array 1 done = 0
+Cycle 59, Array 2 done = 0
+Cycle 59, Array 3 done = 0
+----------------------------------------
+Cycle 60: test case = 2, rst = 0, start = 0
+Cycle 60, Array 0 done = 0
+Cycle 60, Array 1 done = 0
+Cycle 60, Array 2 done = 0
+Cycle 60, Array 3 done = 0
+----------------------------------------
+Cycle 61: test case = 2, rst = 0, start = 0
+Cycle 61, Array 0 done = 0
+Cycle 61, Array 1 done = 0
+Cycle 61, Array 2 done = 0
+Cycle 61, Array 3 done = 0
+----------------------------------------
+Cycle 62: test case = 2, rst = 0, start = 0
+Cycle 62, Array 0 done = 0
+Cycle 62, Array 1 done = 0
+Cycle 62, Array 2 done = 0
+Cycle 62, Array 3 done = 0
+----------------------------------------
+Cycle 63: test case = 2, rst = 0, start = 0
+Cycle 63, Array 0 done = 0
+Cycle 63, Array 1 done = 0
+Cycle 63, Array 2 done = 0
+Cycle 63, Array 3 done = 0
+----------------------------------------
+Cycle 64: test case = 2, rst = 0, start = 0
+Cycle 64, Array 0 done = 0
+Cycle 64, Array 1 done = 0
+Cycle 64, Array 2 done = 0
+Cycle 64, Array 3 done = 0
+----------------------------------------
+Cycle 65: test case = 2, rst = 0, start = 0
+Cycle 65, Array 0 done = 0
+Cycle 65, Array 1 done = 0
+Cycle 65, Array 2 done = 0
+Cycle 65, Array 3 done = 0
+----------------------------------------
+Cycle 66: test case = 2, rst = 0, start = 0
+Cycle 66, Array 0 done = 0
+Cycle 66, Array 1 done = 0
+Cycle 66, Array 2 done = 0
+Cycle 66, Array 3 done = 0
+----------------------------------------
+Cycle 67: test case = 2, rst = 0, start = 0
+Cycle 67, Array 0 done = 0
+Cycle 67, Array 1 done = 0
+Cycle 67, Array 2 done = 0
+Cycle 67, Array 3 done = 0
+----------------------------------------
+Cycle 68: test case = 2, rst = 0, start = 0
+Cycle 68, Array 0 done = 0
+Cycle 68, Array 1 done = 0
+Cycle 68, Array 2 done = 0
+Cycle 68, Array 3 done = 0
+----------------------------------------
+Cycle 69: test case = 2, rst = 0, start = 0
+Cycle 69, Array 0 done = 0
+Cycle 69, Array 1 done = 0
+Cycle 69, Array 2 done = 0
+Cycle 69, Array 3 done = 0
+----------------------------------------
+Cycle 70: test case = 2, rst = 0, start = 0
+Cycle 70: Starting Max Pooling test
+Cycle 70, Array 0 done = 0
+Cycle 70, Array 1 done = 0
+Cycle 70, Array 2 done = 0
+Cycle 70, Array 3 done = 0
+----------------------------------------
+Cycle 71: test case = 2, rst = 0, start = 1
+Cycle 71, Array 0 done = 0
+Cycle 71, Array 1 done = 0
+Cycle 71, Array 2 done = 0
+Cycle 71, Array 3 done = 0
+----------------------------------------
+Cycle 72: test case = 2, rst = 0, start = 1
+Cycle 72, Array 0 done = 0
+Cycle 72, Array 1 done = 0
+Cycle 72, Array 2 done = 0
+Cycle 72, Array 3 done = 0
+----------------------------------------
+Cycle 73: test case = 2, rst = 0, start = 1
+Cycle 73, Array 0 done = 0
+Cycle 73, Array 1 done = 0
+Cycle 73, Array 2 done = 0
+Cycle 73, Array 3 done = 0
+----------------------------------------
+Cycle 74: test case = 2, rst = 0, start = 1
+Cycle 74, Array 0 done = 1
+Array 0 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 74, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 74, Array 2 done = 1
+Array 2 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 7 0 
+Cycle 74, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 7 0 0 
+0 0 0 0 
+0 0 0 0 
+----------------------------------------
+Cycle 75: test case = 2, rst = 0, start = 1
+Cycle 75: Deasserting start for Max Pooling test
+Cycle 75, Array 0 done = 0
+Cycle 75, Array 1 done = 0
+Cycle 75, Array 2 done = 0
+Cycle 75, Array 3 done = 0
+----------------------------------------
+Cycle 76: test case = 2, rst = 0, start = 0
+Cycle 76, Array 0 done = 0
+Cycle 76, Array 1 done = 0
+Cycle 76, Array 2 done = 0
+Cycle 76, Array 3 done = 0
+----------------------------------------
+Cycle 77: test case = 2, rst = 0, start = 0
+Cycle 77, Array 0 done = 0
+Cycle 77, Array 1 done = 0
+Cycle 77, Array 2 done = 0
+Cycle 77, Array 3 done = 0
+----------------------------------------
+Cycle 78: test case = 2, rst = 0, start = 0
+Cycle 78, Array 0 done = 0
+Cycle 78, Array 1 done = 0
+Cycle 78, Array 2 done = 0
+Cycle 78, Array 3 done = 0
+----------------------------------------
+Cycle 79: test case = 2, rst = 0, start = 0
+Cycle 79, Array 0 done = 0
+Cycle 79, Array 1 done = 0
+Cycle 79, Array 2 done = 0
+Cycle 79, Array 3 done = 0
+----------------------------------------
+Cycle 80: test case = 2, rst = 0, start = 0
+Cycle 80, Array 0 done = 0
+Cycle 80, Array 1 done = 0
+Cycle 80, Array 2 done = 0
+Cycle 80, Array 3 done = 0
+----------------------------------------
+Cycle 81: test case = 2, rst = 0, start = 0
+Cycle 81, Array 0 done = 0
+Cycle 81, Array 1 done = 0
+Cycle 81, Array 2 done = 0
+Cycle 81, Array 3 done = 0
+----------------------------------------
+Cycle 82: test case = 2, rst = 0, start = 0
+Cycle 82, Array 0 done = 0
+Cycle 82, Array 1 done = 0
+Cycle 82, Array 2 done = 0
+Cycle 82, Array 3 done = 0
+----------------------------------------
+Cycle 83: test case = 2, rst = 0, start = 0
+Cycle 83, Array 0 done = 0
+Cycle 83, Array 1 done = 0
+Cycle 83, Array 2 done = 0
+Cycle 83, Array 3 done = 0
+----------------------------------------
+Cycle 84: test case = 2, rst = 0, start = 0
+Cycle 84, Array 0 done = 0
+Cycle 84, Array 1 done = 0
+Cycle 84, Array 2 done = 0
+Cycle 84, Array 3 done = 0
+----------------------------------------
+Cycle 85: test case = 2, rst = 0, start = 0
+Mismatch in Max Pooling, Array 0: Expected 9, Got 0
+Mismatch in Max Pooling, Array 1: Expected 9, Got 0
+Mismatch in Max Pooling, Array 2: Expected 9, Got 0
+Mismatch in Max Pooling, Array 3: Expected 9, Got 0
+Max Pooling test FAILED!
+Cycle 85, Array 0 done = 0
+Cycle 85, Array 1 done = 0
+Cycle 85, Array 2 done = 0
+Cycle 85, Array 3 done = 0
+----------------------------------------
+Cycle 86: test case = 3, rst = 0, start = 0
+Cycle 86, Array 0 done = 0
+Cycle 86, Array 1 done = 0
+Cycle 86, Array 2 done = 0
+Cycle 86, Array 3 done = 0
+----------------------------------------
+Cycle 87: test case = 3, rst = 0, start = 0
+Cycle 87, Array 0 done = 0
+Cycle 87, Array 1 done = 0
+Cycle 87, Array 2 done = 0
+Cycle 87, Array 3 done = 0
+----------------------------------------
+Cycle 88: test case = 3, rst = 0, start = 0
+Cycle 88, Array 0 done = 0
+Cycle 88, Array 1 done = 0
+Cycle 88, Array 2 done = 0
+Cycle 88, Array 3 done = 0
+----------------------------------------
+Cycle 89: test case = 3, rst = 0, start = 0
+Cycle 89, Array 0 done = 0
+Cycle 89, Array 1 done = 0
+Cycle 89, Array 2 done = 0
+Cycle 89, Array 3 done = 0
+----------------------------------------
+Cycle 90: test case = 3, rst = 0, start = 0
+Cycle 90: Starting Min Pooling test
+Cycle 90, Array 0 done = 0
+Cycle 90, Array 1 done = 0
+Cycle 90, Array 2 done = 0
+Cycle 90, Array 3 done = 0
+----------------------------------------
+Cycle 91: test case = 3, rst = 0, start = 1
+Cycle 91, Array 0 done = 0
+Cycle 91, Array 1 done = 0
+Cycle 91, Array 2 done = 0
+Cycle 91, Array 3 done = 0
+----------------------------------------
+Cycle 92: test case = 3, rst = 0, start = 1
+Cycle 92, Array 0 done = 0
+Cycle 92, Array 1 done = 0
+Cycle 92, Array 2 done = 0
+Cycle 92, Array 3 done = 0
+----------------------------------------
+Cycle 93: test case = 3, rst = 0, start = 1
+Cycle 93, Array 0 done = 0
+Cycle 93, Array 1 done = 0
+Cycle 93, Array 2 done = 0
+Cycle 93, Array 3 done = 0
+----------------------------------------
+Cycle 94: test case = 3, rst = 0, start = 1
+Cycle 94, Array 0 done = 1
+Array 0 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 94, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 94, Array 2 done = 1
+Array 2 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 94, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+----------------------------------------
+Cycle 95: test case = 3, rst = 0, start = 1
+Cycle 95: Deasserting start for Min Pooling test
+Cycle 95, Array 0 done = 0
+Cycle 95, Array 1 done = 0
+Cycle 95, Array 2 done = 0
+Cycle 95, Array 3 done = 0
+----------------------------------------
+Cycle 96: test case = 3, rst = 0, start = 0
+Cycle 96, Array 0 done = 0
+Cycle 96, Array 1 done = 0
+Cycle 96, Array 2 done = 0
+Cycle 96, Array 3 done = 0
+----------------------------------------
+Cycle 97: test case = 3, rst = 0, start = 0
+Cycle 97, Array 0 done = 0
+Cycle 97, Array 1 done = 0
+Cycle 97, Array 2 done = 0
+Cycle 97, Array 3 done = 0
+----------------------------------------
+Cycle 98: test case = 3, rst = 0, start = 0
+Cycle 98, Array 0 done = 0
+Cycle 98, Array 1 done = 0
+Cycle 98, Array 2 done = 0
+Cycle 98, Array 3 done = 0
+----------------------------------------
+Cycle 99: test case = 3, rst = 0, start = 0
+Cycle 99, Array 0 done = 0
+Cycle 99, Array 1 done = 0
+Cycle 99, Array 2 done = 0
+Cycle 99, Array 3 done = 0
+----------------------------------------
+Cycle 100: test case = 3, rst = 0, start = 0
+Cycle 100, Array 0 done = 0
+Cycle 100, Array 1 done = 0
+Cycle 100, Array 2 done = 0
+Cycle 100, Array 3 done = 0
+----------------------------------------
+Cycle 101: test case = 3, rst = 0, start = 0
+Cycle 101, Array 0 done = 0
+Cycle 101, Array 1 done = 0
+Cycle 101, Array 2 done = 0
+Cycle 101, Array 3 done = 0
+----------------------------------------
+Cycle 102: test case = 3, rst = 0, start = 0
+Cycle 102, Array 0 done = 0
+Cycle 102, Array 1 done = 0
+Cycle 102, Array 2 done = 0
+Cycle 102, Array 3 done = 0
+----------------------------------------
+Cycle 103: test case = 3, rst = 0, start = 0
+Cycle 103, Array 0 done = 0
+Cycle 103, Array 1 done = 0
+Cycle 103, Array 2 done = 0
+Cycle 103, Array 3 done = 0
+----------------------------------------
+Cycle 104: test case = 3, rst = 0, start = 0
+Cycle 104, Array 0 done = 0
+Cycle 104, Array 1 done = 0
+Cycle 104, Array 2 done = 0
+Cycle 104, Array 3 done = 0
+----------------------------------------
+Cycle 105: test case = 3, rst = 0, start = 0
+Min Pooling test PASSED!
+Cycle 105, Array 0 done = 0
+Cycle 105, Array 1 done = 0
+Cycle 105, Array 2 done = 0
+Cycle 105, Array 3 done = 0
+----------------------------------------
+Cycle 106: test case = 4, rst = 0, start = 0
+Cycle 106, Array 0 done = 0
+Cycle 106, Array 1 done = 0
+Cycle 106, Array 2 done = 0
+Cycle 106, Array 3 done = 0
+----------------------------------------
+Cycle 107: test case = 4, rst = 0, start = 0
+Cycle 107, Array 0 done = 0
+Cycle 107, Array 1 done = 0
+Cycle 107, Array 2 done = 0
+Cycle 107, Array 3 done = 0
+----------------------------------------
+Cycle 108: test case = 4, rst = 0, start = 0
+Cycle 108, Array 0 done = 0
+Cycle 108, Array 1 done = 0
+Cycle 108, Array 2 done = 0
+Cycle 108, Array 3 done = 0
+----------------------------------------
+Cycle 109: test case = 4, rst = 0, start = 0
+Cycle 109, Array 0 done = 0
+Cycle 109, Array 1 done = 0
+Cycle 109, Array 2 done = 0
+Cycle 109, Array 3 done = 0
+----------------------------------------
+Cycle 110: test case = 4, rst = 0, start = 0
+Cycle 110, Array 0 done = 0
+Cycle 110, Array 1 done = 0
+Cycle 110, Array 2 done = 0
+Cycle 110, Array 3 done = 0
+----------------------------------------
+Cycle 111: test case = 4, rst = 0, start = 0
+Cycle 111, Array 0 done = 0
+Cycle 111, Array 1 done = 0
+Cycle 111, Array 2 done = 0
+Cycle 111, Array 3 done = 0
+----------------------------------------
+Cycle 112: test case = 4, rst = 0, start = 0
+Cycle 112, Array 0 done = 0
+Cycle 112, Array 1 done = 0
+Cycle 112, Array 2 done = 0
+Cycle 112, Array 3 done = 0
+----------------------------------------
+Cycle 113: test case = 4, rst = 0, start = 0
+Cycle 113, Array 0 done = 0
+Cycle 113, Array 1 done = 0
+Cycle 113, Array 2 done = 0
+Cycle 113, Array 3 done = 0
+----------------------------------------
+Cycle 114: test case = 4, rst = 0, start = 0
+Cycle 114, Array 0 done = 0
+Cycle 114, Array 1 done = 0
+Cycle 114, Array 2 done = 0
+Cycle 114, Array 3 done = 0
+----------------------------------------
+Cycle 115: test case = 4, rst = 0, start = 0
+Cycle 115, Array 0 done = 0
+Cycle 115, Array 1 done = 0
+Cycle 115, Array 2 done = 0
+Cycle 115, Array 3 done = 0
+----------------------------------------
+Cycle 116: test case = 4, rst = 0, start = 0
+Cycle 116, Array 0 done = 0
+Cycle 116, Array 1 done = 0
+Cycle 116, Array 2 done = 0
+Cycle 116, Array 3 done = 0
+----------------------------------------
+Cycle 117: test case = 4, rst = 0, start = 0
+Cycle 117, Array 0 done = 0
+Cycle 117, Array 1 done = 0
+Cycle 117, Array 2 done = 0
+Cycle 117, Array 3 done = 0
+----------------------------------------
+Cycle 118: test case = 4, rst = 0, start = 0
+Cycle 118, Array 0 done = 0
+Cycle 118, Array 1 done = 0
+Cycle 118, Array 2 done = 0
+Cycle 118, Array 3 done = 0
+----------------------------------------
+Cycle 119: test case = 4, rst = 0, start = 0
+Cycle 119, Array 0 done = 0
+Cycle 119, Array 1 done = 0
+Cycle 119, Array 2 done = 0
+Cycle 119, Array 3 done = 0
+----------------------------------------
+Cycle 120: test case = 4, rst = 0, start = 0
+Cycle 120: Starting SGD test
+Cycle 120, Array 0 done = 0
+Cycle 120, Array 1 done = 0
+Cycle 120, Array 2 done = 0
+Cycle 120, Array 3 done = 0
+----------------------------------------
+Cycle 121: test case = 4, rst = 0, start = 1
+Cycle 121, Array 0 done = 0
+Cycle 121, Array 1 done = 0
+Cycle 121, Array 2 done = 0
+Cycle 121, Array 3 done = 0
+----------------------------------------
+Cycle 122: test case = 4, rst = 0, start = 1
+Cycle 122, Array 0 done = 0
+Cycle 122, Array 1 done = 0
+Cycle 122, Array 2 done = 0
+Cycle 122, Array 3 done = 0
+----------------------------------------
+Cycle 123: test case = 4, rst = 0, start = 1
+Cycle 123, Array 0 done = 0
+Cycle 123, Array 1 done = 0
+Cycle 123, Array 2 done = 0
+Cycle 123, Array 3 done = 0
+----------------------------------------
+Cycle 124: test case = 4, rst = 0, start = 1
+Cycle 124, Array 0 done = 1
+Array 0 Output C:
+9.98 9.98 9.98 9.98 
+9.98 9.98 9.98 9.98 
+9.98 0 0 0 
+0 0 0 0 
+Cycle 124, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 9.98 
+9.98 9.98 9.98 9.98 
+9.98 9.98 9.98 9.98 
+Cycle 124, Array 2 done = 1
+Array 2 Output C:
+9.98 9.98 9.98 9.98 
+9.98 9.98 9.98 0 
+0 0 0 0 
+0 0 9.98 9.98 
+Cycle 124, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 9.98 9.98 9.98 
+9.98 0.990001 0.990001 0.990001 
+0.990001 0.990001 0 0 
+----------------------------------------
+Cycle 125: test case = 4, rst = 0, start = 1
+Cycle 125: Deasserting start for SGD test
+Cycle 125, Array 0 done = 0
+Cycle 125, Array 1 done = 0
+Cycle 125, Array 2 done = 0
+Cycle 125, Array 3 done = 0
+----------------------------------------
+Cycle 126: test case = 4, rst = 0, start = 0
+Cycle 126, Array 0 done = 0
+Cycle 126, Array 1 done = 0
+Cycle 126, Array 2 done = 0
+Cycle 126, Array 3 done = 0
+----------------------------------------
+Cycle 127: test case = 4, rst = 0, start = 0
+Cycle 127, Array 0 done = 0
+Cycle 127, Array 1 done = 0
+Cycle 127, Array 2 done = 0
+Cycle 127, Array 3 done = 0
+----------------------------------------
+Cycle 128: test case = 4, rst = 0, start = 0
+Cycle 128, Array 0 done = 0
+Cycle 128, Array 1 done = 0
+Cycle 128, Array 2 done = 0
+Cycle 128, Array 3 done = 0
+----------------------------------------
+Cycle 129: test case = 4, rst = 0, start = 0
+Cycle 129, Array 0 done = 0
+Cycle 129, Array 1 done = 0
+Cycle 129, Array 2 done = 0
+Cycle 129, Array 3 done = 0
+----------------------------------------
+Cycle 130: test case = 4, rst = 0, start = 0
+Cycle 130, Array 0 done = 0
+Cycle 130, Array 1 done = 0
+Cycle 130, Array 2 done = 0
+Cycle 130, Array 3 done = 0
+----------------------------------------
+Cycle 131: test case = 4, rst = 0, start = 0
+Cycle 131, Array 0 done = 0
+Cycle 131, Array 1 done = 0
+Cycle 131, Array 2 done = 0
+Cycle 131, Array 3 done = 0
+----------------------------------------
+Cycle 132: test case = 4, rst = 0, start = 0
+Cycle 132, Array 0 done = 0
+Cycle 132, Array 1 done = 0
+Cycle 132, Array 2 done = 0
+Cycle 132, Array 3 done = 0
+----------------------------------------
+Cycle 133: test case = 4, rst = 0, start = 0
+Cycle 133, Array 0 done = 0
+Cycle 133, Array 1 done = 0
+Cycle 133, Array 2 done = 0
+Cycle 133, Array 3 done = 0
+----------------------------------------
+Cycle 134: test case = 4, rst = 0, start = 0
+Cycle 134, Array 0 done = 0
+Cycle 134, Array 1 done = 0
+Cycle 134, Array 2 done = 0
+Cycle 134, Array 3 done = 0
+----------------------------------------
+Cycle 135: test case = 4, rst = 0, start = 0
+Mismatch in SGD, Array 1 Element 0: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 1: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 2: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 3: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 4: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 5: Expected 9.98, Got 0
+Mismatch in SGD, Array 1 Element 6: Expected 9.98, Got 0
+Mismatch in SGD, Array 2 Element 7: Expected 9.98, Got 0
+Mismatch in SGD, Array 2 Element 8: Expected 9.98, Got 0
+Mismatch in SGD, Array 3 Element 0: Expected 9.98, Got 0
+Mismatch in SGD, Array 3 Element 1: Expected 9.98, Got 0
+Mismatch in SGD, Array 3 Element 2: Expected 9.98, Got 0
+Mismatch in SGD, Array 3 Element 3: Expected 9.98, Got 0
+Mismatch in SGD, Array 3 Element 4: Expected 9.98, Got 0
+SGD test FAILED!
+Cycle 135, Array 0 done = 0
+Cycle 135, Array 1 done = 0
+Cycle 135, Array 2 done = 0
+Cycle 135, Array 3 done = 0
+----------------------------------------
+Cycle 136: test case = 5, rst = 0, start = 0
+Cycle 136, Array 0 done = 0
+Cycle 136, Array 1 done = 0
+Cycle 136, Array 2 done = 0
+Cycle 136, Array 3 done = 0
+----------------------------------------
+Cycle 137: test case = 5, rst = 0, start = 0
+Cycle 137, Array 0 done = 0
+Cycle 137, Array 1 done = 0
+Cycle 137, Array 2 done = 0
+Cycle 137, Array 3 done = 0
+----------------------------------------
+Cycle 138: test case = 5, rst = 0, start = 0
+Cycle 138, Array 0 done = 0
+Cycle 138, Array 1 done = 0
+Cycle 138, Array 2 done = 0
+Cycle 138, Array 3 done = 0
+----------------------------------------
+Cycle 139: test case = 5, rst = 0, start = 0
+Cycle 139, Array 0 done = 0
+Cycle 139, Array 1 done = 0
+Cycle 139, Array 2 done = 0
+Cycle 139, Array 3 done = 0
+----------------------------------------
+Cycle 140: test case = 5, rst = 0, start = 0
+Cycle 140, Array 0 done = 0
+Cycle 140, Array 1 done = 0
+Cycle 140, Array 2 done = 0
+Cycle 140, Array 3 done = 0
+----------------------------------------
+Cycle 141: test case = 5, rst = 0, start = 0
+Cycle 141, Array 0 done = 0
+Cycle 141, Array 1 done = 0
+Cycle 141, Array 2 done = 0
+Cycle 141, Array 3 done = 0
+----------------------------------------
+Cycle 142: test case = 5, rst = 0, start = 0
+Cycle 142, Array 0 done = 0
+Cycle 142, Array 1 done = 0
+Cycle 142, Array 2 done = 0
+Cycle 142, Array 3 done = 0
+----------------------------------------
+Cycle 143: test case = 5, rst = 0, start = 0
+Cycle 143, Array 0 done = 0
+Cycle 143, Array 1 done = 0
+Cycle 143, Array 2 done = 0
+Cycle 143, Array 3 done = 0
+----------------------------------------
+Cycle 144: test case = 5, rst = 0, start = 0
+Cycle 144, Array 0 done = 0
+Cycle 144, Array 1 done = 0
+Cycle 144, Array 2 done = 0
+Cycle 144, Array 3 done = 0
+----------------------------------------
+Cycle 145: test case = 5, rst = 0, start = 0
+Cycle 145, Array 0 done = 0
+Cycle 145, Array 1 done = 0
+Cycle 145, Array 2 done = 0
+Cycle 145, Array 3 done = 0
+----------------------------------------
+Cycle 146: test case = 5, rst = 0, start = 0
+Cycle 146, Array 0 done = 0
+Cycle 146, Array 1 done = 0
+Cycle 146, Array 2 done = 0
+Cycle 146, Array 3 done = 0
+----------------------------------------
+Cycle 147: test case = 5, rst = 0, start = 0
+Cycle 147, Array 0 done = 0
+Cycle 147, Array 1 done = 0
+Cycle 147, Array 2 done = 0
+Cycle 147, Array 3 done = 0
+----------------------------------------
+Cycle 148: test case = 5, rst = 0, start = 0
+Cycle 148, Array 0 done = 0
+Cycle 148, Array 1 done = 0
+Cycle 148, Array 2 done = 0
+Cycle 148, Array 3 done = 0
+----------------------------------------
+Cycle 149: test case = 5, rst = 0, start = 0
+Cycle 149, Array 0 done = 0
+Cycle 149, Array 1 done = 0
+Cycle 149, Array 2 done = 0
+Cycle 149, Array 3 done = 0
+----------------------------------------
+Cycle 150: test case = 5, rst = 0, start = 0
+Cycle 150: Starting Compute Loss test
+Cycle 150, Array 0 done = 0
+Cycle 150, Array 1 done = 0
+Cycle 150, Array 2 done = 0
+Cycle 150, Array 3 done = 0
+----------------------------------------
+Cycle 151: test case = 5, rst = 0, start = 1
+Cycle 151, Array 0 done = 0
+Cycle 151, Array 1 done = 0
+Cycle 151, Array 2 done = 0
+Cycle 151, Array 3 done = 0
+----------------------------------------
+Cycle 152: test case = 5, rst = 0, start = 1
+Cycle 152, Array 0 done = 0
+Cycle 152, Array 1 done = 0
+Cycle 152, Array 2 done = 0
+Cycle 152, Array 3 done = 0
+----------------------------------------
+Cycle 153: test case = 5, rst = 0, start = 1
+Cycle 153, Array 0 done = 0
+Cycle 153, Array 1 done = 0
+Cycle 153, Array 2 done = 0
+Cycle 153, Array 3 done = 0
+----------------------------------------
+Cycle 154: test case = 5, rst = 0, start = 1
+Cycle 154, Array 0 done = 1
+Array 0 Output C:
+31.6667 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+Cycle 154, Array 1 done = 1
+Array 1 Output C:
+0 0 0 0 
+0 0 0 31.6667 
+0 0 0 0 
+0 0 0 0 
+Cycle 154, Array 2 done = 1
+Array 2 Output C:
+0 0 0 0 
+0 0 0 0 
+0 0 0 0 
+0 0 25.5556 0 
+Cycle 154, Array 3 done = 1
+Array 3 Output C:
+0 0 0 0 
+0 25.5556 0 0 
+0 0 0 0 
+0 0 0 0 
+----------------------------------------
+Cycle 155: test case = 5, rst = 0, start = 1
+Cycle 155: Deasserting start for Compute Loss test
+Cycle 155, Array 0 done = 0
+Cycle 155, Array 1 done = 0
+Cycle 155, Array 2 done = 0
+Cycle 155, Array 3 done = 0
+----------------------------------------
+Cycle 156: test case = 5, rst = 0, start = 0
+Cycle 156, Array 0 done = 0
+Cycle 156, Array 1 done = 0
+Cycle 156, Array 2 done = 0
+Cycle 156, Array 3 done = 0
+----------------------------------------
+Cycle 157: test case = 5, rst = 0, start = 0
+Cycle 157, Array 0 done = 0
+Cycle 157, Array 1 done = 0
+Cycle 157, Array 2 done = 0
+Cycle 157, Array 3 done = 0
+----------------------------------------
+Cycle 158: test case = 5, rst = 0, start = 0
+Cycle 158, Array 0 done = 0
+Cycle 158, Array 1 done = 0
+Cycle 158, Array 2 done = 0
+Cycle 158, Array 3 done = 0
+----------------------------------------
+Cycle 159: test case = 5, rst = 0, start = 0
+Cycle 159, Array 0 done = 0
+Cycle 159, Array 1 done = 0
+Cycle 159, Array 2 done = 0
+Cycle 159, Array 3 done = 0
+----------------------------------------
+Cycle 160: test case = 5, rst = 0, start = 0
+Cycle 160, Array 0 done = 0
+Cycle 160, Array 1 done = 0
+Cycle 160, Array 2 done = 0
+Cycle 160, Array 3 done = 0
+----------------------------------------
+Cycle 161: test case = 5, rst = 0, start = 0
+Cycle 161, Array 0 done = 0
+Cycle 161, Array 1 done = 0
+Cycle 161, Array 2 done = 0
+Cycle 161, Array 3 done = 0
+----------------------------------------
+Cycle 162: test case = 5, rst = 0, start = 0
+Cycle 162, Array 0 done = 0
+Cycle 162, Array 1 done = 0
+Cycle 162, Array 2 done = 0
+Cycle 162, Array 3 done = 0
+----------------------------------------
+Cycle 163: test case = 5, rst = 0, start = 0
+Cycle 163, Array 0 done = 0
+Cycle 163, Array 1 done = 0
+Cycle 163, Array 2 done = 0
+Cycle 163, Array 3 done = 0
+----------------------------------------
+Cycle 164: test case = 5, rst = 0, start = 0
+Cycle 164, Array 0 done = 0
+Cycle 164, Array 1 done = 0
+Cycle 164, Array 2 done = 0
+Cycle 164, Array 3 done = 0
+----------------------------------------
+Cycle 165: test case = 5, rst = 0, start = 0
+Mismatch in Loss, Array 1: Expected 31.6667, Got 0
+Mismatch in Loss, Array 2: Expected 31.6667, Got 0
+Mismatch in Loss, Array 3: Expected 31.6667, Got 0
+Compute Loss test FAILED!
+Cycle 165, Array 0 done = 0
+Cycle 165, Array 1 done = 0
+Cycle 165, Array 2 done = 0
+Cycle 165, Array 3 done = 0
+----------------------------------------
+All test cases completed.
+Some tests FAILED! Please check the design.
+INFO: [SIM 211-200] Analyzing trace data
+INFO: [SIM 211-208] Running Code Analyzer
+WARNING: [SIM 211-203] Code Analyzer does not display the impact of the unroll pragma for tasks (C:\fpga\simon\asic_accelerator\top_systolic_controller.cpp:23:9)
+WARNING: [HLS 211-200] Code Analyzer will not display the impact of 'pipeline' (C:\fpga\simon\experimental_accelerator:0:0) as the pipelined function is not the top-level hardware function
+INFO: [SIM 211-210] Code Analyzer finished
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 4 seconds. Total elapsed time: 82.653 seconds; peak allocated memory: 619.230 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 30s

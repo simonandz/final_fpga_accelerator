@@ -1,0 +1,11 @@
+❌ [red][bold]   489 |     UartTxState_t tx_st;
+      |                   ^~~~~
+%Warning-UNUSEDSIGNAL: overall.v:496:17: Signal is not used: 'send_count'
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  496 |     logic [5:0] send_count;
+      |                 ^~~~~~~~~~
+%Error: Internal Error: overall.v:530:31: ../V3Ast.h:2352: AstNode is not of expected type, but instead has type 'STRUCTSEL'
+  530 |                     states\[m].partial_sum\[i] <= 0;
+      |                               ^~~~~~~~~~~
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-16-58/01-verilator-lint/verilator-lint.log'

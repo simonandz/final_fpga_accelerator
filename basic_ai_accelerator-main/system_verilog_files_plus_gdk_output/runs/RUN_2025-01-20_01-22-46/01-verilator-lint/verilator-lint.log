@@ -1,0 +1,313 @@
+%Warning-UNUSEDPARAM: overall.v:77:19: Parameter is not used: 'TOTAL_ARRAY'
+                                     : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+   77 | parameter integer TOTAL_ARRAY = NUM_ARRAYS * TOTAL_3x3;  
+      |                   ^~~~~~~~~~~
+                      ... For warning description see https://verilator.org/warn/UNUSEDPARAM?v=5.018
+                      ... Use "/* verilator lint_off UNUSEDPARAM */" and lint_on around source to disable this message.
+%Warning-UNUSEDPARAM: overall.v:79:18: Parameter is not used: 'TOTAL_ARRAY_MINUS_ONE_6B'
+                                     : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+   79 | localparam [5:0] TOTAL_ARRAY_MINUS_ONE_6B = 6'd35;  
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~
+%Warning-UNUSEDSIGNAL: overall.v:135:23: Bits of signal are not used: 'shifted'[63:32]
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  135 |     reg signed [63:0] shifted;
+      |                       ^~~~~~~
+%Warning-UNUSEDSIGNAL: overall.v:146:23: Bits of signal are not used: 'quotient'[63:32]
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  146 |     reg signed [63:0] quotient;
+      |                       ^~~~~~~~
+%Warning-UNUSEDSIGNAL: overall.v:254:13: Bits of signal are not used: 'idx'[31:4]
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  254 |     integer idx, a_idx, b_idx;
+      |             ^~~
+%Warning-UNUSEDSIGNAL: overall.v:254:18: Bits of signal are not used: 'a_idx'[31:4]
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  254 |     integer idx, a_idx, b_idx;
+      |                  ^~~~~
+%Warning-UNUSEDSIGNAL: overall.v:254:25: Bits of signal are not used: 'b_idx'[31:4]
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  254 |     integer idx, a_idx, b_idx;
+      |                         ^~~~~
+%Warning-UNUSEDSIGNAL: overall.v:635:15: Signal is not used: 'tx_dummy'
+                                       : ... note: In instance 'systolic_top_uart_4parallel_q8_24'
+  635 |         logic tx_dummy;
+      |               ^~~~~~~~
+%Warning-CASEINCOMPLETE: overall.v:658:9: Case values incompletely covered (example pattern 0x5)
+  658 |         case (fsm_state)
+      |         ^~~~
+%Warning-BLKSEQ: overall.v:458:27: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  458 |                     b_bit = rx_pin;
+      |                           ^
+%Warning-BLKSEQ: overall.v:266:17: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  266 |     local_state = s_state_in;
+      |                 ^
+%Warning-BLKSEQ: overall.v:267:17: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  267 |     local_k     = s_k_in;
+      |                 ^
+%Warning-BLKSEQ: overall.v:268:17: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  268 |     local_busy  = s_busy_in;
+      |                 ^
+%Warning-BLKSEQ: overall.v:272:15: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  272 |         localC[i] = s_partial_in[((i+1)*32 - 1) -: 32];
+      |               ^
+%Warning-BLKSEQ: overall.v:277:15: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  277 |         localA[i] = A_blk[((i+1)*32 - 1) -: 32];
+      |               ^
+%Warning-BLKSEQ: overall.v:278:15: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  278 |         localB[i] = B_blk[((i+1)*32 - 1) -: 32];
+      |               ^
+%Warning-BLKSEQ: overall.v:296:32: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  296 |                     local_busy = 1'b1;
+      |                                ^
+%Warning-BLKSEQ: overall.v:298:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  298 |                         local_state = CALC;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:299:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  299 |                         local_k     = 0;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:301:35: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  301 |                             localC[i] = 0;
+      |                                   ^
+%Warning-BLKSEQ: overall.v:304:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  304 |                         local_state = FINISH;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:313:35: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  313 |                             idx   = i*N + j;
+      |                                   ^
+%Warning-BLKSEQ: overall.v:314:35: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  314 |                             a_idx = i*N + local_k;
+      |                                   ^
+%Warning-BLKSEQ: overall.v:315:35: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  315 |                             b_idx = local_k*N + j;
+      |                                   ^
+%Warning-BLKSEQ: overall.v:316:35: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  316 |                             localC[idx] = localC[idx] + q8_24_mul(localA[a_idx], localB[b_idx]);
+      |                                   ^
+%Warning-BLKSEQ: overall.v:319:29: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  319 |                     local_k = local_k + 1;
+      |                             ^
+%Warning-BLKSEQ: overall.v:321:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  321 |                         local_state = FINISH;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:329:26: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  329 |                     tempC[((i+1)*32 - 1) -: 32] = localC[i];
+      |                          ^
+%Warning-BLKSEQ: overall.v:385:28: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  385 |                         mx = tempC[31:0];
+      |                            ^
+%Warning-BLKSEQ: overall.v:388:36: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  388 |                                 mx = tempC[((i+1)*32 - 1) -: 32];
+      |                                    ^
+%Warning-BLKSEQ: overall.v:390:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  390 |                         tempC[31:0] = mx;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:392:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  392 |                             tempC[((i+1)*32 - 1) -: 32] = 0;
+      |                                  ^
+%Warning-BLKSEQ: overall.v:377:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  377 |                             sum_val = sum_val + tempC[((i+1)*32 - 1) -: 32];
+      |                                     ^
+%Warning-BLKSEQ: overall.v:148:12: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  148 |     num_64 = { {32{num[31]}}, num };
+      |            ^
+%Warning-BLKSEQ: overall.v:149:12: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  149 |     den_64 = { {32{den[31]}}, den };
+      |            ^
+%Warning-BLKSEQ: overall.v:150:12: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  150 |     num_64 = num_64 <<< 24;
+      |            ^
+%Warning-BLKSEQ: overall.v:152:18: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  152 |         quotient = 0;
+      |                  ^
+%Warning-BLKSEQ: overall.v:378:29: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  378 |                         avg = q8_24_div(sum_val, 32'd9);
+      |                             ^
+%Warning-BLKSEQ: overall.v:379:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  379 |                         tempC[31:0] = avg;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:381:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  381 |                             tempC[((i+1)*32 - 1) -: 32] = 0;
+      |                                  ^
+%Warning-BLKSEQ: overall.v:180:11: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  180 |     x_int = x >>> 24;
+      |           ^
+%Warning-BLKSEQ: overall.v:370:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  370 |                             tempC[((i+1)*32 - 1) -: 32] = q8_24_sigmoid(tempC[((i+1)*32 - 1) -: 32]);
+      |                                  ^
+%Warning-BLKSEQ: overall.v:364:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  364 |                             tempC[((i+1)*32 - 1) -: 32] =
+      |                                  ^
+%Warning-BLKSEQ: overall.v:352:28: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  352 |                         mn = tempC[31:0];
+      |                            ^
+%Warning-BLKSEQ: overall.v:355:36: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  355 |                                 mn = tempC[((i+1)*32 - 1) -: 32];
+      |                                    ^
+%Warning-BLKSEQ: overall.v:357:37: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  357 |                         tempC[31:0] = mn;
+      |                                     ^
+%Warning-BLKSEQ: overall.v:359:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  359 |                             tempC[((i+1)*32 - 1) -: 32] = 0;
+      |                                  ^
+%Warning-BLKSEQ: overall.v:346:33: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  346 |                         soft_in = tempC;
+      |                                 ^
+%Warning-BLKSEQ: overall.v:204:20: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  204 |         local_array[i] = in_arr[((i+1)*32 - 1) -: 32];
+      |                    ^
+%Warning-BLKSEQ: overall.v:121:14: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  121 |     x_int    = x >>> 24;
+      |              ^
+%Warning-BLKSEQ: overall.v:122:15: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  122 |     lut_index = x_int + 6;
+      |               ^
+%Warning-BLKSEQ: overall.v:123:36: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  123 |     if (lut_index < 0)   lut_index = 0;
+      |                                    ^
+%Warning-BLKSEQ: overall.v:124:36: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  124 |     if (lut_index > 12)  lut_index = 12;
+      |                                    ^
+%Warning-BLKSEQ: overall.v:209:13: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  209 |         tmp = q8_24_exp_fixed(local_array[i]);
+      |             ^
+%Warning-BLKSEQ: overall.v:210:20: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  210 |         local_array[i] = tmp;
+      |                    ^
+%Warning-BLKSEQ: overall.v:211:17: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  211 |         sum_val = sum_val + tmp;
+      |                 ^
+%Warning-BLKSEQ: overall.v:217:24: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  217 |             local_array[i] = q8_24_div(local_array[i], sum_val);
+      |                        ^
+%Warning-BLKSEQ: overall.v:348:31: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  348 |                         tempC = soft_out;
+      |                               ^
+%Warning-BLKSEQ: overall.v:342:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  342 |                             tempC[((i+1)*32 - 1) -: 32] = q8_24_leaky_relu(tempC[((i+1)*32 - 1) -: 32]);
+      |                                  ^
+%Warning-BLKSEQ: overall.v:338:34: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  338 |                             tempC[((i+1)*32 - 1) -: 32] = q8_24_relu(tempC[((i+1)*32 - 1) -: 32]);
+      |                                  ^
+%Warning-BLKSEQ: overall.v:400:29: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  400 |                 local_busy  = 1'b0;
+      |                             ^
+%Warning-BLKSEQ: overall.v:401:29: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  401 |                 local_state = IDLE;
+      |                             ^
+%Warning-BLKSEQ: overall.v:768:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  768 |                 states[0].state       = s0_state_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:769:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  769 |                 states[0].k           = s0_k_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:770:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  770 |                 states[0].busy        = s0_busy_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:771:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  771 |                 states[0].partial_sum = s0_ps_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:773:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  773 |                 states[1].state       = s1_state_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:774:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  774 |                 states[1].k           = s1_k_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:775:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  775 |                 states[1].busy        = s1_busy_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:776:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  776 |                 states[1].partial_sum = s1_ps_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:778:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  778 |                 states[2].state       = s2_state_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:779:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  779 |                 states[2].k           = s2_k_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:780:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  780 |                 states[2].busy        = s2_busy_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:781:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  781 |                 states[2].partial_sum = s2_ps_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:783:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  783 |                 states[3].state       = s3_state_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:784:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  784 |                 states[3].k           = s3_k_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:785:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  785 |                 states[3].busy        = s3_busy_out;
+      |                                       ^
+%Warning-BLKSEQ: overall.v:786:39: Blocking assignment '=' in sequential logic process
+                                 : ... Suggest using delayed assignment '<='
+  786 |                 states[3].partial_sum = s3_ps_out;
+      |                                       ^

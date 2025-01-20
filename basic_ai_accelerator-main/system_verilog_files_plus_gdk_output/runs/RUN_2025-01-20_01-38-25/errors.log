@@ -1,0 +1,12 @@
+❌ [red][bold]   478 | logic [5:0] load_count;
+      |             ^~~~~~~~~~
+                   overall.v:600:31: ... Location of blocking assignment
+  600 |                     load_count++;
+      |                               ^~
+                   overall.v:527:9: ... Location of nonblocking assignment
+  527 |         load_count    <= 6'd0;
+      |         ^~~~~~~~~~
+%Error: Exiting due to 1 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-20_01-38-25/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 1 Lint errors found.

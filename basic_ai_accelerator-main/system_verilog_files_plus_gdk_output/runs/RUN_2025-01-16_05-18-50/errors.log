@@ -1,0 +1,12 @@
+❌ [red][bold]   344 |             for (integer m = 0; m < NUM_ARRAYS; m = m + 1) begin
+      |                                 ^
+%Error: overall.v:348:37: syntax error, unexpected IDENTIFIER
+  348 |                 for (integer i = 0; i < TOTAL_3x3; i = i + 1) begin
+      |                                     ^
+%Error: overall.v:353:33: syntax error, unexpected IDENTIFIER
+  353 |             for (integer i = 0; i < TOTAL_ARRAY; i = i + 1) begin
+      |                                 ^
+%Error: Exiting due to 10 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-18-50/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 10 Lint errors found.

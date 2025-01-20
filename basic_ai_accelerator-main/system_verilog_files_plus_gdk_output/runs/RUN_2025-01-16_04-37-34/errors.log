@@ -1,0 +1,12 @@
+❌ [red][bold]   132 |             e_lut[ 6] = 32'd40342879349; 
+      |                         ^~~~~~~~~~~~~~~
+%Error: overall.v:133:9: syntax error, unexpected end
+  133 |         end
+      |         ^~~
+%Error: overall.v:295:33: syntax error, unexpected IDENTIFIER, expecting "'{"
+  295 |                         q8_24_t avg = q8_24_div(sum_val, 9);  
+      |                                 ^~~
+%Error: Exiting due to 8 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_04-37-34/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 8 Lint errors found.

@@ -1,0 +1,3 @@
+relativeroot=C:/fpga/simon/ultra_experimental_accelerator
+original_argv=--mode hls --csim --config C:\fpga\simon\ultra_experimental_accelerator\hls_config.cfg --work_dir ultra_experimental_accelerator 
+

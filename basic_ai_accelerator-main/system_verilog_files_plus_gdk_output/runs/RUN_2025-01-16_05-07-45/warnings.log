@@ -1,0 +1,12 @@
+❌ [red][bold]    40 |     output logic rx_out,       
+      |                  ^~~~~~
+                   overall.v:547:21: ... Location of blocking assignment
+  547 |             uart_tx(rx_out,   1'b0,   8'd0, 1'b0, tx_st);
+      |                     ^~~~~~
+                   overall.v:500:13: ... Location of nonblocking assignment
+  500 |             rx_out    <= 1'b1;
+      |             ^~~~~~
+%Error: Exiting due to 5 error(s)
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-07-45/01-verilator-lint/verilator-lint.log'
+❌ [red][bold] 5 Lint errors found.

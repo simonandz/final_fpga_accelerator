@@ -1,0 +1,245 @@
+<ENTRY>
+{
+ "thisFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\all_in_one.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "01/14/25 22:02:08",
+ "timestampMillis": "1736910128821",
+ "buildStep": {
+  "cmdId": "af9c434a-7f52-44ba-b274-85f3ce503c29",
+  "name": "v++",
+  "logFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\logs\\all_in_one.steps.log",
+  "commandLine": "C:/fpga/Vitis/2024.2/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\fpga\\simon\\all_in_one\\hls_config.cfg --work_dir all_in_one ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "C:\\fpga\\simon\\all_in_one\\hls_config.cfg",
+   "--work_dir",
+   "all_in_one"
+  ],
+  "iniFiles": [
+   {
+    "path": "C:/fpga\\simon\\all_in_one\\hls_config.cfg",
+    "content": "part=xczu2cg-sfvc784-1-e\n\n[hls]\nflow_target=vivado\npackage.output.format=ip_catalog\npackage.output.syn=false\nsyn.top=systolic_top_uart_4parallel\ncsim.code_analyzer=1\ntb.file=C:/fpga/simon/asic_accelerator/overall_tb.cpp\nsyn.file=systolic_array.cpp"
+   }
+  ],
+  "cwd": "C:\\fpga\\simon\\all_in_one"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:02:08",
+ "timestampMillis": "1736910128822",
+ "status": {
+  "cmdId": "af9c434a-7f52-44ba-b274-85f3ce503c29",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137563",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "systolic_top_uart_4parallel",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/fpga\\simon\\all_in_one\\systolic_array.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2024.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137564",
+ "buildStep": {
+  "cmdId": "e8b0af4d-b30b-4f22-a39b-7cd353ad18ae",
+  "name": "",
+  "logFile": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\fpga\\simon\\all_in_one"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137565",
+ "status": {
+  "cmdId": "e8b0af4d-b30b-4f22-a39b-7cd353ad18ae",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137565",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls\\hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137566",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls\\syn\\report\\csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:02:17",
+ "timestampMillis": "1736910137567",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls\\syn\\report\\csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184309",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184310",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184311",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184311",
+ "status": {
+  "cmdId": "e8b0af4d-b30b-4f22-a39b-7cd353ad18ae",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184587",
+ "status": {
+  "cmdId": "af9c434a-7f52-44ba-b274-85f3ce503c29",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184616",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\reports\\v++_compile_all_in_one_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "01/14/25 22:03:04",
+ "timestampMillis": "1736910184617",
+ "report": {
+  "path": "C:/fpga\\simon\\all_in_one\\all_in_one\\reports\\.db\\v++_compile_all_in_one_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

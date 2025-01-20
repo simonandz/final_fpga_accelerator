@@ -1,0 +1,11 @@
+❌ [red][bold]   195 |         inout  systolic_state_t s,
+      |                                 ^
+                   overall.v:623:31: ... Location of blocking assignment
+  623 |                         states[0],
+      |                               ^
+                   overall.v:242:33: ... Location of nonblocking assignment
+  242 |                         s.state <= FINISH;  
+      |                                 ^~
+%Error: Exiting due to too many errors encountered; --error-limit=50
+
+❌ [red][bold] Log file: 'runs/RUN_2025-01-16_05-27-20/01-verilator-lint/verilator-lint.log'

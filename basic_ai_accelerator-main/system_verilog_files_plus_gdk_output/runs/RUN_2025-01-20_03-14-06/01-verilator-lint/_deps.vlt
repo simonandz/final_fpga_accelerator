@@ -1,0 +1,5 @@
+`verilator_config
+lint_off -rule DECLFILENAME
+lint_off -rule EOFNEWLINE
+lint_off -rule UNDRIVEN -file "/foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_03-14-06/tmp/2647810b9b5249e8b1c1fadf18ca19b7.bb.v"
+lint_off -rule UNUSEDSIGNAL -file "/foss/designs/system_verilog_converted_files/runs/RUN_2025-01-20_03-14-06/tmp/2647810b9b5249e8b1c1fadf18ca19b7.bb.v"

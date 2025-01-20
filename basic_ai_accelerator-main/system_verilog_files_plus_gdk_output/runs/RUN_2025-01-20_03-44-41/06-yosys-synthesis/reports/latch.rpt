@@ -1,0 +1,5 @@
+
+14. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\systolic_top_uart_4parallel_q8_24.\A_blk_packed' from process `\systolic_top_uart_4parallel_q8_24.$proc$overall.v:108$466'.
+No latch inferred for signal `\systolic_top_uart_4parallel_q8_24.\B_blk_packed' from process `\systolic_top_uart_4parallel_q8_24.$proc$overall.v:108$466'.
+No latch inferred for signal `\systolic_top_uart_4parallel_q8_24.\i_g' from process `\systolic_top_uart_4parallel_q8_24.$proc$overall.v:108$466'.
