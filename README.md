@@ -195,14 +195,5 @@ With a timescale of 1 ns and `BAUD_TICKS = 10`, each UART bit period is 10 ns:
 
 ---
 
-## Final Notes
-
-- **Customization:**  
-  You can modify the design parameters (such as BAUD_TICKS and opcodes) to match your target application.
-- **UART Unloading:**  
-  While the unloading process is described conceptually in this README, further implementation details (such as a dedicated UART transmission FSM) may be added.
-- **Testing:**  
-  Ensure you test the module both in simulation and on hardware (if applicable) to verify proper functionality under the defined baud rate and operational conditions.
-
----
-
+![Chip Render](images\Capture_1.PNG)
+![3D Chip Render](images\Capture.PNG)
