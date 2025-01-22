@@ -1,6 +1,6 @@
 # AI Accelerator for Systolic Matricies and Activation Functions
 
-This module implements a systolic processing engine that operates on four 3×3 matrices in parallel using Q8.24 fixed-point arithmetic. It incorporates a simple UART interface to receive data and—if desired—transmit computed results. The module supports several operations, selectable via opcodes.
+This module implements a systolic processing engine that operates on four 3×3 matrices in parallel using Q8.24 fixed-point arithmetic. It incorporates a simple UART interface to receive data and transmit computed results. The module supports several operations, selectable via opcodes.
 
 ---
 
