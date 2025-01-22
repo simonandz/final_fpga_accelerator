@@ -35,7 +35,7 @@ This design uses four parallel systolic arrays to perform 3×3 matrix multiplica
 | 3   | Op-Code                   |
 | 4   | Op-Code                   |
 | 5   | Start                     |
-| 6   | TX (UART RX pin)          |
+| 6   | RX (UART)                 |
 | 7   | Clk                       |
 | 8   | Reset                     |
 
@@ -45,7 +45,7 @@ This design uses four parallel systolic arrays to perform 3×3 matrix multiplica
 |-----|--------------------------|
 | 1   | Done                     |
 | 2   | Busy                     |
-| 3   | RX (UART TX pin)         |
+| 3   | TX (UART)                |
 | 4   | (Unused)                 |
 | 5   | (Unused)                 |
 | 6   | (Unused)                 |
