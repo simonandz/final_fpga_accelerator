@@ -83,7 +83,7 @@ The 8-bit opcode is formed from the four provided opcode inputs (pins 1–4) wit
   The UART receiver task continuously monitors the RX input. When a complete 8-bit byte (with start, data, and stop bits) is received, it asserts a valid flag (`rx_valid`) and provides the received byte (`rx_data`).
 
 - **UART TX:**  
-  The design includes a UART transmitter task that serializes output data with the proper framing. Although the code outlines the transmitter, unloading (or transmitting) the computed result is described conceptually for further implementation.
+  The design includes a UART transmitter task that serializes output data with the proper framing.
 
 ---
 
